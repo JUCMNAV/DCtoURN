@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" xmlns:urn.dyncontext="http:///urn/dyncontext.ecore" xmlns:urncore="http:///urncore.ecore">
+  <urn:URNspec name="AirplaneCaseStudy">
+    <ucmspec/>
+    <grlspec>
+      <actors name="ProjectManager" fromLinks="/0/@urnLinks.0" id="CompoId2" contRefs="Id2"/>
+      <actors name="Senior Business Dev" fromLinks="/0/@urnLinks.1" id="CompoId3" contRefs="Id3"/>
+      <actors name="Senior Developer" fromLinks="/0/@urnLinks.2" id="CompoId4" contRefs="Id4"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.0" dest="CompoId24" src="CompoId22"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.1" dest="CompoId24" src="CompoId23"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.2" dest="CompoId24" src="CompoId21"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.3" dest="CompoId24" src="CompoId20"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.4" dest="CompoId25" src="CompoId16"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.5" dest="CompoId25" src="CompoId19"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.6" dest="CompoId25" src="CompoId15"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.7" dest="CompoId25" src="CompoId18"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.8" dest="CompoId25" src="CompoId17"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.9" dest="CompoId26" src="CompoId16"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.10" dest="CompoId26" src="CompoId19"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.11" dest="CompoId26" src="CompoId15"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.12" dest="CompoId26" src="CompoId18"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.13" dest="CompoId26" src="CompoId17"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.14" dest="CompoId27" src="CompoId13"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.15" dest="CompoId27" src="CompoId14"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.16" dest="CompoId27" src="CompoId12"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.17" dest="CompoId12" src="CompoId10"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.18" dest="CompoId13" src="CompoId10"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.19" dest="CompoId14" src="CompoId10"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.20" dest="CompoId15" src="CompoId6"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.21" dest="CompoId15" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.22" dest="CompoId15" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.23" dest="CompoId16" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.24" dest="CompoId16" src="CompoId6"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.25" dest="CompoId16" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.26" dest="CompoId16" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.27" dest="CompoId17" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.28" dest="CompoId17" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.29" dest="CompoId17" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.30" dest="CompoId18" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.31" dest="CompoId18" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.32" dest="CompoId18" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.33" dest="CompoId19" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.34" dest="CompoId19" src="CompoId6"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.35" dest="CompoId19" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.36" dest="CompoId19" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.37" dest="CompoId20" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.38" dest="CompoId20" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.39" dest="CompoId20" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.40" dest="CompoId21" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.41" dest="CompoId21" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.42" dest="CompoId22" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.43" dest="CompoId23" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.44" dest="CompoId23" src="CompoId5"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.45" dest="CompoId16" src="CompoId11"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.46" dest="CompoId12" src="CompoId28"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.47" dest="CompoId15" src="CompoId29"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.48" dest="CompoId20" src="CompoId31"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.49" dest="CompoId26" src="CompoId30"/>
+    </grlspec>
+    <urndef>
+      <responsibilities name="Understand Requirements" fromLinks="/0/@urnLinks.7" respRefs="/0/@urndef/@specDiagrams.0/@nodes.13"/>
+      <responsibilities name="Prioritize workitems" fromLinks="/0/@urnLinks.8 /0/@urnLinks.19" respRefs="/0/@urndef/@specDiagrams.0/@nodes.14"/>
+      <responsibilities name="Provide workitems to manager" fromLinks="/0/@urnLinks.9 /0/@urnLinks.20" respRefs="/0/@urndef/@specDiagrams.0/@nodes.15"/>
+      <responsibilities name="Plan iteration work" fromLinks="/0/@urnLinks.10" respRefs="/0/@urndef/@specDiagrams.0/@nodes.16"/>
+      <responsibilities name="Communicate development tasks" fromLinks="/0/@urnLinks.11 /0/@urnLinks.21" respRefs="/0/@urndef/@specDiagrams.0/@nodes.17"/>
+      <responsibilities name="Understand development challenges" fromLinks="/0/@urnLinks.12 /0/@urnLinks.22" respRefs="/0/@urndef/@specDiagrams.0/@nodes.18"/>
+      <responsibilities name="Reassign development tasks" fromLinks="/0/@urnLinks.13 /0/@urnLinks.23" respRefs="/0/@urndef/@specDiagrams.0/@nodes.19"/>
+      <responsibilities name="Monitor development activity " fromLinks="/0/@urnLinks.14 /0/@urnLinks.24" respRefs="/0/@urndef/@specDiagrams.0/@nodes.20"/>
+      <responsibilities name="start developing code" fromLinks="/0/@urnLinks.15" respRefs="/0/@urndef/@specDiagrams.0/@nodes.21"/>
+      <responsibilities name="Raise development concern" fromLinks="/0/@urnLinks.16 /0/@urnLinks.25" respRefs="/0/@urndef/@specDiagrams.0/@nodes.22"/>
+      <responsibilities name="Complete development activity" fromLinks="/0/@urnLinks.17 /0/@urnLinks.26" respRefs="/0/@urndef/@specDiagrams.0/@nodes.23"/>
+      <responsibilities name="Notify task completion" fromLinks="/0/@urnLinks.18 /0/@urnLinks.27" respRefs="/0/@urndef/@specDiagrams.0/@nodes.24"/>
+      <specDiagrams xsi:type="ucm.map:UCMmap" name="Complete Project Development">
+        <nodes xsi:type="ucm.map:EndPoint" name="Complete assigned development task" fromLinks="/0/@urnLinks.3" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" pred="/0/@urndef/@specDiagrams.0/@connections.25">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Assign tasks to developers" fromLinks="/0/@urnLinks.4" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" pred="/0/@urndef/@specDiagrams.0/@connections.1">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Ensure completion of dev tasks" fromLinks="/0/@urnLinks.5" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" pred="/0/@urndef/@specDiagrams.0/@connections.27">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Communicate high priority tasks" fromLinks="/0/@urnLinks.6" contRef="/0/@urndef/@specDiagrams.0/@contRefs.0" pred="/0/@urndef/@specDiagrams.0/@connections.16">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Current Iteration tasks remaining" succ="/0/@urndef/@specDiagrams.0/@connections.28" pred="/0/@urndef/@specDiagrams.0/@connections.21">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:AndFork" succ="/0/@urndef/@specDiagrams.0/@connections.7 /0/@urndef/@specDiagrams.0/@connections.8" pred="/0/@urndef/@specDiagrams.0/@connections.0"/>
+        <nodes xsi:type="ucm.map:AndJoin" succ="/0/@urndef/@specDiagrams.0/@connections.9" pred="/0/@urndef/@specDiagrams.0/@connections.19 /0/@urndef/@specDiagrams.0/@connections.20"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.0 /0/@urndef/@specDiagrams.0/@connections.1" pred="/0/@urndef/@specDiagrams.0/@connections.18"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.11 /0/@urndef/@specDiagrams.0/@connections.12" pred="/0/@urndef/@specDiagrams.0/@connections.22"/>
+        <nodes xsi:type="ucm.map:OrJoin" succ="/0/@urndef/@specDiagrams.0/@connections.13" pred="/0/@urndef/@specDiagrams.0/@connections.23 /0/@urndef/@specDiagrams.0/@connections.24"/>
+        <nodes xsi:type="ucm.map:DirectionArrow" succ="/0/@urndef/@specDiagrams.0/@connections.3" pred="/0/@urndef/@specDiagrams.0/@connections.14"/>
+        <nodes xsi:type="ucm.map:DirectionArrow" succ="/0/@urndef/@specDiagrams.0/@connections.4" pred="/0/@urndef/@specDiagrams.0/@connections.15"/>
+        <nodes xsi:type="ucm.map:DirectionArrow" succ="/0/@urndef/@specDiagrams.0/@connections.6" pred="/0/@urndef/@specDiagrams.0/@connections.17"/>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.0" succ="/0/@urndef/@specDiagrams.0/@connections.14" pred="/0/@urndef/@specDiagrams.0/@connections.2" respDef="/0/@urndef/@responsibilities.0">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.0" succ="/0/@urndef/@specDiagrams.0/@connections.15" pred="/0/@urndef/@specDiagrams.0/@connections.3" respDef="/0/@urndef/@responsibilities.1">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.0" succ="/0/@urndef/@specDiagrams.0/@connections.16" pred="/0/@urndef/@specDiagrams.0/@connections.4" respDef="/0/@urndef/@responsibilities.2">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.17" pred="/0/@urndef/@specDiagrams.0/@connections.5" respDef="/0/@urndef/@responsibilities.3">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.18" pred="/0/@urndef/@specDiagrams.0/@connections.6" respDef="/0/@urndef/@responsibilities.4">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.19" pred="/0/@urndef/@specDiagrams.0/@connections.7" respDef="/0/@urndef/@responsibilities.5">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.20" pred="/0/@urndef/@specDiagrams.0/@connections.8" respDef="/0/@urndef/@responsibilities.6">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.21" pred="/0/@urndef/@specDiagrams.0/@connections.9" respDef="/0/@urndef/@responsibilities.7">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.22" pred="/0/@urndef/@specDiagrams.0/@connections.10" respDef="/0/@urndef/@responsibilities.8">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.23" pred="/0/@urndef/@specDiagrams.0/@connections.11" respDef="/0/@urndef/@responsibilities.9">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.24" pred="/0/@urndef/@specDiagrams.0/@connections.12" respDef="/0/@urndef/@responsibilities.10">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.25" pred="/0/@urndef/@specDiagrams.0/@connections.13" respDef="/0/@urndef/@responsibilities.11">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.28" succ="/0/@urndef/@specDiagrams.0/@connections.2">
+          <metadata name="_state" value="Current Project Client Requirement"/>
+        </nodes>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.29" succ="/0/@urndef/@specDiagrams.0/@connections.5">
+          <metadata name="_state" value="Current Project Development tasks"/>
+        </nodes>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.30" succ="/0/@urndef/@specDiagrams.0/@connections.10">
+          <metadata name="_state" value="Current iteration tasks assigned"/>
+        </nodes>
+        <nodes xsi:type="ucm.map:Connect" succ="/0/@urndef/@specDiagrams.0/@connections.26" pred="/0/@urndef/@specDiagrams.0/@connections.28"/>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.31" succ="/0/@urndef/@specDiagrams.0/@connections.27" pred="/0/@urndef/@specDiagrams.0/@connections.26">
+          <metadata name="_state" value="Current Iteration tasks remaining"/>
+        </nodes>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.1" nodes="/0/@urndef/@specDiagrams.0/@nodes.3 /0/@urndef/@specDiagrams.0/@nodes.14 /0/@urndef/@specDiagrams.0/@nodes.15 /0/@urndef/@specDiagrams.0/@nodes.13">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.2" nodes="/0/@urndef/@specDiagrams.0/@nodes.0 /0/@urndef/@specDiagrams.0/@nodes.23 /0/@urndef/@specDiagrams.0/@nodes.24 /0/@urndef/@specDiagrams.0/@nodes.22 /0/@urndef/@specDiagrams.0/@nodes.21">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.0" nodes="/0/@urndef/@specDiagrams.0/@nodes.1 /0/@urndef/@specDiagrams.0/@nodes.2 /0/@urndef/@specDiagrams.0/@nodes.17 /0/@urndef/@specDiagrams.0/@nodes.20 /0/@urndef/@specDiagrams.0/@nodes.16 /0/@urndef/@specDiagrams.0/@nodes.19 /0/@urndef/@specDiagrams.0/@nodes.18">
+          <label/>
+        </contRefs>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.7" target="/0/@urndef/@specDiagrams.0/@nodes.5"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.7" target="/0/@urndef/@specDiagrams.0/@nodes.1"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.25" target="/0/@urndef/@specDiagrams.0/@nodes.13"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.10" target="/0/@urndef/@specDiagrams.0/@nodes.14"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.11" target="/0/@urndef/@specDiagrams.0/@nodes.15"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.26" target="/0/@urndef/@specDiagrams.0/@nodes.16"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.12" target="/0/@urndef/@specDiagrams.0/@nodes.17"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.5" target="/0/@urndef/@specDiagrams.0/@nodes.18"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.5" target="/0/@urndef/@specDiagrams.0/@nodes.19"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.6" target="/0/@urndef/@specDiagrams.0/@nodes.20"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.27" target="/0/@urndef/@specDiagrams.0/@nodes.21"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.8" target="/0/@urndef/@specDiagrams.0/@nodes.22">
+          <condition label="Development Issue"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.8" target="/0/@urndef/@specDiagrams.0/@nodes.23">
+          <condition label="!Development Issue"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.9" target="/0/@urndef/@specDiagrams.0/@nodes.24"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.13" target="/0/@urndef/@specDiagrams.0/@nodes.10"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.14" target="/0/@urndef/@specDiagrams.0/@nodes.11"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.15" target="/0/@urndef/@specDiagrams.0/@nodes.3"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.16" target="/0/@urndef/@specDiagrams.0/@nodes.12"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.17" target="/0/@urndef/@specDiagrams.0/@nodes.7"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.18" target="/0/@urndef/@specDiagrams.0/@nodes.6"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.19" target="/0/@urndef/@specDiagrams.0/@nodes.6"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.20" target="/0/@urndef/@specDiagrams.0/@nodes.4"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.21" target="/0/@urndef/@specDiagrams.0/@nodes.8"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.22" target="/0/@urndef/@specDiagrams.0/@nodes.9"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.23" target="/0/@urndef/@specDiagrams.0/@nodes.9"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.24" target="/0/@urndef/@specDiagrams.0/@nodes.0"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.28" target="/0/@urndef/@specDiagrams.0/@nodes.29"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.29" target="/0/@urndef/@specDiagrams.0/@nodes.2"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.4" target="/0/@urndef/@specDiagrams.0/@nodes.28"/>
+      </specDiagrams>
+      <specDiagrams xsi:type="grl:GRLGraph" name="Stakeholders" id="Id1" description="StakeholderTest">
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId5" id="Id5" succ="/0/@urndef/@specDiagrams.1/@connections.26 /0/@urndef/@specDiagrams.1/@connections.29 /0/@urndef/@specDiagrams.1/@connections.32 /0/@urndef/@specDiagrams.1/@connections.36 /0/@urndef/@specDiagrams.1/@connections.39 /0/@urndef/@specDiagrams.1/@connections.41 /0/@urndef/@specDiagrams.1/@connections.44" def="CompoId5"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId6" id="Id6" succ="/0/@urndef/@specDiagrams.1/@connections.20 /0/@urndef/@specDiagrams.1/@connections.24 /0/@urndef/@specDiagrams.1/@connections.34" def="CompoId6"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId7" id="Id7" succ="/0/@urndef/@specDiagrams.1/@connections.22 /0/@urndef/@specDiagrams.1/@connections.25 /0/@urndef/@specDiagrams.1/@connections.28 /0/@urndef/@specDiagrams.1/@connections.31 /0/@urndef/@specDiagrams.1/@connections.35 /0/@urndef/@specDiagrams.1/@connections.38 /0/@urndef/@specDiagrams.1/@connections.40 /0/@urndef/@specDiagrams.1/@connections.43" def="CompoId7"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId8" id="Id8" succ="/0/@urndef/@specDiagrams.1/@connections.21 /0/@urndef/@specDiagrams.1/@connections.23 /0/@urndef/@specDiagrams.1/@connections.27 /0/@urndef/@specDiagrams.1/@connections.30 /0/@urndef/@specDiagrams.1/@connections.33" def="CompoId8"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId9" id="Id9" succ="/0/@urndef/@specDiagrams.1/@connections.37 /0/@urndef/@specDiagrams.1/@connections.42" def="CompoId9"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId10" id="Id10" succ="/0/@urndef/@specDiagrams.1/@connections.17 /0/@urndef/@specDiagrams.1/@connections.18 /0/@urndef/@specDiagrams.1/@connections.19" def="CompoId10"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId11" id="Id11" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.45" def="CompoId11"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId12" id="Id12" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.16" pred="/0/@urndef/@specDiagrams.1/@connections.17 /0/@urndef/@specDiagrams.1/@connections.46" def="CompoId12"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId13" id="Id13" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.14" pred="/0/@urndef/@specDiagrams.1/@connections.18" def="CompoId13"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId14" id="Id14" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.15" pred="/0/@urndef/@specDiagrams.1/@connections.19" def="CompoId14"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId15" id="Id15" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.6 /0/@urndef/@specDiagrams.1/@connections.11" pred="/0/@urndef/@specDiagrams.1/@connections.20 /0/@urndef/@specDiagrams.1/@connections.21 /0/@urndef/@specDiagrams.1/@connections.22 /0/@urndef/@specDiagrams.1/@connections.47" def="CompoId15"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId16" id="Id16" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.4 /0/@urndef/@specDiagrams.1/@connections.9" pred="/0/@urndef/@specDiagrams.1/@connections.23 /0/@urndef/@specDiagrams.1/@connections.24 /0/@urndef/@specDiagrams.1/@connections.25 /0/@urndef/@specDiagrams.1/@connections.26 /0/@urndef/@specDiagrams.1/@connections.45" def="CompoId16"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId17" id="Id17" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.8 /0/@urndef/@specDiagrams.1/@connections.13" pred="/0/@urndef/@specDiagrams.1/@connections.27 /0/@urndef/@specDiagrams.1/@connections.28 /0/@urndef/@specDiagrams.1/@connections.29" def="CompoId17"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId18" id="Id18" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.7 /0/@urndef/@specDiagrams.1/@connections.12" pred="/0/@urndef/@specDiagrams.1/@connections.30 /0/@urndef/@specDiagrams.1/@connections.31 /0/@urndef/@specDiagrams.1/@connections.32" def="CompoId18"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId19" id="Id19" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.5 /0/@urndef/@specDiagrams.1/@connections.10" pred="/0/@urndef/@specDiagrams.1/@connections.33 /0/@urndef/@specDiagrams.1/@connections.34 /0/@urndef/@specDiagrams.1/@connections.35 /0/@urndef/@specDiagrams.1/@connections.36" def="CompoId19"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId20" id="Id20" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.3" pred="/0/@urndef/@specDiagrams.1/@connections.37 /0/@urndef/@specDiagrams.1/@connections.38 /0/@urndef/@specDiagrams.1/@connections.39 /0/@urndef/@specDiagrams.1/@connections.48" def="CompoId20"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId21" id="Id21" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.2" pred="/0/@urndef/@specDiagrams.1/@connections.40 /0/@urndef/@specDiagrams.1/@connections.41" def="CompoId21"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId22" id="Id22" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.0" pred="/0/@urndef/@specDiagrams.1/@connections.42" def="CompoId22"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId23" id="Id23" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.1" pred="/0/@urndef/@specDiagrams.1/@connections.43 /0/@urndef/@specDiagrams.1/@connections.44" def="CompoId23"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId32" id="Id32" def="CompoId32">
+          <metadata name="_height" value="45"/>
+          <metadata name="_width" value="110"/>
+        </nodes>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId24" id="Id24" contRef="Id4" pred="/0/@urndef/@specDiagrams.1/@connections.0 /0/@urndef/@specDiagrams.1/@connections.1 /0/@urndef/@specDiagrams.1/@connections.2 /0/@urndef/@specDiagrams.1/@connections.3" def="CompoId24"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId25" id="Id25" contRef="Id2" pred="/0/@urndef/@specDiagrams.1/@connections.4 /0/@urndef/@specDiagrams.1/@connections.5 /0/@urndef/@specDiagrams.1/@connections.6 /0/@urndef/@specDiagrams.1/@connections.7 /0/@urndef/@specDiagrams.1/@connections.8" def="CompoId25"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId26" id="Id26" contRef="Id2" pred="/0/@urndef/@specDiagrams.1/@connections.9 /0/@urndef/@specDiagrams.1/@connections.10 /0/@urndef/@specDiagrams.1/@connections.11 /0/@urndef/@specDiagrams.1/@connections.12 /0/@urndef/@specDiagrams.1/@connections.13 /0/@urndef/@specDiagrams.1/@connections.49" def="CompoId26"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId27" id="Id27" contRef="Id3" pred="/0/@urndef/@specDiagrams.1/@connections.14 /0/@urndef/@specDiagrams.1/@connections.15 /0/@urndef/@specDiagrams.1/@connections.16" def="CompoId27"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId28" id="Id28" succ="/0/@urndef/@specDiagrams.1/@connections.46" def="CompoId28"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId29" id="Id29" succ="/0/@urndef/@specDiagrams.1/@connections.47" def="CompoId29"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId30" id="Id30" succ="/0/@urndef/@specDiagrams.1/@connections.49" def="CompoId30"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId31" id="Id31" succ="/0/@urndef/@specDiagrams.1/@connections.48" def="CompoId31"/>
+        <contRefs xsi:type="grl:ActorRef" id="Id2" contDef="CompoId2" nodes="Id16 Id19 Id15 Id18 Id17 Id11 Id25 Id26">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="grl:ActorRef" id="Id3" contDef="CompoId3" nodes="Id13 Id14 Id12 Id27">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="grl:ActorRef" id="Id4" contDef="CompoId4" nodes="Id22 Id23 Id21 Id20 Id24">
+          <label/>
+        </contRefs>
+        <connections xsi:type="grl:LinkRef" source="Id22" target="Id24" link="/0/@grlspec/@links.0"/>
+        <connections xsi:type="grl:LinkRef" source="Id23" target="Id24" link="/0/@grlspec/@links.1"/>
+        <connections xsi:type="grl:LinkRef" source="Id21" target="Id24" link="/0/@grlspec/@links.2"/>
+        <connections xsi:type="grl:LinkRef" source="Id20" target="Id24" link="/0/@grlspec/@links.3"/>
+        <connections xsi:type="grl:LinkRef" source="Id16" target="Id25" link="/0/@grlspec/@links.4"/>
+        <connections xsi:type="grl:LinkRef" source="Id19" target="Id25" link="/0/@grlspec/@links.5"/>
+        <connections xsi:type="grl:LinkRef" source="Id15" target="Id25" link="/0/@grlspec/@links.6"/>
+        <connections xsi:type="grl:LinkRef" source="Id18" target="Id25" link="/0/@grlspec/@links.7"/>
+        <connections xsi:type="grl:LinkRef" source="Id17" target="Id25" link="/0/@grlspec/@links.8"/>
+        <connections xsi:type="grl:LinkRef" source="Id16" target="Id26" link="/0/@grlspec/@links.9"/>
+        <connections xsi:type="grl:LinkRef" source="Id19" target="Id26" link="/0/@grlspec/@links.10"/>
+        <connections xsi:type="grl:LinkRef" source="Id15" target="Id26" link="/0/@grlspec/@links.11"/>
+        <connections xsi:type="grl:LinkRef" source="Id18" target="Id26" link="/0/@grlspec/@links.12"/>
+        <connections xsi:type="grl:LinkRef" source="Id17" target="Id26" link="/0/@grlspec/@links.13"/>
+        <connections xsi:type="grl:LinkRef" source="Id13" target="Id27" link="/0/@grlspec/@links.14"/>
+        <connections xsi:type="grl:LinkRef" source="Id14" target="Id27" link="/0/@grlspec/@links.15"/>
+        <connections xsi:type="grl:LinkRef" source="Id12" target="Id27" link="/0/@grlspec/@links.16"/>
+        <connections xsi:type="grl:LinkRef" source="Id10" target="Id12" link="/0/@grlspec/@links.17"/>
+        <connections xsi:type="grl:LinkRef" source="Id10" target="Id13" link="/0/@grlspec/@links.18"/>
+        <connections xsi:type="grl:LinkRef" source="Id10" target="Id14" link="/0/@grlspec/@links.19"/>
+        <connections xsi:type="grl:LinkRef" source="Id6" target="Id15" link="/0/@grlspec/@links.20"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id15" link="/0/@grlspec/@links.21"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id15" link="/0/@grlspec/@links.22"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id16" link="/0/@grlspec/@links.23"/>
+        <connections xsi:type="grl:LinkRef" source="Id6" target="Id16" link="/0/@grlspec/@links.24"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id16" link="/0/@grlspec/@links.25"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id16" link="/0/@grlspec/@links.26"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id17" link="/0/@grlspec/@links.27"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id17" link="/0/@grlspec/@links.28"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id17" link="/0/@grlspec/@links.29"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id18" link="/0/@grlspec/@links.30"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id18" link="/0/@grlspec/@links.31"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id18" link="/0/@grlspec/@links.32"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id19" link="/0/@grlspec/@links.33"/>
+        <connections xsi:type="grl:LinkRef" source="Id6" target="Id19" link="/0/@grlspec/@links.34"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id19" link="/0/@grlspec/@links.35"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id19" link="/0/@grlspec/@links.36"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id20" link="/0/@grlspec/@links.37"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id20" link="/0/@grlspec/@links.38"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id20" link="/0/@grlspec/@links.39"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id21" link="/0/@grlspec/@links.40"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id21" link="/0/@grlspec/@links.41"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id22" link="/0/@grlspec/@links.42"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id23" link="/0/@grlspec/@links.43"/>
+        <connections xsi:type="grl:LinkRef" source="Id5" target="Id23" link="/0/@grlspec/@links.44"/>
+        <connections xsi:type="grl:LinkRef" source="Id11" target="Id16" link="/0/@grlspec/@links.45"/>
+        <connections xsi:type="grl:LinkRef" source="Id28" target="Id12" link="/0/@grlspec/@links.46"/>
+        <connections xsi:type="grl:LinkRef" source="Id29" target="Id15" link="/0/@grlspec/@links.47"/>
+        <connections xsi:type="grl:LinkRef" source="Id31" target="Id20" link="/0/@grlspec/@links.48"/>
+        <connections xsi:type="grl:LinkRef" source="Id30" target="Id26" link="/0/@grlspec/@links.49"/>
+      </specDiagrams>
+      <specDiagrams xsi:type="ucm.map:UCMmap" name="Iteration Planning">
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.6" children="/0/@urndef/@specDiagrams.2/@contRefs.1 /0/@urndef/@specDiagrams.2/@contRefs.2">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.4" parent="/0/@urndef/@specDiagrams.2/@contRefs.0">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.3" parent="/0/@urndef/@specDiagrams.2/@contRefs.0">
+          <label/>
+        </contRefs>
+      </specDiagrams>
+      <components name="ProjectManager" toLinks="/0/@urnLinks.0" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.2" kind="Actor">
+        <metadata name="_location" value="At left side of Wall"/>
+        <metadata name="_naturalness" value="repManager"/>
+      </components>
+      <components name="Senior Business Dev" toLinks="/0/@urnLinks.1" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.0" kind="Actor">
+        <metadata name="_location" value="At right side of Wall"/>
+        <metadata name="_naturalness" value="repBusinessDev"/>
+      </components>
+      <components name="Senior Developer" toLinks="/0/@urnLinks.2" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.1" kind="Actor">
+        <metadata name="_location" value="In front of Wall"/>
+        <metadata name="_naturalness" value="repDeveloper"/>
+      </components>
+      <components name="ProjectManager" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.2" kind="Actor"/>
+      <components name="BusinessDev" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.1" kind="Actor"/>
+      <components name="Developer A" contRefs="/1" kind="Actor"/>
+      <components name="Iteration Planning" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.0"/>
+    </urndef>
+    <urnLinks fromElem="CompoId2" toElem="/0/@urndef/@components.0"/>
+    <urnLinks fromElem="CompoId3" toElem="/0/@urndef/@components.1"/>
+    <urnLinks fromElem="CompoId4" toElem="/0/@urndef/@components.2"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.0" toElem="CompoId24"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.1" toElem="CompoId25"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.2" toElem="CompoId26"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.3" toElem="CompoId27"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.0"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.1"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.2"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.3"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.4" toElem="CompoId11"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.5"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.6"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.7"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.8"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.9"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.10"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.11"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.1" toElem="CompoId13"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.2" toElem="CompoId14"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.4" toElem="CompoId16"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.5" toElem="CompoId17"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.6" toElem="CompoId18"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.7" toElem="CompoId19"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.9" toElem="CompoId21"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.10" toElem="CompoId22"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.11" toElem="CompoId23"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.25" toElem="CompoId28"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.26" toElem="CompoId29"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.27" toElem="CompoId31"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.29" toElem="CompoId30"/>
+    <dynamicContexts name="DynamicContext1" id="D1" groups="DG1">
+      <changes xsi:type="urn.dyncontext:DeactivationChange" start="2019-04-01T01:00:00.000-0400" end="2019-04-08T01:00:00.000-0400" element="Id13"/>
+      <changes xsi:type="urn.dyncontext:DeactivationChange" start="2019-04-09T01:00:00.000-0400" end="2019-04-30T01:00:00.000-0400" element="Id14"/>
+    </dynamicContexts>
+    <dynamicContextGroups name="DynamicContextGroup1" id="DG1" contexts="D1"/>
+  </urn:URNspec>
+  <ucm.map:ComponentRef contDef="/0/@urndef/@components.5">
+    <label/>
+  </ucm.map:ComponentRef>
+  <grl:IntentionalElement name="Wall" id="CompoId5" linksSrc="/0/@grlspec/@links.26 /0/@grlspec/@links.29 /0/@grlspec/@links.32 /0/@grlspec/@links.36 /0/@grlspec/@links.39 /0/@grlspec/@links.41 /0/@grlspec/@links.44" type="Ressource" refs="Id5">
+    <metadata name="_location" value="Inside XP team office"/>
+    <metadata name="_naturalness" value="repWall"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Story Card" id="CompoId6" linksSrc="/0/@grlspec/@links.20 /0/@grlspec/@links.24 /0/@grlspec/@links.34" type="Ressource" refs="Id6">
+    <metadata name="_location" value="On Wall"/>
+    <metadata name="_naturalness" value="repCards"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Task Card" id="CompoId7" linksSrc="/0/@grlspec/@links.22 /0/@grlspec/@links.25 /0/@grlspec/@links.28 /0/@grlspec/@links.31 /0/@grlspec/@links.35 /0/@grlspec/@links.38 /0/@grlspec/@links.40 /0/@grlspec/@links.43" type="Ressource" refs="Id7">
+    <metadata name="_location" value="On Wall"/>
+    <metadata name="_naturalness" value="repCards"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Bug Card" id="CompoId8" linksSrc="/0/@grlspec/@links.21 /0/@grlspec/@links.23 /0/@grlspec/@links.27 /0/@grlspec/@links.30 /0/@grlspec/@links.33" type="Ressource" refs="Id8">
+    <metadata name="_location" value="On Wall"/>
+    <metadata name="_naturalness" value="repCards"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Developer Machine A" id="CompoId9" linksSrc="/0/@grlspec/@links.37 /0/@grlspec/@links.42" type="Ressource" refs="Id9">
+    <metadata name="_location" value="In front of Wall"/>
+    <metadata name="_naturalness" value="repDevMachine"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Summary Sheet" id="CompoId10" linksSrc="/0/@grlspec/@links.17 /0/@grlspec/@links.18 /0/@grlspec/@links.19" type="Ressource" refs="Id10">
+    <metadata name="_location" value="Inside XP team office"/>
+    <metadata name="_naturalness" value="repSheet"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Point At Card" toLinks="/0/@urnLinks.11" id="CompoId11" linksSrc="/0/@grlspec/@links.45" type="Task" refs="Id11">
+    <metadata name="_location" value="At left side of Wall"/>
+    <metadata name="_naturalness" value="repManager"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Understand Requirements" id="CompoId12" linksDest="/0/@grlspec/@links.17 /0/@grlspec/@links.46" linksSrc="/0/@grlspec/@links.16" type="Task" refs="Id12"/>
+  <grl:IntentionalElement name="Prioritize workitems" toLinks="/0/@urnLinks.19" id="CompoId13" linksDest="/0/@grlspec/@links.18" linksSrc="/0/@grlspec/@links.14" type="Task" refs="Id13"/>
+  <grl:IntentionalElement name="Provide workitems to manager" toLinks="/0/@urnLinks.20" id="CompoId14" linksDest="/0/@grlspec/@links.19" linksSrc="/0/@grlspec/@links.15" type="Task" refs="Id14"/>
+  <grl:IntentionalElement name="Plan iteration work" id="CompoId15" linksDest="/0/@grlspec/@links.20 /0/@grlspec/@links.21 /0/@grlspec/@links.22 /0/@grlspec/@links.47" linksSrc="/0/@grlspec/@links.6 /0/@grlspec/@links.11" type="Task" refs="Id15"/>
+  <grl:IntentionalElement name="Communicate development tasks" toLinks="/0/@urnLinks.21" id="CompoId16" linksDest="/0/@grlspec/@links.23 /0/@grlspec/@links.24 /0/@grlspec/@links.25 /0/@grlspec/@links.26 /0/@grlspec/@links.45" linksSrc="/0/@grlspec/@links.4 /0/@grlspec/@links.9" type="Task" refs="Id16"/>
+  <grl:IntentionalElement name="Understand development challenges" toLinks="/0/@urnLinks.22" id="CompoId17" linksDest="/0/@grlspec/@links.27 /0/@grlspec/@links.28 /0/@grlspec/@links.29" linksSrc="/0/@grlspec/@links.8 /0/@grlspec/@links.13" type="Task" refs="Id17"/>
+  <grl:IntentionalElement name="Reassign development tasks" toLinks="/0/@urnLinks.23" id="CompoId18" linksDest="/0/@grlspec/@links.30 /0/@grlspec/@links.31 /0/@grlspec/@links.32" linksSrc="/0/@grlspec/@links.7 /0/@grlspec/@links.12" type="Task" refs="Id18"/>
+  <grl:IntentionalElement name="Monitor development activity " toLinks="/0/@urnLinks.24" id="CompoId19" linksDest="/0/@grlspec/@links.33 /0/@grlspec/@links.34 /0/@grlspec/@links.35 /0/@grlspec/@links.36" linksSrc="/0/@grlspec/@links.5 /0/@grlspec/@links.10" type="Task" refs="Id19"/>
+  <grl:IntentionalElement name="start developing code" id="CompoId20" linksDest="/0/@grlspec/@links.37 /0/@grlspec/@links.38 /0/@grlspec/@links.39 /0/@grlspec/@links.48" linksSrc="/0/@grlspec/@links.3" type="Task" refs="Id20"/>
+  <grl:IntentionalElement name="Raise development concern" toLinks="/0/@urnLinks.25" id="CompoId21" linksDest="/0/@grlspec/@links.40 /0/@grlspec/@links.41" linksSrc="/0/@grlspec/@links.2" type="Task" refs="Id21"/>
+  <grl:IntentionalElement name="Complete development activity" toLinks="/0/@urnLinks.26" id="CompoId22" linksDest="/0/@grlspec/@links.42" linksSrc="/0/@grlspec/@links.0" type="Task" refs="Id22"/>
+  <grl:IntentionalElement name="Notify task completion" toLinks="/0/@urnLinks.27" id="CompoId23" linksDest="/0/@grlspec/@links.43 /0/@grlspec/@links.44" linksSrc="/0/@grlspec/@links.1" type="Task" refs="Id23"/>
+  <grl:IntentionalElement name="Complete assigned development task" toLinks="/0/@urnLinks.3" id="CompoId24" linksDest="/0/@grlspec/@links.0 /0/@grlspec/@links.1 /0/@grlspec/@links.2 /0/@grlspec/@links.3" type="Goal" refs="Id24"/>
+  <grl:IntentionalElement name="Assign tasks to developers" toLinks="/0/@urnLinks.4" id="CompoId25" linksDest="/0/@grlspec/@links.4 /0/@grlspec/@links.5 /0/@grlspec/@links.6 /0/@grlspec/@links.7 /0/@grlspec/@links.8" type="Goal" refs="Id25"/>
+  <grl:IntentionalElement name="Ensure completion of dev tasks" toLinks="/0/@urnLinks.5" id="CompoId26" linksDest="/0/@grlspec/@links.9 /0/@grlspec/@links.10 /0/@grlspec/@links.11 /0/@grlspec/@links.12 /0/@grlspec/@links.13 /0/@grlspec/@links.49" type="Goal" refs="Id26"/>
+  <grl:IntentionalElement name="Communicate high priority tasks" toLinks="/0/@urnLinks.6" id="CompoId27" linksDest="/0/@grlspec/@links.14 /0/@grlspec/@links.15 /0/@grlspec/@links.16" type="Goal" refs="Id27"/>
+  <grl:IntentionalElement name="Current Project Client Requirement" toLinks="/0/@urnLinks.28" id="CompoId28" linksSrc="/0/@grlspec/@links.46" type="Indicator" refs="Id28"/>
+  <ucm.map:EndPoint name="Current Project Client Requirement">
+    <label/>
+  </ucm.map:EndPoint>
+  <grl:IntentionalElement name="Current Project Development tasks" toLinks="/0/@urnLinks.29" id="CompoId29" linksSrc="/0/@grlspec/@links.47" type="Indicator" refs="Id29"/>
+  <ucm.map:EndPoint name="Current Project Development tasks">
+    <label/>
+  </ucm.map:EndPoint>
+  <grl:IntentionalElement name="Current Iteration tasks remaining" toLinks="/0/@urnLinks.31" id="CompoId30" linksSrc="/0/@grlspec/@links.49" type="Indicator" refs="Id30"/>
+  <grl:IntentionalElement name="Current iteration tasks assigned" toLinks="/0/@urnLinks.30" id="CompoId31" linksSrc="/0/@grlspec/@links.48" type="Indicator" refs="Id31"/>
+  <ucm.map:EndPoint name="Current iteration tasks assigned">
+    <label/>
+  </ucm.map:EndPoint>
+  <grl:IntentionalElement name="Iteration Planning" id="CompoId32" type="Ressource" refs="Id32"/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+</xmi:XMI>

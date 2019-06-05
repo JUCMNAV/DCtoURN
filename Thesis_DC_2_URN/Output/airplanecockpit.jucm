@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" xmlns:urn.dyncontext="http:///urn/dyncontext.ecore" xmlns:urncore="http:///urncore.ecore">
+  <urn:URNspec name="AirplaneCaseStudy">
+    <ucmspec/>
+    <grlspec>
+      <actors name="Captain" fromLinks="/0/@urnLinks.0" id="CompoId2" contRefs="Id2"/>
+      <actors name="FirstOfficer" fromLinks="/0/@urnLinks.1" id="CompoId3" contRefs="Id3"/>
+      <actors name="SecondOfficer" fromLinks="/0/@urnLinks.2" id="CompoId4" contRefs="Id4"/>
+      <actors name="ATCController " fromLinks="/0/@urnLinks.3" id="CompoId5" contRefs="Id5"/>
+      <actors name="High Altitude Controller" fromLinks="/0/@urnLinks.4" id="CompoId6" contRefs="Id6"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.0" dest="CompoId50" src="CompoId31"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.1" dest="CompoId50" src="CompoId34"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.2" dest="CompoId50" src="CompoId32"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.3" dest="CompoId50" src="CompoId36"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.4" dest="CompoId50" src="CompoId35"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.5" dest="CompoId50" src="CompoId33"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.6" dest="CompoId50" src="CompoId37"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.7" dest="CompoId51" src="CompoId31"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.8" dest="CompoId51" src="CompoId34"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.9" dest="CompoId51" src="CompoId32"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.10" dest="CompoId51" src="CompoId36"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.11" dest="CompoId51" src="CompoId35"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.12" dest="CompoId51" src="CompoId33"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.13" dest="CompoId51" src="CompoId37"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.14" dest="CompoId52" src="CompoId31"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.15" dest="CompoId52" src="CompoId34"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.16" dest="CompoId52" src="CompoId32"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.17" dest="CompoId52" src="CompoId36"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.18" dest="CompoId52" src="CompoId35"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.19" dest="CompoId52" src="CompoId33"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.20" dest="CompoId52" src="CompoId37"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.21" dest="CompoId53" src="CompoId40"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.22" dest="CompoId53" src="CompoId45"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.23" dest="CompoId53" src="CompoId44"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.24" dest="CompoId53" src="CompoId42"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.25" dest="CompoId53" src="CompoId41"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.26" dest="CompoId53" src="CompoId43"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.27" dest="CompoId54" src="CompoId40"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.28" dest="CompoId54" src="CompoId45"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.29" dest="CompoId54" src="CompoId44"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.30" dest="CompoId54" src="CompoId42"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.31" dest="CompoId54" src="CompoId41"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.32" dest="CompoId54" src="CompoId43"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.33" dest="CompoId55" src="CompoId46"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.34" dest="CompoId55" src="CompoId48"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.35" dest="CompoId55" src="CompoId47"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.36" dest="CompoId55" src="CompoId49"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.37" dest="CompoId56" src="CompoId38"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.38" dest="CompoId57" src="CompoId39"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.39" dest="CompoId37" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.40" dest="CompoId37" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.41" dest="CompoId32" src="CompoId28"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.42" dest="CompoId32" src="CompoId27"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.43" dest="CompoId32" src="CompoId14"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.44" dest="CompoId32" src="CompoId20"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.45" dest="CompoId34" src="CompoId17"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.46" dest="CompoId34" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.47" dest="CompoId33" src="CompoId20"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.48" dest="CompoId33" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.49" dest="CompoId35" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.50" dest="CompoId35" src="CompoId20"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.51" dest="CompoId35" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.52" dest="CompoId35" src="CompoId26"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.53" dest="CompoId36" src="CompoId17"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.54" dest="CompoId31" src="CompoId12"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.55" dest="CompoId31" src="CompoId9"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.56" dest="CompoId31" src="CompoId14"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.57" dest="CompoId31" src="CompoId29"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.58" dest="CompoId31" src="CompoId23"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.59" dest="CompoId38" src="CompoId24"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.60" dest="CompoId39" src="CompoId25"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.61" dest="CompoId40" src="CompoId19"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.62" dest="CompoId41" src="CompoId19"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.63" dest="CompoId41" src="CompoId11"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.64" dest="CompoId42" src="CompoId11"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.65" dest="CompoId42" src="CompoId16"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.66" dest="CompoId43" src="CompoId11"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.67" dest="CompoId44" src="CompoId11"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.68" dest="CompoId44" src="CompoId16"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.69" dest="CompoId45" src="CompoId11"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.70" dest="CompoId45" src="CompoId22"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.71" dest="CompoId46" src="CompoId18"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.72" dest="CompoId47" src="CompoId21"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.73" dest="CompoId47" src="CompoId18"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.74" dest="CompoId47" src="CompoId15"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.75" dest="CompoId47" src="CompoId8"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.76" dest="CompoId47" src="CompoId10"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.77" dest="CompoId47" src="CompoId7"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.78" dest="CompoId48" src="CompoId27"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.79" dest="CompoId48" src="CompoId28"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.80" dest="CompoId48" src="CompoId10"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.81" dest="CompoId48" src="CompoId18"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.82" dest="CompoId49" src="CompoId15"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.83" dest="CompoId49" src="CompoId10"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.84" dest="CompoId49" src="CompoId13"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.85" dest="CompoId49" src="CompoId29"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.86" dest="CompoId49" src="CompoId23"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.87" dest="CompoId37" src="CompoId30"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.88" dest="CompoId37" src="CompoId58"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.89" dest="CompoId40" src="CompoId60"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.90" dest="CompoId46" src="CompoId58"/>
+      <links xsi:type="grl:Contribution" refs="/0/@urndef/@specDiagrams.1/@connections.91" dest="CompoId50" src="CompoId59"/>
+    </grlspec>
+    <urndef>
+      <responsibilities name="Check Flight Plan" fromLinks="/0/@urnLinks.13" respRefs="/0/@urndef/@specDiagrams.0/@nodes.26"/>
+      <responsibilities name="Monitor aircraft and crew performance" fromLinks="/0/@urnLinks.14 /0/@urnLinks.32" respRefs="/0/@urndef/@specDiagrams.0/@nodes.27"/>
+      <responsibilities name="Communicate with ATC" fromLinks="/0/@urnLinks.15 /0/@urnLinks.33" respRefs="/0/@urndef/@specDiagrams.0/@nodes.28"/>
+      <responsibilities name="Perform redundant error checking" fromLinks="/0/@urnLinks.16 /0/@urnLinks.34" respRefs="/0/@urndef/@specDiagrams.0/@nodes.29"/>
+      <responsibilities name="Perform housekeeeping task" fromLinks="/0/@urnLinks.17 /0/@urnLinks.35" respRefs="/0/@urndef/@specDiagrams.0/@nodes.30"/>
+      <responsibilities name="Monitor ATC frequency" fromLinks="/0/@urnLinks.18 /0/@urnLinks.36" respRefs="/0/@urndef/@specDiagrams.0/@nodes.31"/>
+      <responsibilities name="FlyPlane" fromLinks="/0/@urnLinks.19 /0/@urnLinks.37" respRefs="/0/@urndef/@specDiagrams.0/@nodes.32"/>
+      <responsibilities name="Communicate with Crew" fromLinks="/0/@urnLinks.20 /0/@urnLinks.38" respRefs="/0/@urndef/@specDiagrams.0/@nodes.33"/>
+      <responsibilities name="Provide clearance to aircraft" fromLinks="/0/@urnLinks.21 /0/@urnLinks.39" respRefs="/0/@urndef/@specDiagrams.0/@nodes.34"/>
+      <responsibilities name="Monitor ATC freq" fromLinks="/0/@urnLinks.22" respRefs="/0/@urndef/@specDiagrams.0/@nodes.35"/>
+      <responsibilities name="Report Flight Condition" fromLinks="/0/@urnLinks.23 /0/@urnLinks.40" respRefs="/0/@urndef/@specDiagrams.0/@nodes.36"/>
+      <responsibilities name="Find correct EPR values" fromLinks="/0/@urnLinks.24 /0/@urnLinks.41" respRefs="/0/@urndef/@specDiagrams.0/@nodes.37"/>
+      <responsibilities name="Increase Engine Thrust Force" fromLinks="/0/@urnLinks.25 /0/@urnLinks.42" respRefs="/0/@urndef/@specDiagrams.0/@nodes.38"/>
+      <responsibilities name="Setting EPR values" fromLinks="/0/@urnLinks.26 /0/@urnLinks.43" respRefs="/0/@urndef/@specDiagrams.0/@nodes.39"/>
+      <responsibilities name="Perf redundant error check" fromLinks="/0/@urnLinks.27 /0/@urnLinks.44" respRefs="/0/@urndef/@specDiagrams.0/@nodes.40"/>
+      <responsibilities name="Mont ATC Frequency" fromLinks="/0/@urnLinks.28" respRefs="/0/@urndef/@specDiagrams.0/@nodes.41"/>
+      <responsibilities name="Perf housekeeping task" fromLinks="/0/@urnLinks.29 /0/@urnLinks.45" respRefs="/0/@urndef/@specDiagrams.0/@nodes.42"/>
+      <responsibilities name="Setting Altitude alert system" fromLinks="/0/@urnLinks.30 /0/@urnLinks.46" respRefs="/0/@urndef/@specDiagrams.0/@nodes.43"/>
+      <responsibilities name="Fly Plane" fromLinks="/0/@urnLinks.31 /0/@urnLinks.47" respRefs="/0/@urndef/@specDiagrams.0/@nodes.44"/>
+      <specDiagrams xsi:type="ucm.map:UCMmap" name="Plan to increase flight altitude">
+        <nodes xsi:type="ucm.map:EndPoint" name="Climbing to filed cruise altitude" fromLinks="/0/@urnLinks.5" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" pred="/0/@urndef/@specDiagrams.0/@connections.51">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Climb uninterrupted by leveling off to intermediate altitude" fromLinks="/0/@urnLinks.6" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" pred="/0/@urndef/@specDiagrams.0/@connections.5">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Getting required altitude clearances" fromLinks="/0/@urnLinks.7" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" pred="/0/@urndef/@specDiagrams.0/@connections.7">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Setting maximum engine thrust" fromLinks="/0/@urnLinks.8" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" pred="/0/@urndef/@specDiagrams.0/@connections.45">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Finding correct EPR values" fromLinks="/0/@urnLinks.9" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" pred="/0/@urndef/@specDiagrams.0/@connections.8">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Assist Captain in flight preparation and operation" fromLinks="/0/@urnLinks.10" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" pred="/0/@urndef/@specDiagrams.0/@connections.49">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Assist crew in getting required clearance" fromLinks="/0/@urnLinks.11" contRef="/0/@urndef/@specDiagrams.0/@contRefs.0" pred="/0/@urndef/@specDiagrams.0/@connections.9">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Provide required altitude clearances" fromLinks="/0/@urnLinks.12" contRef="/0/@urndef/@specDiagrams.0/@contRefs.3" pred="/0/@urndef/@specDiagrams.0/@connections.10">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:EndPoint" name="Current Altitude Alert altitude i.e. 23000 feet above sea level" succ="/0/@urndef/@specDiagrams.0/@connections.52" pred="/0/@urndef/@specDiagrams.0/@connections.37">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:AndFork" succ="/0/@urndef/@specDiagrams.0/@connections.0 /0/@urndef/@specDiagrams.0/@connections.13" pred="/0/@urndef/@specDiagrams.0/@connections.31"/>
+        <nodes xsi:type="ucm.map:AndFork" succ="/0/@urndef/@specDiagrams.0/@connections.15 /0/@urndef/@specDiagrams.0/@connections.16 /0/@urndef/@specDiagrams.0/@connections.17" pred="/0/@urndef/@specDiagrams.0/@connections.1"/>
+        <nodes xsi:type="ucm.map:AndJoin" succ="/0/@urndef/@specDiagrams.0/@connections.4" pred="/0/@urndef/@specDiagrams.0/@connections.3 /0/@urndef/@specDiagrams.0/@connections.32"/>
+        <nodes xsi:type="ucm.map:AndJoin" succ="/0/@urndef/@specDiagrams.0/@connections.2" pred="/0/@urndef/@specDiagrams.0/@connections.34 /0/@urndef/@specDiagrams.0/@connections.35 /0/@urndef/@specDiagrams.0/@connections.36"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.1 /0/@urndef/@specDiagrams.0/@connections.14" pred="/0/@urndef/@specDiagrams.0/@connections.0"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.5 /0/@urndef/@specDiagrams.0/@connections.6" pred="/0/@urndef/@specDiagrams.0/@connections.4"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.7 /0/@urndef/@specDiagrams.0/@connections.18" pred="/0/@urndef/@specDiagrams.0/@connections.6"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.22 /0/@urndef/@specDiagrams.0/@connections.23" pred="/0/@urndef/@specDiagrams.0/@connections.40"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.8 /0/@urndef/@specDiagrams.0/@connections.24" pred="/0/@urndef/@specDiagrams.0/@connections.42"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.28 /0/@urndef/@specDiagrams.0/@connections.29" pred="/0/@urndef/@specDiagrams.0/@connections.46"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.9 /0/@urndef/@specDiagrams.0/@connections.20" pred="/0/@urndef/@specDiagrams.0/@connections.38"/>
+        <nodes xsi:type="ucm.map:OrFork" succ="/0/@urndef/@specDiagrams.0/@connections.10 /0/@urndef/@specDiagrams.0/@connections.11" pred="/0/@urndef/@specDiagrams.0/@connections.39"/>
+        <nodes xsi:type="ucm.map:OrJoin" succ="/0/@urndef/@specDiagrams.0/@connections.3" pred="/0/@urndef/@specDiagrams.0/@connections.2 /0/@urndef/@specDiagrams.0/@connections.11"/>
+        <nodes xsi:type="ucm.map:OrJoin" succ="/0/@urndef/@specDiagrams.0/@connections.26" pred="/0/@urndef/@specDiagrams.0/@connections.41 /0/@urndef/@specDiagrams.0/@connections.44"/>
+        <nodes xsi:type="ucm.map:OrJoin" succ="/0/@urndef/@specDiagrams.0/@connections.30" pred="/0/@urndef/@specDiagrams.0/@connections.47 /0/@urndef/@specDiagrams.0/@connections.48"/>
+        <nodes xsi:type="ucm.map:DirectionArrow" succ="/0/@urndef/@specDiagrams.0/@connections.19" pred="/0/@urndef/@specDiagrams.0/@connections.33"/>
+        <nodes xsi:type="ucm.map:DirectionArrow" succ="/0/@urndef/@specDiagrams.0/@connections.25" pred="/0/@urndef/@specDiagrams.0/@connections.43"/>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.31" pred="/0/@urndef/@specDiagrams.0/@connections.12" respDef="/0/@urndef/@responsibilities.0">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.32" pred="/0/@urndef/@specDiagrams.0/@connections.13" respDef="/0/@urndef/@responsibilities.1">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.33" pred="/0/@urndef/@specDiagrams.0/@connections.14" respDef="/0/@urndef/@responsibilities.2">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.34" pred="/0/@urndef/@specDiagrams.0/@connections.15" respDef="/0/@urndef/@responsibilities.3">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.35" pred="/0/@urndef/@specDiagrams.0/@connections.16" respDef="/0/@urndef/@responsibilities.4">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.36" pred="/0/@urndef/@specDiagrams.0/@connections.17" respDef="/0/@urndef/@responsibilities.5">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.1" succ="/0/@urndef/@specDiagrams.0/@connections.37" pred="/0/@urndef/@specDiagrams.0/@connections.18" respDef="/0/@urndef/@responsibilities.6">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.0" succ="/0/@urndef/@specDiagrams.0/@connections.38" pred="/0/@urndef/@specDiagrams.0/@connections.19" respDef="/0/@urndef/@responsibilities.7">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.3" succ="/0/@urndef/@specDiagrams.0/@connections.39" pred="/0/@urndef/@specDiagrams.0/@connections.20" respDef="/0/@urndef/@responsibilities.8">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" succ="/0/@urndef/@specDiagrams.0/@connections.40" pred="/0/@urndef/@specDiagrams.0/@connections.21" respDef="/0/@urndef/@responsibilities.9">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" succ="/0/@urndef/@specDiagrams.0/@connections.41" pred="/0/@urndef/@specDiagrams.0/@connections.22" respDef="/0/@urndef/@responsibilities.10">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" succ="/0/@urndef/@specDiagrams.0/@connections.42" pred="/0/@urndef/@specDiagrams.0/@connections.23" respDef="/0/@urndef/@responsibilities.11">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" succ="/0/@urndef/@specDiagrams.0/@connections.43" pred="/0/@urndef/@specDiagrams.0/@connections.24" respDef="/0/@urndef/@responsibilities.12">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" succ="/0/@urndef/@specDiagrams.0/@connections.44" pred="/0/@urndef/@specDiagrams.0/@connections.25" respDef="/0/@urndef/@responsibilities.13">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.4" succ="/0/@urndef/@specDiagrams.0/@connections.45" pred="/0/@urndef/@specDiagrams.0/@connections.26" respDef="/0/@urndef/@responsibilities.14">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.46" pred="/0/@urndef/@specDiagrams.0/@connections.27" respDef="/0/@urndef/@responsibilities.15">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.47" pred="/0/@urndef/@specDiagrams.0/@connections.28" respDef="/0/@urndef/@responsibilities.16">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.48" pred="/0/@urndef/@specDiagrams.0/@connections.29" respDef="/0/@urndef/@responsibilities.17">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:RespRef" contRef="/0/@urndef/@specDiagrams.0/@contRefs.2" succ="/0/@urndef/@specDiagrams.0/@connections.49" pred="/0/@urndef/@specDiagrams.0/@connections.30" respDef="/0/@urndef/@responsibilities.18">
+          <label/>
+        </nodes>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.48" succ="/0/@urndef/@specDiagrams.0/@connections.12">
+          <metadata name="_state" value="Current Flight Altitude i.e. 19000 feet above sea level"/>
+        </nodes>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.49" succ="/0/@urndef/@specDiagrams.0/@connections.21">
+          <metadata name="_state" value="Current Flight EPR values"/>
+        </nodes>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.50" succ="/0/@urndef/@specDiagrams.0/@connections.27">
+          <metadata name="_state" value="Current Flight Altitude i.e. 19000 feet above sea level"/>
+        </nodes>
+        <nodes xsi:type="ucm.map:Connect" succ="/0/@urndef/@specDiagrams.0/@connections.50" pred="/0/@urndef/@specDiagrams.0/@connections.52"/>
+        <nodes xsi:type="ucm.map:StartPoint" fromLinks="/0/@urnLinks.51" succ="/0/@urndef/@specDiagrams.0/@connections.51" pred="/0/@urndef/@specDiagrams.0/@connections.50">
+          <metadata name="_state" value="Current Altitude Alert altitude i.e. 23000 feet above sea level"/>
+        </nodes>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.3" nodes="/0/@urndef/@specDiagrams.0/@nodes.6 /0/@urndef/@specDiagrams.0/@nodes.33">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.0" nodes="/0/@urndef/@specDiagrams.0/@nodes.0 /0/@urndef/@specDiagrams.0/@nodes.1 /0/@urndef/@specDiagrams.0/@nodes.2 /0/@urndef/@specDiagrams.0/@nodes.32 /0/@urndef/@specDiagrams.0/@nodes.28 /0/@urndef/@specDiagrams.0/@nodes.27 /0/@urndef/@specDiagrams.0/@nodes.31 /0/@urndef/@specDiagrams.0/@nodes.30 /0/@urndef/@specDiagrams.0/@nodes.29 /0/@urndef/@specDiagrams.0/@nodes.26">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.1" nodes="/0/@urndef/@specDiagrams.0/@nodes.5 /0/@urndef/@specDiagrams.0/@nodes.41 /0/@urndef/@specDiagrams.0/@nodes.43 /0/@urndef/@specDiagrams.0/@nodes.42 /0/@urndef/@specDiagrams.0/@nodes.44">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.4" nodes="/0/@urndef/@specDiagrams.0/@nodes.7 /0/@urndef/@specDiagrams.0/@nodes.34">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.2" nodes="/0/@urndef/@specDiagrams.0/@nodes.3 /0/@urndef/@specDiagrams.0/@nodes.4 /0/@urndef/@specDiagrams.0/@nodes.35 /0/@urndef/@specDiagrams.0/@nodes.40 /0/@urndef/@specDiagrams.0/@nodes.39 /0/@urndef/@specDiagrams.0/@nodes.37 /0/@urndef/@specDiagrams.0/@nodes.36 /0/@urndef/@specDiagrams.0/@nodes.38">
+          <label/>
+        </contRefs>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.9" target="/0/@urndef/@specDiagrams.0/@nodes.13"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.13" target="/0/@urndef/@specDiagrams.0/@nodes.10">
+          <condition label="!increase altitude"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.12" target="/0/@urndef/@specDiagrams.0/@nodes.21"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.21" target="/0/@urndef/@specDiagrams.0/@nodes.11"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.11" target="/0/@urndef/@specDiagrams.0/@nodes.14"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.14" target="/0/@urndef/@specDiagrams.0/@nodes.1">
+          <condition label="!clearance"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.14" target="/0/@urndef/@specDiagrams.0/@nodes.15">
+          <condition label="clearance"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.15" target="/0/@urndef/@specDiagrams.0/@nodes.2"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.17" target="/0/@urndef/@specDiagrams.0/@nodes.4"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.19" target="/0/@urndef/@specDiagrams.0/@nodes.6"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.20" target="/0/@urndef/@specDiagrams.0/@nodes.7"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.20" target="/0/@urndef/@specDiagrams.0/@nodes.21"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.45" target="/0/@urndef/@specDiagrams.0/@nodes.26"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.9" target="/0/@urndef/@specDiagrams.0/@nodes.27"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.13" target="/0/@urndef/@specDiagrams.0/@nodes.28">
+          <condition label="increase altitude"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.10" target="/0/@urndef/@specDiagrams.0/@nodes.29"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.10" target="/0/@urndef/@specDiagrams.0/@nodes.30"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.10" target="/0/@urndef/@specDiagrams.0/@nodes.31"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.15" target="/0/@urndef/@specDiagrams.0/@nodes.32"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.24" target="/0/@urndef/@specDiagrams.0/@nodes.33"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.19" target="/0/@urndef/@specDiagrams.0/@nodes.34"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.46" target="/0/@urndef/@specDiagrams.0/@nodes.35"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.16" target="/0/@urndef/@specDiagrams.0/@nodes.36">
+          <condition label="!increase engine thrust"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.16" target="/0/@urndef/@specDiagrams.0/@nodes.37">
+          <condition label="increase engine thrust"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.17" target="/0/@urndef/@specDiagrams.0/@nodes.38"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.25" target="/0/@urndef/@specDiagrams.0/@nodes.39"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.22" target="/0/@urndef/@specDiagrams.0/@nodes.40"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.47" target="/0/@urndef/@specDiagrams.0/@nodes.41"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.18" target="/0/@urndef/@specDiagrams.0/@nodes.42">
+          <condition label="!Elevation request accepted"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.18" target="/0/@urndef/@specDiagrams.0/@nodes.43">
+          <condition label="Elevation request accepted"/>
+        </connections>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.23" target="/0/@urndef/@specDiagrams.0/@nodes.44"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.26" target="/0/@urndef/@specDiagrams.0/@nodes.9"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.27" target="/0/@urndef/@specDiagrams.0/@nodes.11"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.28" target="/0/@urndef/@specDiagrams.0/@nodes.24"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.29" target="/0/@urndef/@specDiagrams.0/@nodes.12"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.30" target="/0/@urndef/@specDiagrams.0/@nodes.12"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.31" target="/0/@urndef/@specDiagrams.0/@nodes.12"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.32" target="/0/@urndef/@specDiagrams.0/@nodes.8"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.33" target="/0/@urndef/@specDiagrams.0/@nodes.19"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.34" target="/0/@urndef/@specDiagrams.0/@nodes.20"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.35" target="/0/@urndef/@specDiagrams.0/@nodes.16"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.36" target="/0/@urndef/@specDiagrams.0/@nodes.22"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.37" target="/0/@urndef/@specDiagrams.0/@nodes.17"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.38" target="/0/@urndef/@specDiagrams.0/@nodes.25"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.39" target="/0/@urndef/@specDiagrams.0/@nodes.22"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.40" target="/0/@urndef/@specDiagrams.0/@nodes.3"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.41" target="/0/@urndef/@specDiagrams.0/@nodes.18"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.42" target="/0/@urndef/@specDiagrams.0/@nodes.23"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.43" target="/0/@urndef/@specDiagrams.0/@nodes.23"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.44" target="/0/@urndef/@specDiagrams.0/@nodes.5"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.48" target="/0/@urndef/@specDiagrams.0/@nodes.49"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.49" target="/0/@urndef/@specDiagrams.0/@nodes.0"/>
+        <connections xsi:type="ucm.map:NodeConnection" source="/0/@urndef/@specDiagrams.0/@nodes.8" target="/0/@urndef/@specDiagrams.0/@nodes.48"/>
+      </specDiagrams>
+      <specDiagrams xsi:type="grl:GRLGraph" name="Stakeholders" id="Id1" description="StakeholderTest">
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId7" id="Id7" succ="/0/@urndef/@specDiagrams.1/@connections.77" def="CompoId7"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId8" id="Id8" succ="/0/@urndef/@specDiagrams.1/@connections.49 /0/@urndef/@specDiagrams.1/@connections.40 /0/@urndef/@specDiagrams.1/@connections.75" def="CompoId8"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId9" id="Id9" succ="/0/@urndef/@specDiagrams.1/@connections.55 /0/@urndef/@specDiagrams.1/@connections.48 /0/@urndef/@specDiagrams.1/@connections.46 /0/@urndef/@specDiagrams.1/@connections.51 /0/@urndef/@specDiagrams.1/@connections.39" def="CompoId9"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId10" id="Id10" succ="/0/@urndef/@specDiagrams.1/@connections.76 /0/@urndef/@specDiagrams.1/@connections.80 /0/@urndef/@specDiagrams.1/@connections.83" def="CompoId10"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId11" id="Id11" succ="/0/@urndef/@specDiagrams.1/@connections.63 /0/@urndef/@specDiagrams.1/@connections.64 /0/@urndef/@specDiagrams.1/@connections.66 /0/@urndef/@specDiagrams.1/@connections.67 /0/@urndef/@specDiagrams.1/@connections.69" def="CompoId11"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId12" id="Id12" succ="/0/@urndef/@specDiagrams.1/@connections.54" def="CompoId12"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId13" id="Id13" succ="/0/@urndef/@specDiagrams.1/@connections.84" def="CompoId13"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId14" id="Id14" succ="/0/@urndef/@specDiagrams.1/@connections.56 /0/@urndef/@specDiagrams.1/@connections.43" def="CompoId14"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId15" id="Id15" succ="/0/@urndef/@specDiagrams.1/@connections.74 /0/@urndef/@specDiagrams.1/@connections.82" def="CompoId15"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId16" id="Id16" succ="/0/@urndef/@specDiagrams.1/@connections.65 /0/@urndef/@specDiagrams.1/@connections.68" def="CompoId16"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId17" id="Id17" succ="/0/@urndef/@specDiagrams.1/@connections.45 /0/@urndef/@specDiagrams.1/@connections.53" def="CompoId17"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId18" id="Id18" succ="/0/@urndef/@specDiagrams.1/@connections.71 /0/@urndef/@specDiagrams.1/@connections.73 /0/@urndef/@specDiagrams.1/@connections.81" def="CompoId18"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId19" id="Id19" succ="/0/@urndef/@specDiagrams.1/@connections.61 /0/@urndef/@specDiagrams.1/@connections.62" def="CompoId19"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId20" id="Id20" succ="/0/@urndef/@specDiagrams.1/@connections.44 /0/@urndef/@specDiagrams.1/@connections.47 /0/@urndef/@specDiagrams.1/@connections.50" def="CompoId20"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId21" id="Id21" succ="/0/@urndef/@specDiagrams.1/@connections.72" def="CompoId21"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId22" id="Id22" succ="/0/@urndef/@specDiagrams.1/@connections.70" def="CompoId22"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId23" id="Id23" succ="/0/@urndef/@specDiagrams.1/@connections.58 /0/@urndef/@specDiagrams.1/@connections.86" def="CompoId23"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId24" id="Id24" succ="/0/@urndef/@specDiagrams.1/@connections.59" def="CompoId24"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId25" id="Id25" succ="/0/@urndef/@specDiagrams.1/@connections.60" def="CompoId25"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId26" id="Id26" succ="/0/@urndef/@specDiagrams.1/@connections.52" def="CompoId26"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId27" id="Id27" succ="/0/@urndef/@specDiagrams.1/@connections.42 /0/@urndef/@specDiagrams.1/@connections.78" def="CompoId27"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId28" id="Id28" succ="/0/@urndef/@specDiagrams.1/@connections.41 /0/@urndef/@specDiagrams.1/@connections.79" def="CompoId28"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId29" id="Id29" succ="/0/@urndef/@specDiagrams.1/@connections.57 /0/@urndef/@specDiagrams.1/@connections.85" def="CompoId29"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId30" id="Id30" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.87" def="CompoId30"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId37" id="Id37" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.6 /0/@urndef/@specDiagrams.1/@connections.13 /0/@urndef/@specDiagrams.1/@connections.20" pred="/0/@urndef/@specDiagrams.1/@connections.39 /0/@urndef/@specDiagrams.1/@connections.40 /0/@urndef/@specDiagrams.1/@connections.87 /0/@urndef/@specDiagrams.1/@connections.88" def="CompoId37"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId32" id="Id32" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.2 /0/@urndef/@specDiagrams.1/@connections.9 /0/@urndef/@specDiagrams.1/@connections.16" pred="/0/@urndef/@specDiagrams.1/@connections.41 /0/@urndef/@specDiagrams.1/@connections.42 /0/@urndef/@specDiagrams.1/@connections.43 /0/@urndef/@specDiagrams.1/@connections.44" def="CompoId32"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId34" id="Id34" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.1 /0/@urndef/@specDiagrams.1/@connections.8 /0/@urndef/@specDiagrams.1/@connections.15" pred="/0/@urndef/@specDiagrams.1/@connections.45 /0/@urndef/@specDiagrams.1/@connections.46" def="CompoId34"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId33" id="Id33" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.5 /0/@urndef/@specDiagrams.1/@connections.12 /0/@urndef/@specDiagrams.1/@connections.19" pred="/0/@urndef/@specDiagrams.1/@connections.47 /0/@urndef/@specDiagrams.1/@connections.48" def="CompoId33"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId35" id="Id35" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.4 /0/@urndef/@specDiagrams.1/@connections.11 /0/@urndef/@specDiagrams.1/@connections.18" pred="/0/@urndef/@specDiagrams.1/@connections.49 /0/@urndef/@specDiagrams.1/@connections.50 /0/@urndef/@specDiagrams.1/@connections.51 /0/@urndef/@specDiagrams.1/@connections.52" def="CompoId35"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId36" id="Id36" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.3 /0/@urndef/@specDiagrams.1/@connections.10 /0/@urndef/@specDiagrams.1/@connections.17" pred="/0/@urndef/@specDiagrams.1/@connections.53" def="CompoId36"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId31" id="Id31" contRef="Id2" succ="/0/@urndef/@specDiagrams.1/@connections.0 /0/@urndef/@specDiagrams.1/@connections.7 /0/@urndef/@specDiagrams.1/@connections.14" pred="/0/@urndef/@specDiagrams.1/@connections.54 /0/@urndef/@specDiagrams.1/@connections.55 /0/@urndef/@specDiagrams.1/@connections.56 /0/@urndef/@specDiagrams.1/@connections.57 /0/@urndef/@specDiagrams.1/@connections.58" def="CompoId31"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId38" id="Id38" contRef="Id5" succ="/0/@urndef/@specDiagrams.1/@connections.37" pred="/0/@urndef/@specDiagrams.1/@connections.59" def="CompoId38"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId39" id="Id39" contRef="Id6" succ="/0/@urndef/@specDiagrams.1/@connections.38" pred="/0/@urndef/@specDiagrams.1/@connections.60" def="CompoId39"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId40" id="Id40" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.21 /0/@urndef/@specDiagrams.1/@connections.27" pred="/0/@urndef/@specDiagrams.1/@connections.61 /0/@urndef/@specDiagrams.1/@connections.89" def="CompoId40"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId41" id="Id41" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.25 /0/@urndef/@specDiagrams.1/@connections.31" pred="/0/@urndef/@specDiagrams.1/@connections.62 /0/@urndef/@specDiagrams.1/@connections.63" def="CompoId41"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId42" id="Id42" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.24 /0/@urndef/@specDiagrams.1/@connections.30" pred="/0/@urndef/@specDiagrams.1/@connections.64 /0/@urndef/@specDiagrams.1/@connections.65" def="CompoId42"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId43" id="Id43" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.26 /0/@urndef/@specDiagrams.1/@connections.32" pred="/0/@urndef/@specDiagrams.1/@connections.66" def="CompoId43"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId44" id="Id44" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.23 /0/@urndef/@specDiagrams.1/@connections.29" pred="/0/@urndef/@specDiagrams.1/@connections.67 /0/@urndef/@specDiagrams.1/@connections.68" def="CompoId44"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId45" id="Id45" contRef="Id4" succ="/0/@urndef/@specDiagrams.1/@connections.22 /0/@urndef/@specDiagrams.1/@connections.28" pred="/0/@urndef/@specDiagrams.1/@connections.69 /0/@urndef/@specDiagrams.1/@connections.70" def="CompoId45"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId46" id="Id46" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.33" pred="/0/@urndef/@specDiagrams.1/@connections.71 /0/@urndef/@specDiagrams.1/@connections.90" def="CompoId46"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId47" id="Id47" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.35" pred="/0/@urndef/@specDiagrams.1/@connections.72 /0/@urndef/@specDiagrams.1/@connections.73 /0/@urndef/@specDiagrams.1/@connections.74 /0/@urndef/@specDiagrams.1/@connections.75 /0/@urndef/@specDiagrams.1/@connections.76 /0/@urndef/@specDiagrams.1/@connections.77" def="CompoId47"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId48" id="Id48" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.34" pred="/0/@urndef/@specDiagrams.1/@connections.78 /0/@urndef/@specDiagrams.1/@connections.79 /0/@urndef/@specDiagrams.1/@connections.80 /0/@urndef/@specDiagrams.1/@connections.81" def="CompoId48"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId49" id="Id49" contRef="Id3" succ="/0/@urndef/@specDiagrams.1/@connections.36" pred="/0/@urndef/@specDiagrams.1/@connections.82 /0/@urndef/@specDiagrams.1/@connections.83 /0/@urndef/@specDiagrams.1/@connections.84 /0/@urndef/@specDiagrams.1/@connections.85 /0/@urndef/@specDiagrams.1/@connections.86" def="CompoId49"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId61" id="Id61" def="CompoId61">
+          <metadata name="_height" value="45"/>
+          <metadata name="_width" value="110"/>
+        </nodes>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId50" id="Id50" contRef="Id2" pred="/0/@urndef/@specDiagrams.1/@connections.0 /0/@urndef/@specDiagrams.1/@connections.1 /0/@urndef/@specDiagrams.1/@connections.2 /0/@urndef/@specDiagrams.1/@connections.3 /0/@urndef/@specDiagrams.1/@connections.4 /0/@urndef/@specDiagrams.1/@connections.5 /0/@urndef/@specDiagrams.1/@connections.6 /0/@urndef/@specDiagrams.1/@connections.91" def="CompoId50"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId51" id="Id51" contRef="Id2" pred="/0/@urndef/@specDiagrams.1/@connections.7 /0/@urndef/@specDiagrams.1/@connections.8 /0/@urndef/@specDiagrams.1/@connections.9 /0/@urndef/@specDiagrams.1/@connections.10 /0/@urndef/@specDiagrams.1/@connections.11 /0/@urndef/@specDiagrams.1/@connections.12 /0/@urndef/@specDiagrams.1/@connections.13" def="CompoId51"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId52" id="Id52" contRef="Id2" pred="/0/@urndef/@specDiagrams.1/@connections.14 /0/@urndef/@specDiagrams.1/@connections.15 /0/@urndef/@specDiagrams.1/@connections.16 /0/@urndef/@specDiagrams.1/@connections.17 /0/@urndef/@specDiagrams.1/@connections.18 /0/@urndef/@specDiagrams.1/@connections.19 /0/@urndef/@specDiagrams.1/@connections.20" def="CompoId52"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId53" id="Id53" contRef="Id4" pred="/0/@urndef/@specDiagrams.1/@connections.21 /0/@urndef/@specDiagrams.1/@connections.22 /0/@urndef/@specDiagrams.1/@connections.23 /0/@urndef/@specDiagrams.1/@connections.24 /0/@urndef/@specDiagrams.1/@connections.25 /0/@urndef/@specDiagrams.1/@connections.26" def="CompoId53"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId54" id="Id54" contRef="Id4" pred="/0/@urndef/@specDiagrams.1/@connections.27 /0/@urndef/@specDiagrams.1/@connections.28 /0/@urndef/@specDiagrams.1/@connections.29 /0/@urndef/@specDiagrams.1/@connections.30 /0/@urndef/@specDiagrams.1/@connections.31 /0/@urndef/@specDiagrams.1/@connections.32" def="CompoId54"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId55" id="Id55" contRef="Id3" pred="/0/@urndef/@specDiagrams.1/@connections.33 /0/@urndef/@specDiagrams.1/@connections.34 /0/@urndef/@specDiagrams.1/@connections.35 /0/@urndef/@specDiagrams.1/@connections.36" def="CompoId55"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId56" id="Id56" contRef="Id5" pred="/0/@urndef/@specDiagrams.1/@connections.37" def="CompoId56"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId57" id="Id57" contRef="Id6" pred="/0/@urndef/@specDiagrams.1/@connections.38" def="CompoId57"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId58" id="Id58" succ="/0/@urndef/@specDiagrams.1/@connections.88 /0/@urndef/@specDiagrams.1/@connections.90" def="CompoId58"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId59" id="Id59" succ="/0/@urndef/@specDiagrams.1/@connections.91" def="CompoId59"/>
+        <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRefId60" id="Id60" succ="/0/@urndef/@specDiagrams.1/@connections.89" def="CompoId60"/>
+        <contRefs xsi:type="grl:ActorRef" id="Id2" contDef="CompoId2" nodes="Id31 Id34 Id32 Id36 Id35 Id33 Id37 Id30 Id50 Id51 Id52">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="grl:ActorRef" id="Id3" contDef="CompoId3" nodes="Id46 Id48 Id47 Id49 Id55">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="grl:ActorRef" id="Id4" contDef="CompoId4" nodes="Id40 Id45 Id44 Id42 Id41 Id43 Id53 Id54">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="grl:ActorRef" id="Id5" contDef="CompoId5" nodes="Id38 Id56">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="grl:ActorRef" id="Id6" contDef="CompoId6" nodes="Id39 Id57">
+          <label/>
+        </contRefs>
+        <connections xsi:type="grl:LinkRef" source="Id31" target="Id50" link="/0/@grlspec/@links.0"/>
+        <connections xsi:type="grl:LinkRef" source="Id34" target="Id50" link="/0/@grlspec/@links.1"/>
+        <connections xsi:type="grl:LinkRef" source="Id32" target="Id50" link="/0/@grlspec/@links.2"/>
+        <connections xsi:type="grl:LinkRef" source="Id36" target="Id50" link="/0/@grlspec/@links.3"/>
+        <connections xsi:type="grl:LinkRef" source="Id35" target="Id50" link="/0/@grlspec/@links.4"/>
+        <connections xsi:type="grl:LinkRef" source="Id33" target="Id50" link="/0/@grlspec/@links.5"/>
+        <connections xsi:type="grl:LinkRef" source="Id37" target="Id50" link="/0/@grlspec/@links.6"/>
+        <connections xsi:type="grl:LinkRef" source="Id31" target="Id51" link="/0/@grlspec/@links.7"/>
+        <connections xsi:type="grl:LinkRef" source="Id34" target="Id51" link="/0/@grlspec/@links.8"/>
+        <connections xsi:type="grl:LinkRef" source="Id32" target="Id51" link="/0/@grlspec/@links.9"/>
+        <connections xsi:type="grl:LinkRef" source="Id36" target="Id51" link="/0/@grlspec/@links.10"/>
+        <connections xsi:type="grl:LinkRef" source="Id35" target="Id51" link="/0/@grlspec/@links.11"/>
+        <connections xsi:type="grl:LinkRef" source="Id33" target="Id51" link="/0/@grlspec/@links.12"/>
+        <connections xsi:type="grl:LinkRef" source="Id37" target="Id51" link="/0/@grlspec/@links.13"/>
+        <connections xsi:type="grl:LinkRef" source="Id31" target="Id52" link="/0/@grlspec/@links.14"/>
+        <connections xsi:type="grl:LinkRef" source="Id34" target="Id52" link="/0/@grlspec/@links.15"/>
+        <connections xsi:type="grl:LinkRef" source="Id32" target="Id52" link="/0/@grlspec/@links.16"/>
+        <connections xsi:type="grl:LinkRef" source="Id36" target="Id52" link="/0/@grlspec/@links.17"/>
+        <connections xsi:type="grl:LinkRef" source="Id35" target="Id52" link="/0/@grlspec/@links.18"/>
+        <connections xsi:type="grl:LinkRef" source="Id33" target="Id52" link="/0/@grlspec/@links.19"/>
+        <connections xsi:type="grl:LinkRef" source="Id37" target="Id52" link="/0/@grlspec/@links.20"/>
+        <connections xsi:type="grl:LinkRef" source="Id40" target="Id53" link="/0/@grlspec/@links.21"/>
+        <connections xsi:type="grl:LinkRef" source="Id45" target="Id53" link="/0/@grlspec/@links.22"/>
+        <connections xsi:type="grl:LinkRef" source="Id44" target="Id53" link="/0/@grlspec/@links.23"/>
+        <connections xsi:type="grl:LinkRef" source="Id42" target="Id53" link="/0/@grlspec/@links.24"/>
+        <connections xsi:type="grl:LinkRef" source="Id41" target="Id53" link="/0/@grlspec/@links.25"/>
+        <connections xsi:type="grl:LinkRef" source="Id43" target="Id53" link="/0/@grlspec/@links.26"/>
+        <connections xsi:type="grl:LinkRef" source="Id40" target="Id54" link="/0/@grlspec/@links.27"/>
+        <connections xsi:type="grl:LinkRef" source="Id45" target="Id54" link="/0/@grlspec/@links.28"/>
+        <connections xsi:type="grl:LinkRef" source="Id44" target="Id54" link="/0/@grlspec/@links.29"/>
+        <connections xsi:type="grl:LinkRef" source="Id42" target="Id54" link="/0/@grlspec/@links.30"/>
+        <connections xsi:type="grl:LinkRef" source="Id41" target="Id54" link="/0/@grlspec/@links.31"/>
+        <connections xsi:type="grl:LinkRef" source="Id43" target="Id54" link="/0/@grlspec/@links.32"/>
+        <connections xsi:type="grl:LinkRef" source="Id46" target="Id55" link="/0/@grlspec/@links.33"/>
+        <connections xsi:type="grl:LinkRef" source="Id48" target="Id55" link="/0/@grlspec/@links.34"/>
+        <connections xsi:type="grl:LinkRef" source="Id47" target="Id55" link="/0/@grlspec/@links.35"/>
+        <connections xsi:type="grl:LinkRef" source="Id49" target="Id55" link="/0/@grlspec/@links.36"/>
+        <connections xsi:type="grl:LinkRef" source="Id38" target="Id56" link="/0/@grlspec/@links.37"/>
+        <connections xsi:type="grl:LinkRef" source="Id39" target="Id57" link="/0/@grlspec/@links.38"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id37" link="/0/@grlspec/@links.39"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id37" link="/0/@grlspec/@links.40"/>
+        <connections xsi:type="grl:LinkRef" source="Id28" target="Id32" link="/0/@grlspec/@links.41"/>
+        <connections xsi:type="grl:LinkRef" source="Id27" target="Id32" link="/0/@grlspec/@links.42"/>
+        <connections xsi:type="grl:LinkRef" source="Id14" target="Id32" link="/0/@grlspec/@links.43"/>
+        <connections xsi:type="grl:LinkRef" source="Id20" target="Id32" link="/0/@grlspec/@links.44"/>
+        <connections xsi:type="grl:LinkRef" source="Id17" target="Id34" link="/0/@grlspec/@links.45"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id34" link="/0/@grlspec/@links.46"/>
+        <connections xsi:type="grl:LinkRef" source="Id20" target="Id33" link="/0/@grlspec/@links.47"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id33" link="/0/@grlspec/@links.48"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id35" link="/0/@grlspec/@links.49"/>
+        <connections xsi:type="grl:LinkRef" source="Id20" target="Id35" link="/0/@grlspec/@links.50"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id35" link="/0/@grlspec/@links.51"/>
+        <connections xsi:type="grl:LinkRef" source="Id26" target="Id35" link="/0/@grlspec/@links.52"/>
+        <connections xsi:type="grl:LinkRef" source="Id17" target="Id36" link="/0/@grlspec/@links.53"/>
+        <connections xsi:type="grl:LinkRef" source="Id12" target="Id31" link="/0/@grlspec/@links.54"/>
+        <connections xsi:type="grl:LinkRef" source="Id9" target="Id31" link="/0/@grlspec/@links.55"/>
+        <connections xsi:type="grl:LinkRef" source="Id14" target="Id31" link="/0/@grlspec/@links.56"/>
+        <connections xsi:type="grl:LinkRef" source="Id29" target="Id31" link="/0/@grlspec/@links.57"/>
+        <connections xsi:type="grl:LinkRef" source="Id23" target="Id31" link="/0/@grlspec/@links.58"/>
+        <connections xsi:type="grl:LinkRef" source="Id24" target="Id38" link="/0/@grlspec/@links.59"/>
+        <connections xsi:type="grl:LinkRef" source="Id25" target="Id39" link="/0/@grlspec/@links.60"/>
+        <connections xsi:type="grl:LinkRef" source="Id19" target="Id40" link="/0/@grlspec/@links.61"/>
+        <connections xsi:type="grl:LinkRef" source="Id19" target="Id41" link="/0/@grlspec/@links.62"/>
+        <connections xsi:type="grl:LinkRef" source="Id11" target="Id41" link="/0/@grlspec/@links.63"/>
+        <connections xsi:type="grl:LinkRef" source="Id11" target="Id42" link="/0/@grlspec/@links.64"/>
+        <connections xsi:type="grl:LinkRef" source="Id16" target="Id42" link="/0/@grlspec/@links.65"/>
+        <connections xsi:type="grl:LinkRef" source="Id11" target="Id43" link="/0/@grlspec/@links.66"/>
+        <connections xsi:type="grl:LinkRef" source="Id11" target="Id44" link="/0/@grlspec/@links.67"/>
+        <connections xsi:type="grl:LinkRef" source="Id16" target="Id44" link="/0/@grlspec/@links.68"/>
+        <connections xsi:type="grl:LinkRef" source="Id11" target="Id45" link="/0/@grlspec/@links.69"/>
+        <connections xsi:type="grl:LinkRef" source="Id22" target="Id45" link="/0/@grlspec/@links.70"/>
+        <connections xsi:type="grl:LinkRef" source="Id18" target="Id46" link="/0/@grlspec/@links.71"/>
+        <connections xsi:type="grl:LinkRef" source="Id21" target="Id47" link="/0/@grlspec/@links.72"/>
+        <connections xsi:type="grl:LinkRef" source="Id18" target="Id47" link="/0/@grlspec/@links.73"/>
+        <connections xsi:type="grl:LinkRef" source="Id15" target="Id47" link="/0/@grlspec/@links.74"/>
+        <connections xsi:type="grl:LinkRef" source="Id8" target="Id47" link="/0/@grlspec/@links.75"/>
+        <connections xsi:type="grl:LinkRef" source="Id10" target="Id47" link="/0/@grlspec/@links.76"/>
+        <connections xsi:type="grl:LinkRef" source="Id7" target="Id47" link="/0/@grlspec/@links.77"/>
+        <connections xsi:type="grl:LinkRef" source="Id27" target="Id48" link="/0/@grlspec/@links.78"/>
+        <connections xsi:type="grl:LinkRef" source="Id28" target="Id48" link="/0/@grlspec/@links.79"/>
+        <connections xsi:type="grl:LinkRef" source="Id10" target="Id48" link="/0/@grlspec/@links.80"/>
+        <connections xsi:type="grl:LinkRef" source="Id18" target="Id48" link="/0/@grlspec/@links.81"/>
+        <connections xsi:type="grl:LinkRef" source="Id15" target="Id49" link="/0/@grlspec/@links.82"/>
+        <connections xsi:type="grl:LinkRef" source="Id10" target="Id49" link="/0/@grlspec/@links.83"/>
+        <connections xsi:type="grl:LinkRef" source="Id13" target="Id49" link="/0/@grlspec/@links.84"/>
+        <connections xsi:type="grl:LinkRef" source="Id29" target="Id49" link="/0/@grlspec/@links.85"/>
+        <connections xsi:type="grl:LinkRef" source="Id23" target="Id49" link="/0/@grlspec/@links.86"/>
+        <connections xsi:type="grl:LinkRef" source="Id30" target="Id37" link="/0/@grlspec/@links.87"/>
+        <connections xsi:type="grl:LinkRef" source="Id58" target="Id37" link="/0/@grlspec/@links.88"/>
+        <connections xsi:type="grl:LinkRef" source="Id60" target="Id40" link="/0/@grlspec/@links.89"/>
+        <connections xsi:type="grl:LinkRef" source="Id58" target="Id46" link="/0/@grlspec/@links.90"/>
+        <connections xsi:type="grl:LinkRef" source="Id59" target="Id50" link="/0/@grlspec/@links.91"/>
+      </specDiagrams>
+      <specDiagrams xsi:type="ucm.map:UCMmap" name="Cockpit">
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.10" children="/0/@urndef/@specDiagrams.2/@contRefs.1 /0/@urndef/@specDiagrams.2/@contRefs.2 /0/@urndef/@specDiagrams.2/@contRefs.3">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.5" parent="/0/@urndef/@specDiagrams.2/@contRefs.0">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.6" parent="/0/@urndef/@specDiagrams.2/@contRefs.0">
+          <label/>
+        </contRefs>
+        <contRefs xsi:type="ucm.map:ComponentRef" contDef="/0/@urndef/@components.7" parent="/0/@urndef/@specDiagrams.2/@contRefs.0">
+          <label/>
+        </contRefs>
+      </specDiagrams>
+      <components name="Captain" toLinks="/0/@urnLinks.0" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.1" kind="Actor">
+        <metadata name="_location" value="Inside Cockpit"/>
+        <metadata name="_naturalness" value="repCaptain"/>
+      </components>
+      <components name="FirstOfficer" toLinks="/0/@urnLinks.1" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.2" kind="Actor">
+        <metadata name="_location" value="Left of Captain"/>
+        <metadata name="_naturalness" value="repFirstOfficer"/>
+      </components>
+      <components name="SecondOfficer" toLinks="/0/@urnLinks.2" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.4" kind="Actor">
+        <metadata name="_location" value="Right of Captain"/>
+        <metadata name="_naturalness" value="repSecondOfficer"/>
+      </components>
+      <components name="ATCController " toLinks="/0/@urnLinks.3" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.0" kind="Actor">
+        <metadata name="_location" value="Inside Oakland Center"/>
+        <metadata name="_naturalness" value="repATCCont"/>
+      </components>
+      <components name="High Altitude Controller" toLinks="/0/@urnLinks.4" contRefs="/0/@urndef/@specDiagrams.0/@contRefs.3" kind="Actor">
+        <metadata name="_location" value="Inside Oakland Center"/>
+        <metadata name="_naturalness" value="repHighAltCont"/>
+      </components>
+      <components name="Captain" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.1" kind="Actor"/>
+      <components name="FirstOfficer" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.2" kind="Actor"/>
+      <components name="SecondOfficer" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.3" kind="Actor"/>
+      <components name="ATCController" contRefs="/1" kind="Actor"/>
+      <components name="HighAltController" contRefs="/2" kind="Actor"/>
+      <components name="Cockpit" contRefs="/0/@urndef/@specDiagrams.2/@contRefs.0"/>
+    </urndef>
+    <urnLinks fromElem="CompoId2" toElem="/0/@urndef/@components.0"/>
+    <urnLinks fromElem="CompoId3" toElem="/0/@urndef/@components.1"/>
+    <urnLinks fromElem="CompoId4" toElem="/0/@urndef/@components.2"/>
+    <urnLinks fromElem="CompoId5" toElem="/0/@urndef/@components.3"/>
+    <urnLinks fromElem="CompoId6" toElem="/0/@urndef/@components.4"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.0" toElem="CompoId50"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.1" toElem="CompoId51"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.2" toElem="CompoId52"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.3" toElem="CompoId53"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.4" toElem="CompoId54"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.5" toElem="CompoId55"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.6" toElem="CompoId56"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.7" toElem="CompoId57"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.0" toElem="CompoId30"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.1"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.2"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.3"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.4"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.5"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.6"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.7"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.8"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.9"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.10"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.11"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.12"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.13"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.14"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.15"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.16"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.17"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.18"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.1" toElem="CompoId32"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.2" toElem="CompoId34"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.3" toElem="CompoId33"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.4" toElem="CompoId35"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.5" toElem="CompoId36"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.6" toElem="CompoId31"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.7" toElem="CompoId38"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.8" toElem="CompoId39"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.10" toElem="CompoId41"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.11" toElem="CompoId42"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.12" toElem="CompoId43"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.13" toElem="CompoId44"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.14" toElem="CompoId45"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.16" toElem="CompoId47"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.17" toElem="CompoId48"/>
+    <urnLinks fromElem="/0/@urndef/@responsibilities.18" toElem="CompoId49"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.45" toElem="CompoId58"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.46" toElem="CompoId60"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.47" toElem="CompoId58"/>
+    <urnLinks fromElem="/0/@urndef/@specDiagrams.0/@nodes.49" toElem="CompoId59"/>
+    <dynamicContexts name="DynamicContext1" id="D1" groups="DG1">
+      <changes xsi:type="urn.dyncontext:DeactivationChange" start="1990-01-01T00:00:00.000-0500" end="1994-12-31T00:00:00.000-0500" element="Id29"/>
+      <changes xsi:type="urn.dyncontext:DeactivationChange" start="1995-01-01T00:00:00.000-0500" end="2020-12-31T00:00:00.000-0500" element="Id12"/>
+      <changes xsi:type="urn.dyncontext:DeactivationChange" start="1995-01-01T00:00:00.000-0500" end="2020-12-31T00:00:00.000-0500" element="Id13"/>
+    </dynamicContexts>
+    <dynamicContextGroups name="DynamicContextGroup1" id="DG1" contexts="D1"/>
+  </urn:URNspec>
+  <ucm.map:ComponentRef contDef="/0/@urndef/@components.8">
+    <label/>
+  </ucm.map:ComponentRef>
+  <ucm.map:ComponentRef contDef="/0/@urndef/@components.9">
+    <label/>
+  </ucm.map:ComponentRef>
+  <grl:IntentionalElement name="NavigationChart" id="CompoId7" linksSrc="/0/@grlspec/@links.77" type="Ressource" refs="Id7">
+    <metadata name="_location" value="In Front of Captain"/>
+    <metadata name="_naturalness" value="repNavChart"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="FlightPlan" id="CompoId8" linksSrc="/0/@grlspec/@links.49 /0/@grlspec/@links.40 /0/@grlspec/@links.75" type="Ressource" refs="Id8">
+    <metadata name="_location" value="Inside Cockpit"/>
+    <metadata name="_naturalness" value="repFlightPlan"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="WorkStationA" id="CompoId9" linksSrc="/0/@grlspec/@links.55 /0/@grlspec/@links.48 /0/@grlspec/@links.46 /0/@grlspec/@links.51 /0/@grlspec/@links.39" type="Ressource" refs="Id9">
+    <metadata name="_location" value="At Captain Location"/>
+    <metadata name="_naturalness" value="repWorkStation"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="WorkStationB" id="CompoId10" linksSrc="/0/@grlspec/@links.76 /0/@grlspec/@links.80 /0/@grlspec/@links.83" type="Ressource" refs="Id10">
+    <metadata name="_location" value="Left of Captain"/>
+    <metadata name="_naturalness" value="repWorkStation"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="WorkStationC" id="CompoId11" linksSrc="/0/@grlspec/@links.63 /0/@grlspec/@links.64 /0/@grlspec/@links.66 /0/@grlspec/@links.67 /0/@grlspec/@links.69" type="Ressource" refs="Id11">
+    <metadata name="_location" value="Right of Captain"/>
+    <metadata name="_naturalness" value="repWorkStation"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="SideStickA" id="CompoId12" linksSrc="/0/@grlspec/@links.54" type="Ressource" refs="Id12">
+    <metadata name="_location" value="At Captain Location"/>
+    <metadata name="_naturalness" value="repSideStick"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="SideStickB" id="CompoId13" linksSrc="/0/@grlspec/@links.84" type="Ressource" refs="Id13">
+    <metadata name="_location" value="Left of Captain"/>
+    <metadata name="_naturalness" value="repSideStick"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="FMCS_A" id="CompoId14" linksSrc="/0/@grlspec/@links.56 /0/@grlspec/@links.43" type="Ressource" refs="Id14">
+    <metadata name="_location" value="In Front of Captain"/>
+    <metadata name="_naturalness" value="repFMCS"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="FMCS_B" id="CompoId15" linksSrc="/0/@grlspec/@links.74 /0/@grlspec/@links.82" type="Ressource" refs="Id15">
+    <metadata name="_location" value="Left of Captain"/>
+    <metadata name="_naturalness" value="repFMCS"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="EnginePerformanceTable" id="CompoId16" linksSrc="/0/@grlspec/@links.65 /0/@grlspec/@links.68" type="Ressource" refs="Id16">
+    <metadata name="_location" value="Right of Captain"/>
+    <metadata name="_naturalness" value="repEPR"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="RadioA" id="CompoId17" linksSrc="/0/@grlspec/@links.45 /0/@grlspec/@links.53" type="Ressource" refs="Id17">
+    <metadata name="_location" value="In Front of Captain"/>
+    <metadata name="_naturalness" value="repRadio"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="RadioB" id="CompoId18" linksSrc="/0/@grlspec/@links.71 /0/@grlspec/@links.73 /0/@grlspec/@links.81" type="Ressource" refs="Id18">
+    <metadata name="_location" value="Left of Captain"/>
+    <metadata name="_naturalness" value="repRadio"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="RadioC" id="CompoId19" linksSrc="/0/@grlspec/@links.61 /0/@grlspec/@links.62" type="Ressource" refs="Id19">
+    <metadata name="_location" value="Right of Captain"/>
+    <metadata name="_naturalness" value="repRadio"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="PaperA" id="CompoId20" linksSrc="/0/@grlspec/@links.44 /0/@grlspec/@links.47 /0/@grlspec/@links.50" type="Ressource" refs="Id20">
+    <metadata name="_location" value="In Front of Captain"/>
+    <metadata name="_naturalness" value="repPaper"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="PaperB" id="CompoId21" linksSrc="/0/@grlspec/@links.72" type="Ressource" refs="Id21">
+    <metadata name="_location" value="Left of Captain"/>
+    <metadata name="_naturalness" value="repPaper"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="PaperC" id="CompoId22" linksSrc="/0/@grlspec/@links.70" type="Ressource" refs="Id22">
+    <metadata name="_location" value="Right of Captain"/>
+    <metadata name="_naturalness" value="repPaper"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Airplane" id="CompoId23" linksSrc="/0/@grlspec/@links.58 /0/@grlspec/@links.86" type="Ressource" refs="Id23">
+    <metadata name="_location" value="Air Route between Sacramento and Los Angeles"/>
+    <metadata name="_naturalness" value="repAirplane"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="RadioD" id="CompoId24" linksSrc="/0/@grlspec/@links.59" type="Ressource" refs="Id24">
+    <metadata name="_location" value="Inside Oakland Center"/>
+    <metadata name="_naturalness" value="repRadio"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="RadioE" id="CompoId25" linksSrc="/0/@grlspec/@links.60" type="Ressource" refs="Id25">
+    <metadata name="_location" value="Inside Oakland Center"/>
+    <metadata name="_naturalness" value="repRadio"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="DepartureChart" id="CompoId26" linksSrc="/0/@grlspec/@links.52" type="Ressource" refs="Id26">
+    <metadata name="_location" value="In Front of Captain"/>
+    <metadata name="_naturalness" value="repDepartureChart"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Altimeter" id="CompoId27" linksSrc="/0/@grlspec/@links.42 /0/@grlspec/@links.78" type="Ressource" refs="Id27">
+    <metadata name="_location" value="Inside Cockpit"/>
+    <metadata name="_naturalness" value="repAltimeter"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="AlertSystem" id="CompoId28" linksSrc="/0/@grlspec/@links.41 /0/@grlspec/@links.79" type="Ressource" refs="Id28">
+    <metadata name="_location" value="Inside Cockpit"/>
+    <metadata name="_naturalness" value="repAltAlert"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="DuplicateFlyingInstrument" id="CompoId29" linksSrc="/0/@grlspec/@links.57 /0/@grlspec/@links.85" type="Ressource" refs="Id29">
+    <metadata name="_location" value="Inside Cockpit"/>
+    <metadata name="_naturalness" value="repDuplicateFly"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="Using finger to point at Flight Plan" toLinks="/0/@urnLinks.13" id="CompoId30" linksSrc="/0/@grlspec/@links.87" type="Task" refs="Id30">
+    <metadata name="_location" value="At Captain Location"/>
+    <metadata name="_naturalness" value="repPointPlan"/>
+  </grl:IntentionalElement>
+  <grl:IntentionalElement name="FlyPlane" toLinks="/0/@urnLinks.37" id="CompoId31" linksDest="/0/@grlspec/@links.54 /0/@grlspec/@links.55 /0/@grlspec/@links.56 /0/@grlspec/@links.57 /0/@grlspec/@links.58" linksSrc="/0/@grlspec/@links.0 /0/@grlspec/@links.7 /0/@grlspec/@links.14" type="Task" refs="Id31"/>
+  <grl:IntentionalElement name="Monitor aircraft and crew performance" toLinks="/0/@urnLinks.32" id="CompoId32" linksDest="/0/@grlspec/@links.41 /0/@grlspec/@links.42 /0/@grlspec/@links.43 /0/@grlspec/@links.44" linksSrc="/0/@grlspec/@links.2 /0/@grlspec/@links.9 /0/@grlspec/@links.16" type="Task" refs="Id32"/>
+  <grl:IntentionalElement name="Perform redundant error checking" toLinks="/0/@urnLinks.34" id="CompoId33" linksDest="/0/@grlspec/@links.47 /0/@grlspec/@links.48" linksSrc="/0/@grlspec/@links.5 /0/@grlspec/@links.12 /0/@grlspec/@links.19" type="Task" refs="Id33"/>
+  <grl:IntentionalElement name="Communicate with ATC" toLinks="/0/@urnLinks.33" id="CompoId34" linksDest="/0/@grlspec/@links.45 /0/@grlspec/@links.46" linksSrc="/0/@grlspec/@links.1 /0/@grlspec/@links.8 /0/@grlspec/@links.15" type="Task" refs="Id34"/>
+  <grl:IntentionalElement name="Perform housekeeeping task" toLinks="/0/@urnLinks.35" id="CompoId35" linksDest="/0/@grlspec/@links.49 /0/@grlspec/@links.50 /0/@grlspec/@links.51 /0/@grlspec/@links.52" linksSrc="/0/@grlspec/@links.4 /0/@grlspec/@links.11 /0/@grlspec/@links.18" type="Task" refs="Id35"/>
+  <grl:IntentionalElement name="Monitor ATC frequency" toLinks="/0/@urnLinks.36" id="CompoId36" linksDest="/0/@grlspec/@links.53" linksSrc="/0/@grlspec/@links.3 /0/@grlspec/@links.10 /0/@grlspec/@links.17" type="Task" refs="Id36"/>
+  <grl:IntentionalElement name="Check Flight Plan" id="CompoId37" linksDest="/0/@grlspec/@links.39 /0/@grlspec/@links.40 /0/@grlspec/@links.87 /0/@grlspec/@links.88" linksSrc="/0/@grlspec/@links.6 /0/@grlspec/@links.13 /0/@grlspec/@links.20" type="Task" refs="Id37"/>
+  <grl:IntentionalElement name="Communicate with Crew" toLinks="/0/@urnLinks.38" id="CompoId38" linksDest="/0/@grlspec/@links.59" linksSrc="/0/@grlspec/@links.37" type="Task" refs="Id38"/>
+  <grl:IntentionalElement name="Provide clearance to aircraft" toLinks="/0/@urnLinks.39" id="CompoId39" linksDest="/0/@grlspec/@links.60" linksSrc="/0/@grlspec/@links.38" type="Task" refs="Id39"/>
+  <grl:IntentionalElement name="Monitor ATC freq" id="CompoId40" linksDest="/0/@grlspec/@links.61 /0/@grlspec/@links.89" linksSrc="/0/@grlspec/@links.21 /0/@grlspec/@links.27" type="Task" refs="Id40"/>
+  <grl:IntentionalElement name="Report Flight Condition" toLinks="/0/@urnLinks.40" id="CompoId41" linksDest="/0/@grlspec/@links.62 /0/@grlspec/@links.63" linksSrc="/0/@grlspec/@links.25 /0/@grlspec/@links.31" type="Task" refs="Id41"/>
+  <grl:IntentionalElement name="Find correct EPR values" toLinks="/0/@urnLinks.41" id="CompoId42" linksDest="/0/@grlspec/@links.64 /0/@grlspec/@links.65" linksSrc="/0/@grlspec/@links.24 /0/@grlspec/@links.30" type="Task" refs="Id42"/>
+  <grl:IntentionalElement name="Increase Engine Thrust Force" toLinks="/0/@urnLinks.42" id="CompoId43" linksDest="/0/@grlspec/@links.66" linksSrc="/0/@grlspec/@links.26 /0/@grlspec/@links.32" type="Task" refs="Id43"/>
+  <grl:IntentionalElement name="Setting EPR values" toLinks="/0/@urnLinks.43" id="CompoId44" linksDest="/0/@grlspec/@links.67 /0/@grlspec/@links.68" linksSrc="/0/@grlspec/@links.23 /0/@grlspec/@links.29" type="Task" refs="Id44"/>
+  <grl:IntentionalElement name="Perf redundant error check" toLinks="/0/@urnLinks.44" id="CompoId45" linksDest="/0/@grlspec/@links.69 /0/@grlspec/@links.70" linksSrc="/0/@grlspec/@links.22 /0/@grlspec/@links.28" type="Task" refs="Id45"/>
+  <grl:IntentionalElement name="Mont ATC Frequency" id="CompoId46" linksDest="/0/@grlspec/@links.71 /0/@grlspec/@links.90" linksSrc="/0/@grlspec/@links.33" type="Task" refs="Id46"/>
+  <grl:IntentionalElement name="Perf housekeeping task" toLinks="/0/@urnLinks.45" id="CompoId47" linksDest="/0/@grlspec/@links.72 /0/@grlspec/@links.73 /0/@grlspec/@links.74 /0/@grlspec/@links.75 /0/@grlspec/@links.76 /0/@grlspec/@links.77" linksSrc="/0/@grlspec/@links.35" type="Task" refs="Id47"/>
+  <grl:IntentionalElement name="Setting Altitude alert system" toLinks="/0/@urnLinks.46" id="CompoId48" linksDest="/0/@grlspec/@links.78 /0/@grlspec/@links.79 /0/@grlspec/@links.80 /0/@grlspec/@links.81" linksSrc="/0/@grlspec/@links.34" type="Task" refs="Id48"/>
+  <grl:IntentionalElement name="Fly Plane" toLinks="/0/@urnLinks.47" id="CompoId49" linksDest="/0/@grlspec/@links.82 /0/@grlspec/@links.83 /0/@grlspec/@links.84 /0/@grlspec/@links.85 /0/@grlspec/@links.86" linksSrc="/0/@grlspec/@links.36" type="Task" refs="Id49"/>
+  <grl:IntentionalElement name="Climbing to filed cruise altitude" toLinks="/0/@urnLinks.5" id="CompoId50" linksDest="/0/@grlspec/@links.0 /0/@grlspec/@links.1 /0/@grlspec/@links.2 /0/@grlspec/@links.3 /0/@grlspec/@links.4 /0/@grlspec/@links.5 /0/@grlspec/@links.6 /0/@grlspec/@links.91" type="Goal" refs="Id50"/>
+  <grl:IntentionalElement name="Climb uninterrupted by leveling off to intermediate altitude" toLinks="/0/@urnLinks.6" id="CompoId51" linksDest="/0/@grlspec/@links.7 /0/@grlspec/@links.8 /0/@grlspec/@links.9 /0/@grlspec/@links.10 /0/@grlspec/@links.11 /0/@grlspec/@links.12 /0/@grlspec/@links.13" type="Goal" refs="Id51"/>
+  <grl:IntentionalElement name="Getting required altitude clearances" toLinks="/0/@urnLinks.7" id="CompoId52" linksDest="/0/@grlspec/@links.14 /0/@grlspec/@links.15 /0/@grlspec/@links.16 /0/@grlspec/@links.17 /0/@grlspec/@links.18 /0/@grlspec/@links.19 /0/@grlspec/@links.20" type="Goal" refs="Id52"/>
+  <grl:IntentionalElement name="Setting maximum engine thrust" toLinks="/0/@urnLinks.8" id="CompoId53" linksDest="/0/@grlspec/@links.21 /0/@grlspec/@links.22 /0/@grlspec/@links.23 /0/@grlspec/@links.24 /0/@grlspec/@links.25 /0/@grlspec/@links.26" type="Goal" refs="Id53"/>
+  <grl:IntentionalElement name="Finding correct EPR values" toLinks="/0/@urnLinks.9" id="CompoId54" linksDest="/0/@grlspec/@links.27 /0/@grlspec/@links.28 /0/@grlspec/@links.29 /0/@grlspec/@links.30 /0/@grlspec/@links.31 /0/@grlspec/@links.32" type="Goal" refs="Id54"/>
+  <grl:IntentionalElement name="Assist Captain in flight preparation and operation" toLinks="/0/@urnLinks.10" id="CompoId55" linksDest="/0/@grlspec/@links.33 /0/@grlspec/@links.34 /0/@grlspec/@links.35 /0/@grlspec/@links.36" type="Goal" refs="Id55"/>
+  <grl:IntentionalElement name="Assist crew in getting required clearance" toLinks="/0/@urnLinks.11" id="CompoId56" linksDest="/0/@grlspec/@links.37" type="Goal" refs="Id56"/>
+  <grl:IntentionalElement name="Provide required altitude clearances" toLinks="/0/@urnLinks.12" id="CompoId57" linksDest="/0/@grlspec/@links.38" type="Goal" refs="Id57"/>
+  <grl:IntentionalElement name="Current Flight Altitude i.e. 19000 feet above sea level" toLinks="/0/@urnLinks.48 /0/@urnLinks.50" id="CompoId58" linksSrc="/0/@grlspec/@links.88 /0/@grlspec/@links.90" type="Indicator" refs="Id58"/>
+  <ucm.map:EndPoint name="Current Flight Altitude i.e. 19000 feet above sea level">
+    <label/>
+  </ucm.map:EndPoint>
+  <grl:IntentionalElement name="Current Altitude Alert altitude i.e. 23000 feet above sea level" toLinks="/0/@urnLinks.51" id="CompoId59" linksSrc="/0/@grlspec/@links.91" type="Indicator" refs="Id59"/>
+  <grl:IntentionalElement name="Current Flight EPR values" toLinks="/0/@urnLinks.49" id="CompoId60" linksSrc="/0/@grlspec/@links.89" type="Indicator" refs="Id60"/>
+  <ucm.map:EndPoint name="Current Flight EPR values">
+    <label/>
+  </ucm.map:EndPoint>
+  <grl:IntentionalElement name="Cockpit" id="CompoId61" type="Ressource" refs="Id61"/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+  <urncore:Condition/>
+</xmi:XMI>

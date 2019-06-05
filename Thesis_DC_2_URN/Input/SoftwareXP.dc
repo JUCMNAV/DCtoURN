@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DC_MMApplication:DCSpec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DC_MMApplication="http://DC_MMApplication" xmi:id="_F_aS8HU2Eem1ldHTr_2PwA">
+  <changes xsi:type="DC_MMApplication:DeactivationChange" xmi:id="_XmPgkHVTEem1ldHTr_2PwA" element="_zRYc0HVREem1ldHTr_2PwA" start="2019-04-01T01:00:00.000-0400" end="2019-04-08T01:00:00.000-0400"/>
+  <changes xsi:type="DC_MMApplication:DeactivationChange" xmi:id="_BUkY0HVUEem1ldHTr_2PwA" element="_5xAysHVREem1ldHTr_2PwA" start="2019-04-09T01:00:00.000-0400" end="2019-04-30T01:00:00.000-0400"/>
+  <workflows xmi:id="_-FoUcHVPEem1ldHTr_2PwA" name="WorkflowA">
+    <plans xmi:id="_BoZQkHVQEem1ldHTr_2PwA" name="Complete Project Development" actors="_SAjEYHVIEem1ldHTr_2PwA _nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" precedingState="_M_TecHVQEem1ldHTr_2PwA">
+      <links xmi:id="_aHtiUHVUEem1ldHTr_2PwA" to="_gAvLMHVUEem1ldHTr_2PwA" from="_JEmG8HVREem1ldHTr_2PwA" action="_g_zi4HVREem1ldHTr_2PwA"/>
+      <links xmi:id="_ngZasHVUEem1ldHTr_2PwA" to="_q5VscHVUEem1ldHTr_2PwA" from="_gAvLMHVUEem1ldHTr_2PwA" action="_zRYc0HVREem1ldHTr_2PwA"/>
+      <links xmi:id="_woYS4HVUEem1ldHTr_2PwA" to="_8UKhYHVQEem1ldHTr_2PwA" from="_q5VscHVUEem1ldHTr_2PwA" action="_5xAysHVREem1ldHTr_2PwA"/>
+      <links xmi:id="_T_X1oHVVEem1ldHTr_2PwA" to="_VNyJgHVVEem1ldHTr_2PwA" from="_NPTM0HVREem1ldHTr_2PwA" action="_CNdakHVSEem1ldHTr_2PwA"/>
+      <links xmi:id="_jrJyAHVVEem1ldHTr_2PwA" to="_Mj00oHVWEem1ldHTr_2PwA" from="_VNyJgHVVEem1ldHTr_2PwA" action="_OHIXQHVSEem1ldHTr_2PwA"/>
+      <links xmi:id="_48XF0HVVEem1ldHTr_2PwA" to="_2Qc5MHVVEem1ldHTr_2PwA" from="_tSmNYHVVEem1ldHTr_2PwA" action="_YUZcgHVSEem1ldHTr_2PwA"/>
+      <links xmi:id="_7YmewHVVEem1ldHTr_2PwA" to="_2Qc5MHVVEem1ldHTr_2PwA" from="_tSmNYHVVEem1ldHTr_2PwA" action="_g5itYHVSEem1ldHTr_2PwA"/>
+      <links xmi:id="__4i00HVVEem1ldHTr_2PwA" to="_U_UMgHVREem1ldHTr_2PwA" from="_2Qc5MHVVEem1ldHTr_2PwA" action="_nyfiMHVSEem1ldHTr_2PwA"/>
+      <links xmi:id="_D3c6YHVWEem1ldHTr_2PwA" to="_lFQKwHVQEem1ldHTr_2PwA" from="_U_UMgHVREem1ldHTr_2PwA"/>
+      <links xmi:id="_XSR7YHVWEem1ldHTr_2PwA" to="_tSmNYHVVEem1ldHTr_2PwA" from="_Mj00oHVWEem1ldHTr_2PwA"/>
+      <links xmi:id="_awsjAHVWEem1ldHTr_2PwA" to="_fba0cHVQEem1ldHTr_2PwA" from="_Mj00oHVWEem1ldHTr_2PwA"/>
+      <links xmi:id="_i9mTAHVWEem1ldHTr_2PwA" to="_oAOfYHVWEem1ldHTr_2PwA" from="_Y3QHYHVREem1ldHTr_2PwA" action="_uLCYoHVSEem1ldHTr_2PwA"/>
+      <links xmi:id="_2E9lcHVWEem1ldHTr_2PwA" to="_zkudUHVWEem1ldHTr_2PwA" from="_oAOfYHVWEem1ldHTr_2PwA" action="_4e8RYHVSEem1ldHTr_2PwA">
+        <linklabel xmi:id="_6pJiUHVWEem1ldHTr_2PwA" label="Development Issue"/>
+      </links>
+      <links xmi:id="_AIVu4HVXEem1ldHTr_2PwA" to="_zkudUHVWEem1ldHTr_2PwA" from="_oAOfYHVWEem1ldHTr_2PwA" action="_8_z0gHVSEem1ldHTr_2PwA">
+        <linklabel xmi:id="_GLMpMHVXEem1ldHTr_2PwA" label="!Development Issue"/>
+      </links>
+      <links xmi:id="_KYUw8HVXEem1ldHTr_2PwA" to="_Z7dL0HVQEem1ldHTr_2PwA" from="_zkudUHVWEem1ldHTr_2PwA" action="_CuGNAHVTEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_Z7dL0HVQEem1ldHTr_2PwA" name="Complete assigned development task" toLink="_KYUw8HVXEem1ldHTr_2PwA" actor="_nCEWYHVIEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_fba0cHVQEem1ldHTr_2PwA" name="Assign tasks to developers" toLink="_awsjAHVWEem1ldHTr_2PwA" actor="_oZyzwHVHEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_lFQKwHVQEem1ldHTr_2PwA" name="Ensure completion of dev tasks" toLink="_D3c6YHVWEem1ldHTr_2PwA" actor="_oZyzwHVHEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_8UKhYHVQEem1ldHTr_2PwA" name="Communicate high priority tasks" toLink="_woYS4HVUEem1ldHTr_2PwA" actor="_SAjEYHVIEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="_JEmG8HVREem1ldHTr_2PwA" name="Current Project Client Requirement" flowLink="_aHtiUHVUEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="_NPTM0HVREem1ldHTr_2PwA" name="Current Project Development tasks" flowLink="_T_X1oHVVEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="_U_UMgHVREem1ldHTr_2PwA" name="Current Iteration tasks remaining" toLink="__4i00HVVEem1ldHTr_2PwA" flowLink="_D3c6YHVWEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="_Y3QHYHVREem1ldHTr_2PwA" name="Current iteration tasks assigned" flowLink="_i9mTAHVWEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:Sequence" xmi:id="_gAvLMHVUEem1ldHTr_2PwA" name="Seq1" toLink="_aHtiUHVUEem1ldHTr_2PwA" flowLink="_ngZasHVUEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:Sequence" xmi:id="_q5VscHVUEem1ldHTr_2PwA" name="Seq2" toLink="_ngZasHVUEem1ldHTr_2PwA" flowLink="_woYS4HVUEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:Sequence" xmi:id="_VNyJgHVVEem1ldHTr_2PwA" name="Seq3" toLink="_T_X1oHVVEem1ldHTr_2PwA" flowLink="_jrJyAHVVEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:AndFork" xmi:id="_tSmNYHVVEem1ldHTr_2PwA" name="Fork1" toLink="_XSR7YHVWEem1ldHTr_2PwA" flowLink="_48XF0HVVEem1ldHTr_2PwA _7YmewHVVEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:AndJoin" xmi:id="_2Qc5MHVVEem1ldHTr_2PwA" name="Join1" toLink="_48XF0HVVEem1ldHTr_2PwA _7YmewHVVEem1ldHTr_2PwA" flowLink="__4i00HVVEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_Mj00oHVWEem1ldHTr_2PwA" name="Fork1" toLink="_jrJyAHVVEem1ldHTr_2PwA" flowLink="_XSR7YHVWEem1ldHTr_2PwA _awsjAHVWEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_oAOfYHVWEem1ldHTr_2PwA" name="Fork2" toLink="_i9mTAHVWEem1ldHTr_2PwA" flowLink="_2E9lcHVWEem1ldHTr_2PwA _AIVu4HVXEem1ldHTr_2PwA"/>
+      <elements xsi:type="DC_MMApplication:ORJoin" xmi:id="_zkudUHVWEem1ldHTr_2PwA" name="Join1" toLink="_2E9lcHVWEem1ldHTr_2PwA _AIVu4HVXEem1ldHTr_2PwA" flowLink="_KYUw8HVXEem1ldHTr_2PwA"/>
+      <actions xmi:id="_g_zi4HVREem1ldHTr_2PwA" name="Understand Requirements" actionLink="_aHtiUHVUEem1ldHTr_2PwA" artefacts="_pjm0IHVKEem1ldHTr_2PwA"/>
+      <actions xmi:id="_zRYc0HVREem1ldHTr_2PwA" name="Prioritize workitems" actionLink="_ngZasHVUEem1ldHTr_2PwA" artefacts="_pjm0IHVKEem1ldHTr_2PwA"/>
+      <actions xmi:id="_5xAysHVREem1ldHTr_2PwA" name="Provide workitems to manager" actionLink="_woYS4HVUEem1ldHTr_2PwA" artefacts="_pjm0IHVKEem1ldHTr_2PwA"/>
+      <actions xmi:id="_CNdakHVSEem1ldHTr_2PwA" name="Plan iteration work" actionLink="_T_X1oHVVEem1ldHTr_2PwA" artefacts="_dvW_cHVJEem1ldHTr_2PwA _BXNBoHVKEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA"/>
+      <actions xmi:id="_OHIXQHVSEem1ldHTr_2PwA" name="Communicate development tasks" actionLink="_jrJyAHVVEem1ldHTr_2PwA" artefacts="_BXNBoHVKEem1ldHTr_2PwA _dvW_cHVJEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA" uses="_JWHuEHVMEem1ldHTr_2PwA"/>
+      <actions xmi:id="_YUZcgHVSEem1ldHTr_2PwA" name="Understand development challenges" actionLink="_48XF0HVVEem1ldHTr_2PwA" artefacts="_BXNBoHVKEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA"/>
+      <actions xmi:id="_g5itYHVSEem1ldHTr_2PwA" name="Reassign development tasks" actionLink="_7YmewHVVEem1ldHTr_2PwA" artefacts="_BXNBoHVKEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA"/>
+      <actions xmi:id="_nyfiMHVSEem1ldHTr_2PwA" name="Monitor development activity " infoMovementAt="_ZbXzAHVPEem1ldHTr_2PwA" actionLink="__4i00HVVEem1ldHTr_2PwA" artefacts="_BXNBoHVKEem1ldHTr_2PwA _dvW_cHVJEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA"/>
+      <actions xmi:id="_uLCYoHVSEem1ldHTr_2PwA" name="start developing code" transformationAt="_Knu_kHVPEem1ldHTr_2PwA" actionLink="_i9mTAHVWEem1ldHTr_2PwA" artefacts="_Ya_GUHVKEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA"/>
+      <actions xmi:id="_4e8RYHVSEem1ldHTr_2PwA" name="Raise development concern" actionLink="_2E9lcHVWEem1ldHTr_2PwA" artefacts="_25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA"/>
+      <actions xmi:id="_8_z0gHVSEem1ldHTr_2PwA" name="Complete development activity" actionLink="_AIVu4HVXEem1ldHTr_2PwA" artefacts="_Ya_GUHVKEem1ldHTr_2PwA"/>
+      <actions xmi:id="_CuGNAHVTEem1ldHTr_2PwA" name="Notify task completion" infoMovementAt="_ZbXzAHVPEem1ldHTr_2PwA" actionLink="_KYUw8HVXEem1ldHTr_2PwA" artefacts="_25cCQHVJEem1ldHTr_2PwA _CyH88HVJEem1ldHTr_2PwA"/>
+    </plans>
+  </workflows>
+  <hubs xmi:id="_kT670HVNEem1ldHTr_2PwA" name="Iteration Planning" information="_IsLjwHVNEem1ldHTr_2PwA" usedResources="_SAjEYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA _pjm0IHVKEem1ldHTr_2PwA"/>
+  <transformations xmi:id="_Knu_kHVPEem1ldHTr_2PwA" name="Code development" causedBy="_uLCYoHVSEem1ldHTr_2PwA" transformedFrom="_QA-KkHVOEem1ldHTr_2PwA" transformedTo="_9Kbs8HVOEem1ldHTr_2PwA"/>
+  <locations xmi:id="_0qyEQHVHEem1ldHTr_2PwA" name="At left side of Wall" resources="_oZyzwHVHEem1ldHTr_2PwA _JWHuEHVMEem1ldHTr_2PwA"/>
+  <locations xmi:id="_aQQ30HVIEem1ldHTr_2PwA" name="At right side of Wall" resources="_SAjEYHVIEem1ldHTr_2PwA"/>
+  <locations xmi:id="_3Q1EAHVIEem1ldHTr_2PwA" name="In front of Wall" resources="_nCEWYHVIEem1ldHTr_2PwA _Ya_GUHVKEem1ldHTr_2PwA"/>
+  <locations xmi:id="_On2NwHVJEem1ldHTr_2PwA" name="Inside XP team office" resources="_CyH88HVJEem1ldHTr_2PwA _pjm0IHVKEem1ldHTr_2PwA"/>
+  <locations xmi:id="_q0xWgHVJEem1ldHTr_2PwA" name="On Wall" resources="_dvW_cHVJEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _BXNBoHVKEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_oZyzwHVHEem1ldHTr_2PwA" name="ProjectManager" resourceLocation="_0qyEQHVHEem1ldHTr_2PwA" Naturalness="_9ALB4HVHEem1ldHTr_2PwA" position="ProjectManager" infoTarget="_ZbXzAHVPEem1ldHTr_2PwA" actorPlan="_BoZQkHVQEem1ldHTr_2PwA" performedActions="_OHIXQHVSEem1ldHTr_2PwA _nyfiMHVSEem1ldHTr_2PwA _CNdakHVSEem1ldHTr_2PwA _g5itYHVSEem1ldHTr_2PwA _YUZcgHVSEem1ldHTr_2PwA" targetStates="_fba0cHVQEem1ldHTr_2PwA _lFQKwHVQEem1ldHTr_2PwA" usedToCreateScaffolding="_CyH88HVJEem1ldHTr_2PwA _dvW_cHVJEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _BXNBoHVKEem1ldHTr_2PwA _pjm0IHVKEem1ldHTr_2PwA" uses="_JWHuEHVMEem1ldHTr_2PwA" situationalAwareness="_IsLjwHVNEem1ldHTr_2PwA _0wHBcHVNEem1ldHTr_2PwA _QA-KkHVOEem1ldHTr_2PwA _xaAL0HVOEem1ldHTr_2PwA" horizonOfObservation="_IsLjwHVNEem1ldHTr_2PwA _0wHBcHVNEem1ldHTr_2PwA _QA-KkHVOEem1ldHTr_2PwA _xaAL0HVOEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_SAjEYHVIEem1ldHTr_2PwA" name="BusinessDev" resourceLocation="_aQQ30HVIEem1ldHTr_2PwA" Naturalness="_e778wHVIEem1ldHTr_2PwA" position="Senior Business Dev" actorPlan="_BoZQkHVQEem1ldHTr_2PwA" performedActions="_zRYc0HVREem1ldHTr_2PwA _5xAysHVREem1ldHTr_2PwA _g_zi4HVREem1ldHTr_2PwA" targetStates="_8UKhYHVQEem1ldHTr_2PwA" usedToCreateScaffolding="_CyH88HVJEem1ldHTr_2PwA _pjm0IHVKEem1ldHTr_2PwA" situationalAwareness="_IsLjwHVNEem1ldHTr_2PwA" horizonOfObservation="_IsLjwHVNEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_nCEWYHVIEem1ldHTr_2PwA" name="Developer A" resourceLocation="_3Q1EAHVIEem1ldHTr_2PwA" Naturalness="_64B0MHVIEem1ldHTr_2PwA" position="Senior Developer" actorPlan="_BoZQkHVQEem1ldHTr_2PwA" performedActions="_8_z0gHVSEem1ldHTr_2PwA _CuGNAHVTEem1ldHTr_2PwA _4e8RYHVSEem1ldHTr_2PwA _uLCYoHVSEem1ldHTr_2PwA" targetStates="_Z7dL0HVQEem1ldHTr_2PwA" usedToCreateScaffolding="_CyH88HVJEem1ldHTr_2PwA _dvW_cHVJEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _BXNBoHVKEem1ldHTr_2PwA _Ya_GUHVKEem1ldHTr_2PwA" situationalAwareness="_0wHBcHVNEem1ldHTr_2PwA _QA-KkHVOEem1ldHTr_2PwA _xaAL0HVOEem1ldHTr_2PwA _9Kbs8HVOEem1ldHTr_2PwA" horizonOfObservation="_0wHBcHVNEem1ldHTr_2PwA _QA-KkHVOEem1ldHTr_2PwA _xaAL0HVOEem1ldHTr_2PwA _9Kbs8HVOEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_CyH88HVJEem1ldHTr_2PwA" name="Wall" describes="_xaAL0HVOEem1ldHTr_2PwA" resourceLocation="_On2NwHVJEem1ldHTr_2PwA" Naturalness="_UZzlUHVJEem1ldHTr_2PwA" key="true" description="" usedby="_SAjEYHVIEem1ldHTr_2PwA _nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" consistsOf="_dvW_cHVJEem1ldHTr_2PwA _BXNBoHVKEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_dvW_cHVJEem1ldHTr_2PwA" name="Story Card" describes="_0wHBcHVNEem1ldHTr_2PwA" resourceLocation="_q0xWgHVJEem1ldHTr_2PwA" Naturalness="_u0yPUHVJEem1ldHTr_2PwA" key="true" description="green colour" usedby="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" presentIn="_CyH88HVJEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_25cCQHVJEem1ldHTr_2PwA" name="Task Card" describes="_QA-KkHVOEem1ldHTr_2PwA _9Kbs8HVOEem1ldHTr_2PwA" resourceLocation="_q0xWgHVJEem1ldHTr_2PwA" Naturalness="_u0yPUHVJEem1ldHTr_2PwA" key="true" description="white colour" usedby="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" presentIn="_CyH88HVJEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_BXNBoHVKEem1ldHTr_2PwA" name="Bug Card" resourceLocation="_q0xWgHVJEem1ldHTr_2PwA" Naturalness="_u0yPUHVJEem1ldHTr_2PwA" key="true" description="pink colour" usedby="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" presentIn="_CyH88HVJEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_Ya_GUHVKEem1ldHTr_2PwA" name="Developer Machine A" resourceLocation="_3Q1EAHVIEem1ldHTr_2PwA" Naturalness="_gv6J4HVKEem1ldHTr_2PwA" usedby="_nCEWYHVIEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_pjm0IHVKEem1ldHTr_2PwA" name="Summary Sheet" describes="_IsLjwHVNEem1ldHTr_2PwA" resourceLocation="_On2NwHVJEem1ldHTr_2PwA" Naturalness="_vgELgHVKEem1ldHTr_2PwA" usedby="_SAjEYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA"/>
+  <resources xsi:type="DC_MMApplication:BodilySupport" xmi:id="_JWHuEHVMEem1ldHTr_2PwA" name="Point At Card" resourceLocation="_0qyEQHVHEem1ldHTr_2PwA" Naturalness="_9ALB4HVHEem1ldHTr_2PwA" usedBy="_oZyzwHVHEem1ldHTr_2PwA"/>
+  <histories xmi:id="_M_TecHVQEem1ldHTr_2PwA" name="Project development tasks completed" goalStates="_fba0cHVQEem1ldHTr_2PwA _8UKhYHVQEem1ldHTr_2PwA _Z7dL0HVQEem1ldHTr_2PwA _lFQKwHVQEem1ldHTr_2PwA"/>
+  <structures xmi:id="_IsLjwHVNEem1ldHTr_2PwA" name="Time to be devoted for each project item" representations="_pjm0IHVKEem1ldHTr_2PwA" actorsAwareness="_SAjEYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" actorsHorizon="_SAjEYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA">
+    <type href="DC_Software_Info.ram#_avC-MHVLEema_s8ygZm_xQ"/>
+  </structures>
+  <structures xmi:id="_0wHBcHVNEem1ldHTr_2PwA" name="Story items to be completed" representations="_dvW_cHVJEem1ldHTr_2PwA" actorsAwareness="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" actorsHorizon="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA">
+    <type href="DC_Software_Info.ram#_LDC2cxytEeilQIWjLFzJ-Q"/>
+  </structures>
+  <structures xmi:id="_QA-KkHVOEem1ldHTr_2PwA" name="Development tasks to be completed" representations="_25cCQHVJEem1ldHTr_2PwA" transformationsFrom="_Knu_kHVPEem1ldHTr_2PwA" actorsAwareness="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" actorsHorizon="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA">
+    <type href="DC_Software_Info.ram#_LDC2cxytEeilQIWjLFzJ-Q"/>
+  </structures>
+  <structures xmi:id="_xaAL0HVOEem1ldHTr_2PwA" name="Development Progress Made" representations="_CyH88HVJEem1ldHTr_2PwA" movementAt="_ZbXzAHVPEem1ldHTr_2PwA" actorsAwareness="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA" actorsHorizon="_nCEWYHVIEem1ldHTr_2PwA _oZyzwHVHEem1ldHTr_2PwA">
+    <type href="DC_Software_Info.ram#_LDC2chytEeilQIWjLFzJ-Q"/>
+  </structures>
+  <structures xmi:id="_9Kbs8HVOEem1ldHTr_2PwA" name="Development Code generated" representations="_25cCQHVJEem1ldHTr_2PwA" transformationsTo="_Knu_kHVPEem1ldHTr_2PwA" actorsAwareness="_nCEWYHVIEem1ldHTr_2PwA" actorsHorizon="_nCEWYHVIEem1ldHTr_2PwA">
+    <type href="DC_Software_Info.ram#_LDC2cxytEeilQIWjLFzJ-Q"/>
+  </structures>
+  <exchanges xmi:id="_ZbXzAHVPEem1ldHTr_2PwA" name="Development Progress" bandwidth="High" movedTo="_oZyzwHVHEem1ldHTr_2PwA" movementCausedBy="_CuGNAHVTEem1ldHTr_2PwA _nyfiMHVSEem1ldHTr_2PwA" movementOf="_xaAL0HVOEem1ldHTr_2PwA"/>
+  <degreeNaturalness xmi:id="_9ALB4HVHEem1ldHTr_2PwA" name="repManager" representations="_oZyzwHVHEem1ldHTr_2PwA _JWHuEHVMEem1ldHTr_2PwA" level="High">
+    <concept href="DC_Software_Info.ram#_K5T2MByuEeilQIWjLFzJ-Q"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_e778wHVIEem1ldHTr_2PwA" name="repBusinessDev" representations="_SAjEYHVIEem1ldHTr_2PwA" level="High">
+    <concept href="DC_Software_Info.ram#_Mg8iYByuEeilQIWjLFzJ-Q"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_64B0MHVIEem1ldHTr_2PwA" name="repDeveloper" representations="_nCEWYHVIEem1ldHTr_2PwA" level="High">
+    <concept href="DC_Software_Info.ram#_HiHQ4ByuEeilQIWjLFzJ-Q"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_UZzlUHVJEem1ldHTr_2PwA" name="repWall" representations="_CyH88HVJEem1ldHTr_2PwA" level="low">
+    <concept href="DC_Software_Info.ram#_LDC2chytEeilQIWjLFzJ-Q"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_u0yPUHVJEem1ldHTr_2PwA" name="repCards" representations="_dvW_cHVJEem1ldHTr_2PwA _25cCQHVJEem1ldHTr_2PwA _BXNBoHVKEem1ldHTr_2PwA" level="low">
+    <concept href="DC_Software_Info.ram#_LDC2cxytEeilQIWjLFzJ-Q"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_gv6J4HVKEem1ldHTr_2PwA" name="repDevMachine" representations="_Ya_GUHVKEem1ldHTr_2PwA" level="low">
+    <concept href="DC_Software_Info.ram#_HMNyAByxEeilQIWjLFzJ-Q"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_vgELgHVKEem1ldHTr_2PwA" name="repSheet" representations="_pjm0IHVKEem1ldHTr_2PwA" level="low">
+    <concept href="DC_Software_Info.ram#_avC-MHVLEema_s8ygZm_xQ"/>
+  </degreeNaturalness>
+</DC_MMApplication:DCSpec>

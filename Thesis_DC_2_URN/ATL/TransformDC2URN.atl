@@ -1,0 +1,810 @@
+-- @path urn=/Thesis_DC_2_URN/Metamodels/urn.ecore
+-- @path DC=/Thesis_DC_2_URN/Metamodels/DC.ecore
+
+module TransformDC2URN;
+create OUT : urn from IN : DC;
+
+-- Use "" if you have to use the keyword in a different context	
+
+
+helper def : id : Integer = 0;
+
+helper context Integer def : inc() : Integer = self + 1;
+
+
+helper context DC!Location def: locName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;
+
+helper context DC!Actor def: acName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;
+
+helper context DC!Naturalness def: natName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;
+
+helper context DC!MediatingArtefact def: dcName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;	
+
+helper context DC!BodilySupport def: bsName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;	
+
+helper context DC!Action def: asName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;
+
+helper context DC!GoalState def: gsName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;	
+
+helper context DC!State def: sName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;	
+
+
+helper context DC!InformationHub def: ihName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;	
+
+helper context DC!FlowElement def: elementType: Integer =
+	if self.oclIsTypeOf(DC!GoalState)  then
+		1
+	else if self.oclIsTypeOf(DC!State)  then
+    2
+	else 3
+			endif
+			endif;
+
+helper context DC!Plan def: planName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;
+
+helper context DC!FlowLink def: elemType: Integer =
+	if self.action.oclIsUndefined() then
+		1
+	else 2
+			endif;
+
+helper context DC!FlowLink def: elemTypeB: Integer =
+	if self."from".oclIsTypeOf(DC!State) then
+		1
+	else 2
+			endif;
+
+rule DC2URNspec
+{
+	from
+		dc: DC!DCSpec
+	to
+		d : urn!URNdefinition (
+			specDiagrams <- dc.workflows->any(c| true).plans->collect(dp| thisModule.resolveTemp(dp,'um')),
+			specDiagrams<-gr,
+			specDiagrams <- dc.hubs -> collect(ih| thisModule.resolveTemp(ih,'umi')),
+			components <- dc.resources -> collect(a| thisModule.resolveTemp(a,'c')),
+			components <- dc.resources -> collect(a| thisModule.resolveTemp(a,'c2')),
+			components <- dc.hubs -> collect(ih| thisModule.resolveTemp(ih,'cihe')),
+			responsibilities <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'res'))
+		 
+        ),  
+--Check what needs to be done between workflow and map hierarchy
+--		um : urn!UCMmap(
+--		name <- 'TestingMap'),
+		gl:urn!GRLspec(
+			actors <- dc.resources -> collect(a| thisModule.resolveTemp(a,'ac')),
+-- To be checked later!!!!!!!!!!!!!!!! Why names appear when not included here and how to include goals in here			
+--			intElements <- dc.resources -> collect(art| thisModule.resolveTemp(art,'ie')),
+--			intElements <- dc.resources -> collect(bs| thisModule.resolveTemp(bs,'be')),
+--			intElements <- dc.hubs -> collect(ih| thisModule.resolveTemp(ih,'ihe')),
+--			intElements <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'ge')),
+--			intElements <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'se')),
+--			intElements <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'ase')),
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c3')),
+--			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c1')),
+--			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c2')),
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'c1')),
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'c2')),
+-- Added 13-05
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'c8')),
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'c9'))
+-- Added 13-05
+		),
+		gr : urn!GRLGraph(
+		name <- 'Stakeholders',
+		contRefs <- dc.resources -> collect(a| thisModule.resolveTemp(a,'aref')),
+		nodes <- dc.resources -> collect(art| thisModule.resolveTemp(art,'iref')),
+		nodes <- dc.resources -> collect(bs| thisModule.resolveTemp(bs,'bref')),
+		nodes <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'asref')),
+		nodes <- dc.hubs -> collect(ih| thisModule.resolveTemp(ih,'ihref')),
+		nodes <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'gref')),
+		nodes <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'sref')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'l3')),
+--		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'l1')),
+--		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'l2')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'l1')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'l2')),
+-- Added 13-05
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'l8')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'l9'))
+-- Added 13-05
+		
+		),
+		dcont: urn!DynamicContext(
+			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!DeactivationChange)) -> collect(dchg| thisModule.resolveTemp(dchg,'udchg')),
+			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!PropertyChange)) -> collect(pchg| thisModule.resolveTemp(pchg,'upchg')),
+			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!FormulaChange)) -> collect(fchg| thisModule.resolveTemp(fchg,'ufchg')),
+			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!EnumerationChange)) -> collect(echg| thisModule.resolveTemp(echg,'uechg'))
+		),
+		dcontg: urn!DynamicContextGroup(contexts <- dcont),
+		us: urn!URNspec(
+	    	urndef <- d,
+			ucmspec <- dc.workflows -> collect(dw| thisModule.resolveTemp(dw,'uc')),
+			grlspec <- gl,
+			dynamicContexts <- dcont,
+			dynamicContextGroups <- dcontg,
+			urnLinks <- dc.resources ->collect(a| thisModule.resolveTemp(a,'ulink1')),
+			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState)) ->collect(gs| thisModule.resolveTemp(gs,'ulink2')),
+			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink3')),
+			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink4')),
+	    	-- Added 13 - 05
+			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink8')),
+			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink9')),
+			name <- 'AirplaneCaseStudy'
+			)
+ 
+do{
+		thisModule.id <- thisModule.id.inc();
+		gr.id <-  'Id'+ thisModule.id;
+		gr.description <- 'StakeholderTest';
+		dcont.id <- 'D'+ thisModule.id;
+		dcont.name <- 'DynamicContext'+ thisModule.id;
+		dcontg.id <- 'DG'+ thisModule.id;
+		dcontg.name <- 'DynamicContextGroup'+ thisModule.id;
+  }
+
+}
+
+rule DCWorkflow2UCMspec
+{
+	from
+	dw:DC!DCWorkflow
+	to
+	uc : urn!UCMspec()
+--	,	chg:urn!Timepoint()
+}
+
+
+rule DCDeactChange2URNDeactChange
+{
+	from
+	dchg:DC!DeactivationChange
+	to
+	udchg:urn!DeactivationChange(
+		element <- dchg.element,
+		start <- dchg.start,
+		end <- dchg.end
+		)
+}
+
+
+rule DCPropChange2URNPropChange
+{
+	from
+	pchg:DC!PropertyChange
+	to
+	upchg:urn!PropertyChange(
+		affectedProperty<-pchg.affectedProperty,
+		element <- pchg.element,
+		start <- pchg.start,
+		end <- pchg.end
+		)
+}
+
+
+rule DCFormChange2URNFormChange
+{
+	from
+	fchg:DC!FormulaChange
+	to
+	ufchg:urn!FormulaChange(
+		formula<-fchg.formula,
+		element <- fchg.element,
+		start <- fchg.start,
+		end <- fchg.end
+	)
+}
+
+
+rule DCDEnumChange2URNEnumChange
+{
+	from
+	echg:DC!EnumerationChange
+	to
+	uechg:urn!EnumChange(
+		newValue <- echg.newValue,
+		element <- echg.element,
+		start <- echg.start,
+		end <- echg.end
+		)
+}
+
+
+rule DCPlan2UCMmap
+{
+  from
+  dp:DC!Plan
+  to
+  um : urn!UCMmap(
+ name <- dp.planName,
+ contRefs <- dp.actors -> collect(a| thisModule.resolveTemp(a,'cref')),
+ --contRefs <- dp.actors -> collect(a| thisModule.resolveTemp(a,'cihref')),
+ nodes <- dp.elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'endp')),
+-- nodes <- dp.links->collect(c|c."from")->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'start')),
+ nodes <- dp.links->collect(sf|sf."to") -> select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'ends')),
+ nodes <- dp.elements->select(n| n.oclIsTypeOf(DC!AndFork)) -> collect(andf| thisModule.resolveTemp(andf,'af')),
+ nodes <- dp.elements->select(n| n.oclIsTypeOf(DC!AndJoin)) -> collect(andj| thisModule.resolveTemp(andj,'aj')),
+ nodes <- dp.elements->select(n| n.oclIsTypeOf(DC!ORFork)) -> collect(orf| thisModule.resolveTemp(orf,'of')),
+ nodes <- dp.elements->select(n| n.oclIsTypeOf(DC!ORJoin)) -> collect(orj| thisModule.resolveTemp(orj,'oj')),
+ nodes <- dp.elements->select(n| n.oclIsTypeOf(DC!"Sequence")) -> collect(seq| thisModule.resolveTemp(seq,'da')),
+ nodes <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'resref')),
+ nodes <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'start')),
+-- nodes <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'ends')),
+ nodes <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'linkp')),
+ nodes <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'start2')),
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn')),
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn1')),
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn2')),
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn3')),
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn4')),
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn5'))
+)
+}
+
+
+rule DCActor2GRLActor
+{
+	from
+		a: DC!Actor
+		to 
+	 	aref : urn!ActorRef (
+			contDef <- ac,
+			label <- label1,
+			nodes <- a.performedActions -> collect(as| thisModule.resolveTemp(as,'asref')),
+--			nodes <- a.usedToCreateScaffolding -> collect(art| thisModule.resolveTemp(art,'iref')),
+			nodes <- a."uses" -> collect(bs| thisModule.resolveTemp(bs,'bref'))
+			
+		),
+		
+		ac : urn!Actor(
+		  name <- a.position,
+		  contRefs <- aref,
+		  fromLinks <- ulink1,
+			metadata <- m5,
+			metadata <- m8
+		),
+		label1:urn!ComponentLabel(),
+		cref : urn!ComponentRef (
+			contDef <- c,
+			label <- label2,
+			nodes <- a.targetStates->collect(gs| thisModule.resolveTemp(gs,'endp')),
+			nodes <- a.performedActions -> collect(t|t.actionLink) -> collect(fl| thisModule.resolveTemp(fl,'resref'))
+			),
+		c : urn!Component(
+		  name <- a.position,
+		  kind<-'Actor',
+		  contRefs <- cref,
+		  toLinks <- ulink1,
+			metadata <- m5,
+			metadata <- m8
+		),
+		c2ref : urn!ComponentRef (
+			contDef <- c2,
+			label <- label3
+			),
+		c2 : urn!Component(
+		  name <- a.acName,
+		  kind<-'Actor',
+		  contRefs <- c2ref
+		),
+		label2:urn!ComponentLabel(),
+		label3:urn!ComponentLabel(),
+		ulink1:urn!URNlink(
+			fromElem <- ac,
+			toElem <- c),
+		m5:urn!Metadata(name <- '_location',value <- a.resourceLocation.locName),
+		m8:urn!Metadata(name <- '_naturalness',value <- a.Naturalness.natName)
+
+do{
+		thisModule.id <- thisModule.id.inc();
+		aref.id <-  'Id'+ thisModule.id;
+		ac.id <- 'CompoId' +thisModule.id;
+		
+  }	
+}
+
+rule DCArtefact2GRLResource
+{
+	from
+	art:DC!MediatingArtefact
+	to
+	iref:urn!IntentionalElementRef(
+		"def"<- ie
+--		name <- art.dcName
+		),
+	ie:urn!IntentionalElement(
+	type <-#Ressource,
+--	name <- art.dcName,
+	refs <- iref,
+	metadata <- m6,
+	metadata <- m9
+	),
+	m6:urn!Metadata(name <- '_location',value <- art.resourceLocation.locName),
+	m9:urn!Metadata(name <- '_naturalness',value <- art.Naturalness.natName)
+do{
+		thisModule.id <- thisModule.id.inc();
+		iref.id <-  'Id'+ thisModule.id;
+		iref.name <-  'IntentionalElementRef'+iref.id;
+		ie.id <- 'CompoId' +thisModule.id;
+		ie.name <- art.dcName;
+        
+  }
+}
+
+rule DCBodilySupport2GRLTask
+{
+	from
+	bs:DC!BodilySupport
+	to
+	bref:urn!IntentionalElementRef(
+		"def"<- be
+--		name <- art.dcName
+		),
+	be:urn!IntentionalElement(
+	type <-#Task,
+	name <- bs.bsName,
+	refs <- bref,
+	metadata <- m7,
+	metadata <- m10
+	),
+		m7:urn!Metadata(name <- '_location',value <- bs.resourceLocation.locName),
+		m10:urn!Metadata(name <- '_naturalness',value <- bs.Naturalness.natName)
+do{
+		thisModule.id <- thisModule.id.inc();
+		bref.id <-  'Id'+ thisModule.id;
+		bref.name <-  'IntentionalElementRef'+bref.id;
+		be.id <- 'CompoId' +thisModule.id;
+      
+  }
+}
+
+rule DCAction2GRLTask
+{
+	from
+	as:DC!Action
+	to
+	asref:urn!IntentionalElementRef(
+		"def"<- ase
+--		name <- art.dcName
+		),
+	ase:urn!IntentionalElement(
+	type <-#Task,
+	name <- as.asName,
+	refs <- asref
+	),
+    c1:distinct urn! Contribution foreach(e in as.artefacts)(
+		refs <- l1,
+		dest <- ase,
+		src <- thisModule.resolveTemp(e, 'ie')
+		),
+	l1: distinct urn!LinkRef foreach(e in as.artefacts)(
+			link <- c1,
+		target<-asref,
+		source <- thisModule.resolveTemp(e, 'iref')
+		),
+	c2:distinct urn! Contribution foreach(e in as."uses")(
+		refs <- l2,
+		dest <- ase,
+		src <- thisModule.resolveTemp(e, 'be')
+		),
+	l2: distinct urn!LinkRef foreach(e in as."uses")(
+			link <- c2,
+		target<-asref,
+		source <- thisModule.resolveTemp(e, 'bref')
+		)	
+do{
+		thisModule.id <- thisModule.id.inc();
+		asref.id <-  'Id'+ thisModule.id;
+		asref.name <-  'IntentionalElementRef'+asref.id;
+		ase.id <- 'CompoId' +thisModule.id;
+      
+  }
+}
+
+rule DCGoalState2GRLGoal
+{
+	from
+	gs:DC!GoalState(gs.elementType=1)
+	to
+	gref:urn!IntentionalElementRef(
+		"def"<- ge
+--		name <- art.dcName
+		),
+	ge:urn!IntentionalElement(
+	type <-#Goal,
+	name <- gs.gsName,
+	refs <- gref
+	),
+
+--   	c1:distinct urn! Contribution foreach(e in gs.actor.usedToCreateScaffolding)(
+--		refs <- l1,
+--		dest <- ge,
+--		src <- thisModule.resolveTemp(e, 'ie')
+--		),
+--	l1: distinct urn!LinkRef foreach(e in gs.actor.usedToCreateScaffolding)(
+--			link <- c1,
+--		target<-gref,
+--		source <- thisModule.resolveTemp(e, 'iref')
+--		),
+--	c2:distinct urn! Contribution foreach(e in gs.actor."uses")(
+--		refs <- l2,
+--		dest <- ge,
+--		src <- thisModule.resolveTemp(e, 'be')
+--		),
+--	l2: distinct urn!LinkRef foreach(e in gs.actor."uses")(
+--			link <- c2,
+--		target<-gref,
+--		source <- thisModule.resolveTemp(e, 'bref')
+--		),
+		
+	c3:distinct urn! Contribution foreach(e in gs.actor.performedActions)(
+		refs <- l3,
+		dest <- ge,
+		src <- thisModule.resolveTemp(e, 'ase')
+		),
+	l3: distinct urn!LinkRef foreach(e in gs.actor.performedActions)(
+		link <- c3,
+		target<-gref,
+		source <- thisModule.resolveTemp(e, 'asref')
+		),
+
+	endp:urn!EndPoint(name <- gs.gsName,
+		label <- labelG),
+	labelG: urn!NodeLabel(),
+	ulink2:urn!URNlink(
+		fromElem <- endp,
+		toElem <- ge)
+	do{
+		thisModule.id <- thisModule.id.inc();
+		gref.id <-  'Id'+ thisModule.id;
+		gref.name <-  'IntentionalElementRef'+gref.id;
+		ge.id <- 'CompoId' +thisModule.id;
+        gref.contRef <-  thisModule.resolveTemp(gs.actor,'aref');
+	}
+}
+
+rule DCState2GRLKPI
+{
+	from
+	s:DC!State(s.elementType=2)
+	to
+	sref:urn!IntentionalElementRef(
+		"def"<- se
+--		name <- art.dcName
+		),
+	se:urn!IntentionalElement(
+	type <-#Indicator,
+	name <- s.sName,
+	refs <- sref
+	),
+	
+	ends:urn!EndPoint(name <- s.sName,
+		label <- labelS),
+	labelS: urn!NodeLabel()
+	do{
+		thisModule.id <- thisModule.id.inc();
+		sref.id <-  'Id'+ thisModule.id;
+		sref.name <-  'IntentionalElementRef'+sref.id;
+		se.id <- 'CompoId' +thisModule.id;
+    }
+}
+
+rule DCInformationHubs2GRLResource
+{
+	from
+	ih:DC!InformationHub
+	to
+	ihref:urn!IntentionalElementRef(
+		"def"<- ihe,
+		metadata<-m3,
+		metadata<-m4
+--		name <- art.dcName
+		),
+	ihe:urn!IntentionalElement(
+	type <-#Ressource,
+	name <- ih.ihName,
+	refs <- ihref
+	),
+	m3:urn!Metadata(name <- '_height',value <- '45'),
+	m4:urn!Metadata(name <- '_width',value <- '110'),
+		cihref : urn!ComponentRef (
+			contDef <- cihe,
+			label <- label3,
+			children <- ih.usedResources -> select(n| n.oclIsTypeOf(DC!Actor))->collect(a| thisModule.resolveTemp(a,'c2ref'))
+			),
+		cihe : urn!Component(
+		  name <- ih.ihName,
+		  kind<-'Team',
+		  contRefs <- cihref
+		),
+		label3:urn!ComponentLabel(),
+		umi : urn!UCMmap(
+        name <- ih.ihName,
+		contRefs <- cihref,
+        contRefs <- ih.usedResources -> select(n| n.oclIsTypeOf(DC!Actor))->collect(a| thisModule.resolveTemp(a,'c2ref'))
+ )
+do{
+		thisModule.id <- thisModule.id.inc();
+		ihref.id <-  'Id'+ thisModule.id;
+		ihref.name <-  'IntentionalElementRef'+ihref.id;
+		ihe.id <- 'CompoId' +thisModule.id;
+      
+  }
+}
+
+rule DCFlowLink2UCMConnection
+{
+	from
+	fl:DC!FlowLink(fl.elemType = 1 and fl.elemTypeB = 2)
+	to
+	conn:urn!NodeConnection(
+--		source <- thisModule.resolveTemp(fl."from",'start'),
+--		source <- thisModule.resolveTemp(fl.action,'resref'),
+		source <- thisModule.resolveTemp(fl."from",'aj'),
+		source <- thisModule.resolveTemp(fl."from",'af'),
+		source <- thisModule.resolveTemp(fl."from",'of'),
+		source <- thisModule.resolveTemp(fl."from",'oj'),
+		target <- thisModule.resolveTemp(fl."to",'aj'),
+		target <- thisModule.resolveTemp(fl."to",'af'),
+--		target <- thisModule.resolveTemp(fl.action,'resref'),
+		target <- thisModule.resolveTemp(fl."to",'endp'),
+		target <- thisModule.resolveTemp(fl."to",'of'),
+		target <- thisModule.resolveTemp(fl."to",'oj')
+		--		condition <- 
+		),
+    		cond1 : urn!Condition()
+	do
+    {
+      if(not(fl.linklabel.oclIsUndefined())){
+        cond1.label <- fl.linklabel.label;
+      	conn.condition <- cond1;
+      }
+     
+    }	
+}
+
+rule DCFlowLink2UCMResp
+{
+	from
+	fl:DC!FlowLink(fl.elemType = 2 and fl.elemTypeB = 2)
+	to
+	resref:urn!RespRef(			
+		label <- labelX
+		),
+    res:urn!Responsibility(
+		respRefs <- resref,
+		name <- fl.action.name
+	),
+	labelX:urn!NodeLabel(),
+	conn1:urn!NodeConnection(
+--		source <- thisModule.resolveTemp(fl."from",'start'),
+--		source <- thisModule.resolveTemp(fl.action,'resref'),
+		source <- thisModule.resolveTemp(fl."from",'aj'),
+		source <- thisModule.resolveTemp(fl."from",'af'),
+		source <- thisModule.resolveTemp(fl."from",'of'),
+		source <- thisModule.resolveTemp(fl."from",'oj'),
+		source <- thisModule.resolveTemp(fl."from",'da'),
+		target <- resref),
+	conn2:urn!NodeConnection(
+		source <- resref,
+		target <- thisModule.resolveTemp(fl."to",'aj'),
+		target <- thisModule.resolveTemp(fl."to",'af'),
+--		target <- thisModule.resolveTemp(fl.action,'resref'),
+		target <- thisModule.resolveTemp(fl."to",'endp'),
+		target <- thisModule.resolveTemp(fl."to",'of'),
+		target <- thisModule.resolveTemp(fl."to",'oj'),
+		target <- thisModule.resolveTemp(fl."to",'da'),
+		target <- thisModule.resolveTemp(fl."to",'ends')),
+
+    	cond2 : urn!Condition(),
+	ulink3:urn!URNlink(
+		fromElem <- res,
+		toElem <- fl.action."uses"->collect(bsf| thisModule.resolveTemp(bsf,'be'))),
+	ulink4:urn!URNlink(
+		fromElem <- res,
+		toElem <- thisModule.resolveTemp(fl.action,'ase'))	
+	do
+    {
+      if(not(fl.linklabel.oclIsUndefined())){
+        cond2.label <- fl.linklabel.label;
+      	conn1.condition <- cond2;
+      }
+     
+    }
+	}
+
+rule DCFlowLink2UCMStartp
+{
+	from
+	fl:DC!FlowLink(fl.elemType = 2 and fl.elemTypeB = 1)
+	to
+	resref:urn!RespRef(			
+		label <- labelX
+		),
+    res:urn!Responsibility(
+		respRefs <- resref,
+		name <- fl.action.name
+	),
+	labelX:urn!NodeLabel(),
+	start:urn!StartPoint(
+		metadata <- m1
+		),
+	conn1:urn!NodeConnection(
+		source <- start,
+		target <- resref),
+	conn2:urn!NodeConnection(
+		source <- resref,
+		target <- thisModule.resolveTemp(fl."to",'aj'),
+		target <- thisModule.resolveTemp(fl."to",'af'),
+		target <- thisModule.resolveTemp(fl."to",'endp'),
+		target <- thisModule.resolveTemp(fl."to",'of'),
+		target <- thisModule.resolveTemp(fl."to",'oj'),
+		target <- thisModule.resolveTemp(fl."to",'da')),
+    	cond2 : urn!Condition(),
+	ulink3:urn!URNlink(
+		fromElem <- res,
+		toElem <- fl.action."uses"->collect(bsf| thisModule.resolveTemp(bsf,'be'))),
+-- Added 13 - 05 
+	ulink8:urn!URNlink(
+		fromElem <- start,
+		toElem <- thisModule.resolveTemp(fl."from",'se')),
+	m1:urn!Metadata(name <- '_state',value <- fl."from".name),
+-- Added 13 - 05    
+	c8: urn! Contribution(
+		refs <- l8,
+		dest <- thisModule.resolveTemp(fl.action, 'ase'),
+		src <- thisModule.resolveTemp(fl."from", 'se')
+		),
+	l8:urn!LinkRef (
+			link <- c8,
+		target<-thisModule.resolveTemp(fl.action, 'asref'),
+		source <- thisModule.resolveTemp(fl."from", 'sref')
+		)
+-- Added 13 - 05
+	do
+    {
+      if(not(fl.linklabel.oclIsUndefined())){
+        cond2.label <- fl.linklabel.label;
+      	conn1.condition <- cond2;
+      }
+     
+    }
+	}
+
+
+
+rule DCFlowLink2UCMStartEndp
+{
+	from
+	fl:DC!FlowLink(fl.elemType = 1 and fl.elemTypeB = 1)
+	to
+	linkp:urn!Connect(),
+	start2:urn!StartPoint(
+		metadata <- m2
+		),
+	conn5:urn!NodeConnection(
+		source <- thisModule.resolveTemp(fl."from",'ends'),
+		target <- linkp),	
+	conn3:urn!NodeConnection(
+		source <- linkp,
+		target <- start2),
+	conn4:urn!NodeConnection(
+		source <- start2,
+		target <- thisModule.resolveTemp(fl."to",'aj'),
+		target <- thisModule.resolveTemp(fl."to",'af'),
+		target <- thisModule.resolveTemp(fl."to",'endp'),
+		target <- thisModule.resolveTemp(fl."to",'of'),
+		target <- thisModule.resolveTemp(fl."to",'oj')
+		),
+	m2:urn!Metadata(name <- '_state',value <- fl."from".name),
+-- Added 13 - 05    
+	c9: urn! Contribution(
+		refs <- l9,
+		dest <- thisModule.resolveTemp(fl."to", 'ge'),
+		src <- thisModule.resolveTemp(fl."from", 'se')
+		),
+	l9:urn!LinkRef (
+			link <- c9,
+		target<-thisModule.resolveTemp(fl."to", 'gref'),
+		source <- thisModule.resolveTemp(fl."from", 'sref')
+		),
+-- Added 13 - 05	
+
+-- Added 13 - 05 
+	ulink9:urn!URNlink(
+		fromElem <- start2,
+		toElem <- thisModule.resolveTemp(fl."from",'se'))
+
+	}
+
+
+rule DCAndFork2UCMAndFork
+{
+	from
+	andf:DC!AndFork
+	to
+	af:urn!AndFork()
+}
+
+rule DCAndJoin2UCMAndJoin
+{
+	from
+	andj:DC!AndJoin
+	to
+	aj:urn!AndJoin()
+}
+
+rule DCOrFork2UCMOrFork
+{
+	from
+	orf:DC!ORFork
+	to
+	of:urn!OrFork()
+}
+
+rule DCOrJoin2UCMOrJoin
+{
+	from
+	orj:DC!ORJoin
+	to
+	oj:urn!OrJoin()
+}
+
+rule DCSequence2UCMArrow
+{
+	from
+	seq:DC!"Sequence"
+	to
+	da:urn!DirectionArrow()
+}

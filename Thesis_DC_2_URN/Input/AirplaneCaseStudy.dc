@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DC_MMApplication:DCSpec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DC_MMApplication="http://DC_MMApplication" xmi:id="_BQj8sNywEei4POu86h7oEg">
+  <changes xsi:type="DC_MMApplication:DeactivationChange" xmi:id="_gavdwHQvEemC-5DefeGyig" element="_qweVwHQfEemhBuM7eOka7w" start="1990-01-01T00:00:00.000-0500" end="1994-12-31T00:00:00.000-0500"/>
+  <changes xsi:type="DC_MMApplication:DeactivationChange" xmi:id="_kRcpkHQvEemC-5DefeGyig" element="_Br3I4NzBEei4POu86h7oEg" start="1995-01-01T00:00:00.000-0500" end="2020-12-31T00:00:00.000-0500"/>
+  <changes xsi:type="DC_MMApplication:DeactivationChange" xmi:id="_obBHAHQvEemC-5DefeGyig" element="_lMcFcNzBEei4POu86h7oEg" start="1995-01-01T00:00:00.000-0500" end="2020-12-31T00:00:00.000-0500"/>
+  <workflows xmi:id="_VFQs4NzJEei4POu86h7oEg" name="WorkFlowA">
+    <plans xmi:id="_g0cQ0NzJEei4POu86h7oEg" name="Plan to increase flight altitude" actors="_3pyvYNyyEei4POu86h7oEg _DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _0KzqkNyzEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" precedingState="_vkb6YNzJEei4POu86h7oEg">
+      <links xmi:id="_NoZSYALLEemG34S8ONoiZQ" to="_W83HYALLEemG34S8ONoiZQ" from="_WhfyoNzPEei4POu86h7oEg" action="_gCqiQBCVEemAcORLPaajvA"/>
+      <links xmi:id="_1V2fEALLEemG34S8ONoiZQ" to="_QfaS8BCZEemAcORLPaajvA" from="_W83HYALLEemG34S8ONoiZQ"/>
+      <links xmi:id="_146I0ALLEemG34S8ONoiZQ" to="_FzxaMBCaEemAcORLPaajvA" from="_QfaS8BCZEemAcORLPaajvA">
+        <linklabel xmi:id="_fBKZQBCmEem_paYttijg0A" label="!increase altitude"/>
+      </links>
+      <links xmi:id="_2alSgALLEemG34S8ONoiZQ" to="_HDb7IALMEemG34S8ONoiZQ" from="_W83HYALLEemG34S8ONoiZQ" action="_b6BocNzNEei4POu86h7oEg"/>
+      <links xmi:id="_q2YxQBCaEemAcORLPaajvA" to="_MN5IgBCbEemAcORLPaajvA" from="_QfaS8BCZEemAcORLPaajvA" action="_07qg8NzNEei4POu86h7oEg">
+        <linklabel xmi:id="_WQmikBCmEem_paYttijg0A" label="increase altitude"/>
+      </links>
+      <links xmi:id="_0SSOgBCbEemAcORLPaajvA" to="_vuGRoBCbEemAcORLPaajvA" from="_FzxaMBCaEemAcORLPaajvA" action="_uEvscNzNEei4POu86h7oEg"/>
+      <links xmi:id="_G24LEBCcEemAcORLPaajvA" to="_vuGRoBCbEemAcORLPaajvA" from="_FzxaMBCaEemAcORLPaajvA" action="_FEC5wNzOEei4POu86h7oEg"/>
+      <links xmi:id="_L7LycBCcEemAcORLPaajvA" to="_vuGRoBCbEemAcORLPaajvA" from="_FzxaMBCaEemAcORLPaajvA" action="_UzlUwNzOEei4POu86h7oEg"/>
+      <links xmi:id="_KIlW8BCdEemAcORLPaajvA" to="_Fgtz8BCdEemAcORLPaajvA" from="_vuGRoBCbEemAcORLPaajvA"/>
+      <links xmi:id="_QO_UgBCdEemAcORLPaajvA" to="_HDb7IALMEemG34S8ONoiZQ" from="_Fgtz8BCdEemAcORLPaajvA"/>
+      <links xmi:id="_EyV1kBCeEemAcORLPaajvA" to="__6YBEBCdEemAcORLPaajvA" from="_HDb7IALMEemG34S8ONoiZQ"/>
+      <links xmi:id="_Lqwe4BCeEemAcORLPaajvA" to="_kj0BYNzQEei4POu86h7oEg" from="__6YBEBCdEemAcORLPaajvA">
+        <linklabel xmi:id="_xJR1MBCmEem_paYttijg0A" label="!clearance"/>
+      </links>
+      <links xmi:id="_iEZaYBCeEemAcORLPaajvA" to="_eqh7kBCeEemAcORLPaajvA" from="__6YBEBCdEemAcORLPaajvA">
+        <linklabel xmi:id="_sqadMBCmEem_paYttijg0A" label="clearance"/>
+      </links>
+      <links xmi:id="_n_6WkBCeEemAcORLPaajvA" to="_qyS84NzQEei4POu86h7oEg" from="_eqh7kBCeEemAcORLPaajvA"/>
+      <links xmi:id="_u1jYsBCeEemAcORLPaajvA" to="__7pKoNzPEei4POu86h7oEg" from="_eqh7kBCeEemAcORLPaajvA" action="_1n3KgNzLEei4POu86h7oEg"/>
+      <links xmi:id="_L2tAUBI3Eemlyb50bw9ysA" to="_ITi3EIAeEemYHuVdVjcB_g" from="_MN5IgBCbEemAcORLPaajvA" action="_s_TOUBI2Eemlyb50bw9ysA"/>
+      <links xmi:id="_iTEfsBI3Eemlyb50bw9ysA" to="_jjeMEIAeEemYHuVdVjcB_g" from="_ITi3EIAeEemYHuVdVjcB_g" action="_4Ki-wBI2Eemlyb50bw9ysA"/>
+      <links xmi:id="_uRdWoBjBEemhUfxdamAaog" to="_EhUEABjCEemhUfxdamAaog" from="_H5dVwNzQEei4POu86h7oEg" action="_1t_ZoBjBEemhUfxdamAaog"/>
+      <links xmi:id="_6BQJIBjCEemhUfxdamAaog" to="_-hCHIBjCEemhUfxdamAaog" from="_EhUEABjCEemhUfxdamAaog" action="_TM02MBjCEemhUfxdamAaog">
+        <linklabel xmi:id="_JdORYIAdEemYHuVdVjcB_g" label="!increase engine thrust"/>
+      </links>
+      <links xmi:id="_KxucsBjDEemhUfxdamAaog" to="_Mtb7cBjDEemhUfxdamAaog" from="_EhUEABjCEemhUfxdamAaog" action="_X9Hf8BjDEemhUfxdamAaog">
+        <linklabel xmi:id="_78VfQIAcEemYHuVdVjcB_g" label="increase engine thrust"/>
+      </links>
+      <links xmi:id="_yto8IBjDEemhUfxdamAaog" to="_85LCsNzQEei4POu86h7oEg" from="_Mtb7cBjDEemhUfxdamAaog"/>
+      <links xmi:id="_6w3LsBjDEemhUfxdamAaog" to="_DBNRQBjEEemhUfxdamAaog" from="_Mtb7cBjDEemhUfxdamAaog" action="_IQFw8BjEEemhUfxdamAaog"/>
+      <links xmi:id="_R8HxYBjEEemhUfxdamAaog" to="_-hCHIBjCEemhUfxdamAaog" from="_DBNRQBjEEemhUfxdamAaog" action="_XRDOsBjEEemhUfxdamAaog"/>
+      <links xmi:id="_25bxsBjEEemhUfxdamAaog" to="_3NIs8NzQEei4POu86h7oEg" from="_-hCHIBjCEemhUfxdamAaog" action="_jiS94BjEEemhUfxdamAaog"/>
+      <links xmi:id="_hfSSYBjGEemTZa4ieKUVuw" to="_nzHn8BjGEemTZa4ieKUVuw" from="_WhfyoNzPEei4POu86h7oEg" action="_XifSEBjGEemTZa4ieKUVuw"/>
+      <links xmi:id="_Rw21MBjHEemTZa4ieKUVuw" to="_WFprMBjHEemTZa4ieKUVuw" from="_nzHn8BjGEemTZa4ieKUVuw" action="_9pRb4BjGEemTZa4ieKUVuw">
+        <linklabel xmi:id="_buzsEBjHEemTZa4ieKUVuw" label="!Elevation request accepted"/>
+      </links>
+      <links xmi:id="_k4xhQBjHEemTZa4ieKUVuw" to="_WFprMBjHEemTZa4ieKUVuw" from="_nzHn8BjGEemTZa4ieKUVuw" action="_s0bJMBjHEemTZa4ieKUVuw">
+        <linklabel xmi:id="_pLsvABjHEemTZa4ieKUVuw" label="Elevation request accepted"/>
+      </links>
+      <links xmi:id="_-_VacBjHEemTZa4ieKUVuw" to="_xU080BjIEemTZa4ieKUVuw" from="_WFprMBjHEemTZa4ieKUVuw" action="_IsTPABjIEemTZa4ieKUVuw"/>
+      <links xmi:id="_OhFEwHUEEemEMuHxrP0P1g" to="_aSmQQNzQEei4POu86h7oEg" from="__7pKoNzPEei4POu86h7oEg"/>
+      <links xmi:id="_WGBIcIAeEemYHuVdVjcB_g" to="_dKDBUIAdEemYHuVdVjcB_g" from="_ITi3EIAeEemYHuVdVjcB_g"/>
+      <links xmi:id="_8vzRoIAeEemYHuVdVjcB_g" to="_nmoU8IAdEemYHuVdVjcB_g" from="_jjeMEIAeEemYHuVdVjcB_g"/>
+      <links xmi:id="_AmrckIAfEemYHuVdVjcB_g" to="_Fgtz8BCdEemAcORLPaajvA" from="_jjeMEIAeEemYHuVdVjcB_g"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="_WhfyoNzPEei4POu86h7oEg" name="Current Flight Altitude i.e. 19000 feet above sea level" flowLink="_NoZSYALLEemG34S8ONoiZQ _hfSSYBjGEemTZa4ieKUVuw"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="__7pKoNzPEei4POu86h7oEg" name="Current Altitude Alert altitude i.e. 23000 feet above sea level" toLink="_u1jYsBCeEemAcORLPaajvA" flowLink="_OhFEwHUEEemEMuHxrP0P1g"/>
+      <elements xsi:type="DC_MMApplication:State" xmi:id="_H5dVwNzQEei4POu86h7oEg" name="Current Flight EPR values" flowLink="_uRdWoBjBEemhUfxdamAaog"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_aSmQQNzQEei4POu86h7oEg" name="Climbing to filed cruise altitude" toLink="_OhFEwHUEEemEMuHxrP0P1g" actor="_DMSCgNywEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_kj0BYNzQEei4POu86h7oEg" name="Climb uninterrupted by leveling off to intermediate altitude" toLink="_Lqwe4BCeEemAcORLPaajvA" actor="_DMSCgNywEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_qyS84NzQEei4POu86h7oEg" name="Getting required altitude clearances" toLink="_n_6WkBCeEemAcORLPaajvA" actor="_DMSCgNywEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_3NIs8NzQEei4POu86h7oEg" name="Setting maximum engine thrust" toLink="_25bxsBjEEemhUfxdamAaog" actor="_cmgIMNyyEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_85LCsNzQEei4POu86h7oEg" name="Finding correct EPR values" toLink="_yto8IBjDEemhUfxdamAaog" actor="_cmgIMNyyEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:AndFork" xmi:id="_W83HYALLEemG34S8ONoiZQ" name="Fork1" toLink="_NoZSYALLEemG34S8ONoiZQ" flowLink="_1V2fEALLEemG34S8ONoiZQ _2alSgALLEemG34S8ONoiZQ"/>
+      <elements xsi:type="DC_MMApplication:AndJoin" xmi:id="_HDb7IALMEemG34S8ONoiZQ" name="Join1" toLink="_2alSgALLEemG34S8ONoiZQ _QO_UgBCdEemAcORLPaajvA" flowLink="_EyV1kBCeEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_QfaS8BCZEemAcORLPaajvA" name="Fork2" toLink="_1V2fEALLEemG34S8ONoiZQ" flowLink="_146I0ALLEemG34S8ONoiZQ _q2YxQBCaEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:AndFork" xmi:id="_FzxaMBCaEemAcORLPaajvA" name="Fork3" toLink="_146I0ALLEemG34S8ONoiZQ" flowLink="_0SSOgBCbEemAcORLPaajvA _G24LEBCcEemAcORLPaajvA _L7LycBCcEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:Sequence" xmi:id="_MN5IgBCbEemAcORLPaajvA" name="Seq1" toLink="_q2YxQBCaEemAcORLPaajvA" flowLink="_L2tAUBI3Eemlyb50bw9ysA"/>
+      <elements xsi:type="DC_MMApplication:AndJoin" xmi:id="_vuGRoBCbEemAcORLPaajvA" name="Join2" toLink="_0SSOgBCbEemAcORLPaajvA _G24LEBCcEemAcORLPaajvA _L7LycBCcEemAcORLPaajvA" flowLink="_KIlW8BCdEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:ORJoin" xmi:id="_Fgtz8BCdEemAcORLPaajvA" name="Join3" toLink="_KIlW8BCdEemAcORLPaajvA _AmrckIAfEemYHuVdVjcB_g" flowLink="_QO_UgBCdEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="__6YBEBCdEemAcORLPaajvA" name="Fork4" toLink="_EyV1kBCeEemAcORLPaajvA" flowLink="_Lqwe4BCeEemAcORLPaajvA _iEZaYBCeEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_eqh7kBCeEemAcORLPaajvA" name="Fork5" toLink="_iEZaYBCeEemAcORLPaajvA" flowLink="_n_6WkBCeEemAcORLPaajvA _u1jYsBCeEemAcORLPaajvA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_EhUEABjCEemhUfxdamAaog" name="Fork6" toLink="_uRdWoBjBEemhUfxdamAaog" flowLink="_6BQJIBjCEemhUfxdamAaog _KxucsBjDEemhUfxdamAaog"/>
+      <elements xsi:type="DC_MMApplication:ORJoin" xmi:id="_-hCHIBjCEemhUfxdamAaog" name="Join4" toLink="_6BQJIBjCEemhUfxdamAaog _R8HxYBjEEemhUfxdamAaog" flowLink="_25bxsBjEEemhUfxdamAaog"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_Mtb7cBjDEemhUfxdamAaog" name="Fork7" toLink="_KxucsBjDEemhUfxdamAaog" flowLink="_yto8IBjDEemhUfxdamAaog _6w3LsBjDEemhUfxdamAaog"/>
+      <elements xsi:type="DC_MMApplication:Sequence" xmi:id="_DBNRQBjEEemhUfxdamAaog" name="Seq3" toLink="_6w3LsBjDEemhUfxdamAaog" flowLink="_R8HxYBjEEemhUfxdamAaog"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_nzHn8BjGEemTZa4ieKUVuw" name="Fork8" toLink="_hfSSYBjGEemTZa4ieKUVuw" flowLink="_Rw21MBjHEemTZa4ieKUVuw _k4xhQBjHEemTZa4ieKUVuw"/>
+      <elements xsi:type="DC_MMApplication:ORJoin" xmi:id="_WFprMBjHEemTZa4ieKUVuw" name="Join5" toLink="_Rw21MBjHEemTZa4ieKUVuw _k4xhQBjHEemTZa4ieKUVuw" flowLink="_-_VacBjHEemTZa4ieKUVuw"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_xU080BjIEemTZa4ieKUVuw" name="Assist Captain in flight preparation and operation" toLink="_-_VacBjHEemTZa4ieKUVuw" actor="_v7omUNyxEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_dKDBUIAdEemYHuVdVjcB_g" name="Assist crew in getting required clearance" toLink="_WGBIcIAeEemYHuVdVjcB_g" actor="_3pyvYNyyEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:GoalState" xmi:id="_nmoU8IAdEemYHuVdVjcB_g" name="Provide required altitude clearances" toLink="_8vzRoIAeEemYHuVdVjcB_g" actor="_0KzqkNyzEei4POu86h7oEg"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_ITi3EIAeEemYHuVdVjcB_g" name="Fork9" toLink="_L2tAUBI3Eemlyb50bw9ysA" flowLink="_WGBIcIAeEemYHuVdVjcB_g _iTEfsBI3Eemlyb50bw9ysA"/>
+      <elements xsi:type="DC_MMApplication:ORFork" xmi:id="_jjeMEIAeEemYHuVdVjcB_g" name="Fork10" toLink="_iTEfsBI3Eemlyb50bw9ysA" flowLink="_8vzRoIAeEemYHuVdVjcB_g _AmrckIAfEemYHuVdVjcB_g"/>
+      <actions xmi:id="_1n3KgNzLEei4POu86h7oEg" name="FlyPlane" actionLink="_u1jYsBCeEemAcORLPaajvA" artefacts="_Br3I4NzBEei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg _URM24NzCEei4POu86h7oEg _qweVwHQfEemhBuM7eOka7w _oHK0YNzFEei4POu86h7oEg"/>
+      <actions xmi:id="_b6BocNzNEei4POu86h7oEg" name="Monitor aircraft and crew performance" actionLink="_2alSgALLEemG34S8ONoiZQ" artefacts="_U9o3YNzIEei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _URM24NzCEei4POu86h7oEg _clevUNzEEei4POu86h7oEg"/>
+      <actions xmi:id="_uEvscNzNEei4POu86h7oEg" name="Perform redundant error checking" actionLink="_0SSOgBCbEemAcORLPaajvA" artefacts="_clevUNzEEei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg"/>
+      <actions xmi:id="_07qg8NzNEei4POu86h7oEg" name="Communicate with ATC" actionLink="_q2YxQBCaEemAcORLPaajvA" artefacts="_wpwycNzDEei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg"/>
+      <actions xmi:id="_FEC5wNzOEei4POu86h7oEg" name="Perform housekeeeping task" actionLink="_G24LEBCcEemAcORLPaajvA" artefacts="_rreNINy7Eei4POu86h7oEg _clevUNzEEei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg _Fou_YNzHEei4POu86h7oEg"/>
+      <actions xmi:id="_UzlUwNzOEei4POu86h7oEg" name="Monitor ATC frequency" actionLink="_L7LycBCcEemAcORLPaajvA" artefacts="_wpwycNzDEei4POu86h7oEg"/>
+      <actions xmi:id="_gCqiQBCVEemAcORLPaajvA" name="Check Flight Plan" actionLink="_NoZSYALLEemG34S8ONoiZQ" artefacts="_tKFjYNy_Eei4POu86h7oEg _rreNINy7Eei4POu86h7oEg" uses="_iYG8sCBZEem5W8SFjUPOuQ"/>
+      <actions xmi:id="_s_TOUBI2Eemlyb50bw9ysA" name="Communicate with Crew" actionLink="_L2tAUBI3Eemlyb50bw9ysA" artefacts="_cZrdENzGEei4POu86h7oEg"/>
+      <actions xmi:id="_4Ki-wBI2Eemlyb50bw9ysA" name="Provide clearance to aircraft" infoMovementAt="_YJbv8CBeEem5W8SFjUPOuQ" actionLink="_iTEfsBI3Eemlyb50bw9ysA" artefacts="_nJsqENzGEei4POu86h7oEg"/>
+      <actions xmi:id="_1t_ZoBjBEemhUfxdamAaog" name="Monitor ATC freq" actionLink="_uRdWoBjBEemhUfxdamAaog" artefacts="_OhXUUNzEEei4POu86h7oEg"/>
+      <actions xmi:id="_TM02MBjCEemhUfxdamAaog" name="Report Flight Condition" actionLink="_6BQJIBjCEemhUfxdamAaog" artefacts="_OhXUUNzEEei4POu86h7oEg _kos7sNzAEei4POu86h7oEg"/>
+      <actions xmi:id="_X9Hf8BjDEemhUfxdamAaog" name="Find correct EPR values" actionLink="_KxucsBjDEemhUfxdamAaog" artefacts="_kos7sNzAEei4POu86h7oEg _UFJicNzDEei4POu86h7oEg"/>
+      <actions xmi:id="_IQFw8BjEEemhUfxdamAaog" name="Increase Engine Thrust Force" transformationAt="_rv-joCBcEem5W8SFjUPOuQ" actionLink="_6w3LsBjDEemhUfxdamAaog" artefacts="_kos7sNzAEei4POu86h7oEg"/>
+      <actions xmi:id="_XRDOsBjEEemhUfxdamAaog" name="Setting EPR values" actionLink="_R8HxYBjEEemhUfxdamAaog" artefacts="_kos7sNzAEei4POu86h7oEg _UFJicNzDEei4POu86h7oEg"/>
+      <actions xmi:id="_jiS94BjEEemhUfxdamAaog" name="Perf redundant error check" actionLink="_25bxsBjEEemhUfxdamAaog" artefacts="_kos7sNzAEei4POu86h7oEg _ytyqQNzEEei4POu86h7oEg"/>
+      <actions xmi:id="_XifSEBjGEemTZa4ieKUVuw" name="Mont ATC Frequency" actionLink="_hfSSYBjGEemTZa4ieKUVuw" artefacts="_G401oNzEEei4POu86h7oEg"/>
+      <actions xmi:id="_9pRb4BjGEemTZa4ieKUVuw" name="Perf housekeeping task" actionLink="_Rw21MBjHEemTZa4ieKUVuw" artefacts="_rNUicNzEEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _szCN8NzCEei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _zZd3wNy0Eei4POu86h7oEg"/>
+      <actions xmi:id="_s0bJMBjHEemTZa4ieKUVuw" name="Setting Altitude alert system" actionLink="_k4xhQBjHEemTZa4ieKUVuw" artefacts="_LSyisNzIEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _G401oNzEEei4POu86h7oEg"/>
+      <actions xmi:id="_IsTPABjIEemTZa4ieKUVuw" name="Fly Plane" actionLink="_-_VacBjHEemTZa4ieKUVuw" artefacts="_szCN8NzCEei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _lMcFcNzBEei4POu86h7oEg _qweVwHQfEemhBuM7eOka7w _oHK0YNzFEei4POu86h7oEg"/>
+    </plans>
+  </workflows>
+  <hubs xmi:id="_lyDnwALQEemG34S8ONoiZQ" name="Cockpit" information="_GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _ABNmwO2dEeiAGPHCeCLJFQ _zFKzECBdEem5W8SFjUPOuQ _39zA0CBbEem5W8SFjUPOuQ" usedResources="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _Fou_YNzHEei4POu86h7oEg _UFJicNzDEei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _URM24NzCEei4POu86h7oEg _szCN8NzCEei4POu86h7oEg _zZd3wNy0Eei4POu86h7oEg _clevUNzEEei4POu86h7oEg _rNUicNzEEei4POu86h7oEg _ytyqQNzEEei4POu86h7oEg _Br3I4NzBEei4POu86h7oEg _lMcFcNzBEei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _kos7sNzAEei4POu86h7oEg _wpwycNzDEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _OhXUUNzEEei4POu86h7oEg"/>
+  <transformations xmi:id="_rv-joCBcEem5W8SFjUPOuQ" name="Maximum thrust force setting" causedBy="_IQFw8BjEEemhUfxdamAaog" transformedFrom="_zFKzECBdEem5W8SFjUPOuQ" transformedTo="_39zA0CBbEem5W8SFjUPOuQ"/>
+  <locations xmi:id="_ld1nMNywEei4POu86h7oEg" name="Inside Cockpit" resources="_DMSCgNywEei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg _qweVwHQfEemhBuM7eOka7w"/>
+  <locations xmi:id="_UdTMcNyyEei4POu86h7oEg" name="Left of Captain" resources="_v7omUNyxEei4POu86h7oEg _lMcFcNzBEei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _szCN8NzCEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _rNUicNzEEei4POu86h7oEg"/>
+  <locations xmi:id="_tci4QNyyEei4POu86h7oEg" name="Right of Captain" resources="_cmgIMNyyEei4POu86h7oEg _kos7sNzAEei4POu86h7oEg _UFJicNzDEei4POu86h7oEg _OhXUUNzEEei4POu86h7oEg _ytyqQNzEEei4POu86h7oEg"/>
+  <locations xmi:id="_Hj40kNyzEei4POu86h7oEg" name="Inside Oakland Center" resources="_3pyvYNyyEei4POu86h7oEg _0KzqkNyzEei4POu86h7oEg _cZrdENzGEei4POu86h7oEg _nJsqENzGEei4POu86h7oEg"/>
+  <locations xmi:id="_EbDJcNy1Eei4POu86h7oEg" name="In Front of Captain" resources="_zZd3wNy0Eei4POu86h7oEg _URM24NzCEei4POu86h7oEg _wpwycNzDEei4POu86h7oEg _clevUNzEEei4POu86h7oEg _Fou_YNzHEei4POu86h7oEg"/>
+  <locations xmi:id="_HkovkNzAEei4POu86h7oEg" name="At Captain Location" resources="_tKFjYNy_Eei4POu86h7oEg _Br3I4NzBEei4POu86h7oEg _iYG8sCBZEem5W8SFjUPOuQ"/>
+  <locations xmi:id="_ObnmwNzGEei4POu86h7oEg" name="Air Route between Sacramento and Los Angeles" resources="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_DMSCgNywEei4POu86h7oEg" name="Captain" resourceLocation="_ld1nMNywEei4POu86h7oEg" Naturalness="_Fq4L4NywEei4POu86h7oEg" position="Captain" actorPlan="_g0cQ0NzJEei4POu86h7oEg" performedActions="_1n3KgNzLEei4POu86h7oEg _07qg8NzNEei4POu86h7oEg _b6BocNzNEei4POu86h7oEg _UzlUwNzOEei4POu86h7oEg _FEC5wNzOEei4POu86h7oEg _uEvscNzNEei4POu86h7oEg _gCqiQBCVEemAcORLPaajvA" targetStates="_aSmQQNzQEei4POu86h7oEg _kj0BYNzQEei4POu86h7oEg _qyS84NzQEei4POu86h7oEg" usedToCreateScaffolding="_zZd3wNy0Eei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg _Br3I4NzBEei4POu86h7oEg _URM24NzCEei4POu86h7oEg _wpwycNzDEei4POu86h7oEg _clevUNzEEei4POu86h7oEg _Fou_YNzHEei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg _qweVwHQfEemhBuM7eOka7w" uses="_iYG8sCBZEem5W8SFjUPOuQ" situationalAwareness="_ABNmwO2dEeiAGPHCeCLJFQ _GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _zFKzECBdEem5W8SFjUPOuQ" horizonOfObservation="_ABNmwO2dEeiAGPHCeCLJFQ _GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _zFKzECBdEem5W8SFjUPOuQ"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_v7omUNyxEei4POu86h7oEg" name="FirstOfficer" resourceLocation="_UdTMcNyyEei4POu86h7oEg" Naturalness="_BKk-kNyyEei4POu86h7oEg" position="FirstOfficer" actorPlan="_g0cQ0NzJEei4POu86h7oEg" performedActions="_XifSEBjGEemTZa4ieKUVuw _s0bJMBjHEemTZa4ieKUVuw _9pRb4BjGEemTZa4ieKUVuw _IsTPABjIEemTZa4ieKUVuw" targetStates="_xU080BjIEemTZa4ieKUVuw" usedToCreateScaffolding="_zZd3wNy0Eei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _lMcFcNzBEei4POu86h7oEg _szCN8NzCEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _rNUicNzEEei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg _qweVwHQfEemhBuM7eOka7w" situationalAwareness="_ABNmwO2dEeiAGPHCeCLJFQ _GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _zFKzECBdEem5W8SFjUPOuQ" horizonOfObservation="_ABNmwO2dEeiAGPHCeCLJFQ _GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _zFKzECBdEem5W8SFjUPOuQ"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_cmgIMNyyEei4POu86h7oEg" name="SecondOfficer" resourceLocation="_tci4QNyyEei4POu86h7oEg" Naturalness="_i1QJcNyyEei4POu86h7oEg" position="SecondOfficer" infoTarget="_YJbv8CBeEem5W8SFjUPOuQ" actorPlan="_g0cQ0NzJEei4POu86h7oEg" performedActions="_1t_ZoBjBEemhUfxdamAaog _jiS94BjEEemhUfxdamAaog _XRDOsBjEEemhUfxdamAaog _X9Hf8BjDEemhUfxdamAaog _TM02MBjCEemhUfxdamAaog _IQFw8BjEEemhUfxdamAaog" targetStates="_3NIs8NzQEei4POu86h7oEg _85LCsNzQEei4POu86h7oEg" usedToCreateScaffolding="_zZd3wNy0Eei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _kos7sNzAEei4POu86h7oEg _UFJicNzDEei4POu86h7oEg _OhXUUNzEEei4POu86h7oEg _ytyqQNzEEei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg" situationalAwareness="_ABNmwO2dEeiAGPHCeCLJFQ _GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _39zA0CBbEem5W8SFjUPOuQ" horizonOfObservation="_ABNmwO2dEeiAGPHCeCLJFQ _GCQDkALPEemG34S8ONoiZQ _iUtzoALPEemG34S8ONoiZQ _39zA0CBbEem5W8SFjUPOuQ"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_3pyvYNyyEei4POu86h7oEg" name="ATCController" resourceLocation="_Hj40kNyzEei4POu86h7oEg" Naturalness="___pnENyyEei4POu86h7oEg" position="ATCController " actorPlan="_g0cQ0NzJEei4POu86h7oEg" performedActions="_s_TOUBI2Eemlyb50bw9ysA" targetStates="_dKDBUIAdEemYHuVdVjcB_g" usedToCreateScaffolding="_cZrdENzGEei4POu86h7oEg" situationalAwareness="_zFKzECBdEem5W8SFjUPOuQ" horizonOfObservation="_zFKzECBdEem5W8SFjUPOuQ"/>
+  <resources xsi:type="DC_MMApplication:Actor" xmi:id="_0KzqkNyzEei4POu86h7oEg" name="HighAltController" resourceLocation="_Hj40kNyzEei4POu86h7oEg" Naturalness="_Dd3k8Ny0Eei4POu86h7oEg" position="High Altitude Controller" actorPlan="_g0cQ0NzJEei4POu86h7oEg" performedActions="_4Ki-wBI2Eemlyb50bw9ysA" targetStates="_nmoU8IAdEemYHuVdVjcB_g" usedToCreateScaffolding="_nJsqENzGEei4POu86h7oEg" situationalAwareness="_zFKzECBdEem5W8SFjUPOuQ" horizonOfObservation="_zFKzECBdEem5W8SFjUPOuQ"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_zZd3wNy0Eei4POu86h7oEg" name="NavigationChart" resourceLocation="_EbDJcNy1Eei4POu86h7oEg" Naturalness="_KRBeUNy1Eei4POu86h7oEg" usedby="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_rreNINy7Eei4POu86h7oEg" name="FlightPlan" describes="_ABNmwO2dEeiAGPHCeCLJFQ" resourceLocation="_ld1nMNywEei4POu86h7oEg" Naturalness="_xXQrQNy7Eei4POu86h7oEg" usedby="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_tKFjYNy_Eei4POu86h7oEg" name="WorkStationA" resourceLocation="_HkovkNzAEei4POu86h7oEg" Naturalness="_2r-wYNy_Eei4POu86h7oEg" usedby="_DMSCgNywEei4POu86h7oEg" consistsOf="_Fou_YNzHEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_WwkuQNzAEei4POu86h7oEg" name="WorkStationB" resourceLocation="_UdTMcNyyEei4POu86h7oEg" Naturalness="_2r-wYNy_Eei4POu86h7oEg" usedby="_v7omUNyxEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_kos7sNzAEei4POu86h7oEg" name="WorkStationC" resourceLocation="_tci4QNyyEei4POu86h7oEg" Naturalness="_2r-wYNy_Eei4POu86h7oEg" usedby="_cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_Br3I4NzBEei4POu86h7oEg" name="SideStickA" resourceLocation="_HkovkNzAEei4POu86h7oEg" Naturalness="_PjiqYNzBEei4POu86h7oEg" key="true" usedby="_DMSCgNywEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_lMcFcNzBEei4POu86h7oEg" name="SideStickB" resourceLocation="_UdTMcNyyEei4POu86h7oEg" Naturalness="_PjiqYNzBEei4POu86h7oEg" key="true" usedby="_v7omUNyxEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_URM24NzCEei4POu86h7oEg" name="FMCS_A" resourceLocation="_EbDJcNy1Eei4POu86h7oEg" Naturalness="_ckN18NzCEei4POu86h7oEg" key="true" description="Flight Management Computer System" usedby="_DMSCgNywEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_szCN8NzCEei4POu86h7oEg" name="FMCS_B" resourceLocation="_UdTMcNyyEei4POu86h7oEg" Naturalness="_ckN18NzCEei4POu86h7oEg" key="true" description="Flight Management Computer System" usedby="_v7omUNyxEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_UFJicNzDEei4POu86h7oEg" name="EnginePerformanceTable" describes="_39zA0CBbEem5W8SFjUPOuQ" resourceLocation="_tci4QNyyEei4POu86h7oEg" Naturalness="_c2QLsNzDEei4POu86h7oEg" key="true" description="Contains EPR values" usedby="_cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_wpwycNzDEei4POu86h7oEg" name="RadioA" describes="_zFKzECBdEem5W8SFjUPOuQ" resourceLocation="_EbDJcNy1Eei4POu86h7oEg" Naturalness="_2pA_INzDEei4POu86h7oEg" key="true" usedby="_DMSCgNywEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_G401oNzEEei4POu86h7oEg" name="RadioB" describes="_zFKzECBdEem5W8SFjUPOuQ" resourceLocation="_UdTMcNyyEei4POu86h7oEg" Naturalness="_2pA_INzDEei4POu86h7oEg" key="true" usedby="_v7omUNyxEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_OhXUUNzEEei4POu86h7oEg" name="RadioC" resourceLocation="_tci4QNyyEei4POu86h7oEg" Naturalness="_2pA_INzDEei4POu86h7oEg" key="true" usedby="_cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_clevUNzEEei4POu86h7oEg" name="PaperA" resourceLocation="_EbDJcNy1Eei4POu86h7oEg" Naturalness="_fJAcANzEEei4POu86h7oEg" usedby="_DMSCgNywEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_rNUicNzEEei4POu86h7oEg" name="PaperB" resourceLocation="_UdTMcNyyEei4POu86h7oEg" Naturalness="_fJAcANzEEei4POu86h7oEg" usedby="_v7omUNyxEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_ytyqQNzEEei4POu86h7oEg" name="PaperC" resourceLocation="_tci4QNyyEei4POu86h7oEg" Naturalness="_fJAcANzEEei4POu86h7oEg" usedby="_cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_oHK0YNzFEei4POu86h7oEg" name="Airplane" resourceLocation="_ObnmwNzGEei4POu86h7oEg" Naturalness="_rUazgNzFEei4POu86h7oEg" consistsOf="_UFJicNzDEei4POu86h7oEg _rreNINy7Eei4POu86h7oEg _URM24NzCEei4POu86h7oEg _szCN8NzCEei4POu86h7oEg _zZd3wNy0Eei4POu86h7oEg _clevUNzEEei4POu86h7oEg _rNUicNzEEei4POu86h7oEg _ytyqQNzEEei4POu86h7oEg _wpwycNzDEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _OhXUUNzEEei4POu86h7oEg _Br3I4NzBEei4POu86h7oEg _lMcFcNzBEei4POu86h7oEg _tKFjYNy_Eei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _kos7sNzAEei4POu86h7oEg _LSyisNzIEei4POu86h7oEg _U9o3YNzIEei4POu86h7oEg _qweVwHQfEemhBuM7eOka7w"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_cZrdENzGEei4POu86h7oEg" name="RadioD" describes="_zFKzECBdEem5W8SFjUPOuQ" resourceLocation="_Hj40kNyzEei4POu86h7oEg" Naturalness="_2pA_INzDEei4POu86h7oEg" key="true" usedby="_3pyvYNyyEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_nJsqENzGEei4POu86h7oEg" name="RadioE" describes="_zFKzECBdEem5W8SFjUPOuQ" resourceLocation="_Hj40kNyzEei4POu86h7oEg" Naturalness="_2pA_INzDEei4POu86h7oEg" key="true" usedby="_0KzqkNyzEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_Fou_YNzHEei4POu86h7oEg" name="DepartureChart" resourceLocation="_EbDJcNy1Eei4POu86h7oEg" Naturalness="_9GRPENzGEei4POu86h7oEg" usedby="_DMSCgNywEei4POu86h7oEg" presentIn="_tKFjYNy_Eei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_LSyisNzIEei4POu86h7oEg" name="Altimeter" describes="_GCQDkALPEemG34S8ONoiZQ" resourceLocation="_ld1nMNywEei4POu86h7oEg" Naturalness="_EuknwNzIEei4POu86h7oEg" key="true" usedby="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_U9o3YNzIEei4POu86h7oEg" name="AlertSystem" describes="_iUtzoALPEemG34S8ONoiZQ" resourceLocation="_ld1nMNywEei4POu86h7oEg" Naturalness="_63GzYNzHEei4POu86h7oEg" key="true" usedby="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:BodilySupport" xmi:id="_iYG8sCBZEem5W8SFjUPOuQ" name="Using finger to point at Flight Plan" resourceLocation="_HkovkNzAEei4POu86h7oEg" Naturalness="_AMQh8CBaEem5W8SFjUPOuQ" usedBy="_DMSCgNywEei4POu86h7oEg"/>
+  <resources xsi:type="DC_MMApplication:MediatingArtefact" xmi:id="_qweVwHQfEemhBuM7eOka7w" name="DuplicateFlyingInstrument" resourceLocation="_ld1nMNywEei4POu86h7oEg" Naturalness="_ITnDgHQgEemhBuM7eOka7w" key="true" usedby="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg" presentIn="_oHK0YNzFEei4POu86h7oEg"/>
+  <histories xmi:id="_vkb6YNzJEei4POu86h7oEg" name="Current Flight Altitude, Altitude Alert value and EPR values" goalStates="_aSmQQNzQEei4POu86h7oEg _kj0BYNzQEei4POu86h7oEg _qyS84NzQEei4POu86h7oEg"/>
+  <structures xmi:id="_iUtzoALPEemG34S8ONoiZQ" name="Flight Cleared Altitude" representations="_U9o3YNzIEei4POu86h7oEg" actorsAwareness="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" actorsHorizon="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg">
+    <type href="DCDomainModelApplication.ram#_28_KdNymEeiYhO6XVa8Wyg"/>
+  </structures>
+  <structures xmi:id="_GCQDkALPEemG34S8ONoiZQ" name="Flight Altitude" representations="_LSyisNzIEei4POu86h7oEg" actorsAwareness="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" actorsHorizon="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg">
+    <type href="DCDomainModelApplication.ram#_28_KSNymEeiYhO6XVa8Wyg"/>
+  </structures>
+  <structures xmi:id="_ABNmwO2dEeiAGPHCeCLJFQ" name="Max Elevation to be achieved" representations="_rreNINy7Eei4POu86h7oEg" actorsAwareness="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg" actorsHorizon="_DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _cmgIMNyyEei4POu86h7oEg">
+    <type href="DCDomainModelApplication.ram#_28_KYNymEeiYhO6XVa8Wyg"/>
+  </structures>
+  <structures xmi:id="_39zA0CBbEem5W8SFjUPOuQ" name="EPR value" representations="_UFJicNzDEei4POu86h7oEg" transformationsTo="_rv-joCBcEem5W8SFjUPOuQ" actorsAwareness="_cmgIMNyyEei4POu86h7oEg" actorsHorizon="_cmgIMNyyEei4POu86h7oEg">
+    <type href="DCDomainModelApplication.ram#_28_KTNymEeiYhO6XVa8Wyg"/>
+  </structures>
+  <structures xmi:id="_zFKzECBdEem5W8SFjUPOuQ" name="ATC clearance" representations="_wpwycNzDEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _cZrdENzGEei4POu86h7oEg _nJsqENzGEei4POu86h7oEg" movementAt="_YJbv8CBeEem5W8SFjUPOuQ" transformationsFrom="_rv-joCBcEem5W8SFjUPOuQ" actorsAwareness="_3pyvYNyyEei4POu86h7oEg _DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _0KzqkNyzEei4POu86h7oEg" actorsHorizon="_3pyvYNyyEei4POu86h7oEg _DMSCgNywEei4POu86h7oEg _v7omUNyxEei4POu86h7oEg _0KzqkNyzEei4POu86h7oEg">
+    <type href="DCDomainModelApplication.ram#_28_KatymEeiYhO6XVa8Wyg"/>
+  </structures>
+  <exchanges xmi:id="_YJbv8CBeEem5W8SFjUPOuQ" name="Inform clearance to Second Officer" bandwidth="High" movedTo="_cmgIMNyyEei4POu86h7oEg" movementCausedBy="_4Ki-wBI2Eemlyb50bw9ysA" movementOf="_zFKzECBdEem5W8SFjUPOuQ"/>
+  <degreeNaturalness xmi:id="_2r-wYNy_Eei4POu86h7oEg" name="repWorkStation" representations="_tKFjYNy_Eei4POu86h7oEg _WwkuQNzAEei4POu86h7oEg _kos7sNzAEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KRdymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_KRBeUNy1Eei4POu86h7oEg" name="repNavChart" representations="_zZd3wNy0Eei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KdtymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="___pnENyyEei4POu86h7oEg" name="repATCCont" representations="_3pyvYNyyEei4POu86h7oEg" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_KetymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_i1QJcNyyEei4POu86h7oEg" name="repSecondOfficer" representations="_cmgIMNyyEei4POu86h7oEg" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_KeNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_BKk-kNyyEei4POu86h7oEg" name="repFirstOfficer" representations="_v7omUNyxEei4POu86h7oEg" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_KjdymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_Fq4L4NywEei4POu86h7oEg" name="repCaptain" representations="_DMSCgNywEei4POu86h7oEg" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_KfNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_Dd3k8Ny0Eei4POu86h7oEg" name="repHighAltCont" representations="_0KzqkNyzEei4POu86h7oEg" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_Ki9ymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_xXQrQNy7Eei4POu86h7oEg" name="repFlightPlan" representations="_rreNINy7Eei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KYNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_PjiqYNzBEei4POu86h7oEg" name="repSideStick" representations="_Br3I4NzBEei4POu86h7oEg _lMcFcNzBEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KXNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_ckN18NzCEei4POu86h7oEg" name="repFMCS" representations="_URM24NzCEei4POu86h7oEg _szCN8NzCEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KZtymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_c2QLsNzDEei4POu86h7oEg" name="repEPR" representations="_UFJicNzDEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KTNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_2pA_INzDEei4POu86h7oEg" name="repRadio" representations="_wpwycNzDEei4POu86h7oEg _G401oNzEEei4POu86h7oEg _OhXUUNzEEei4POu86h7oEg _cZrdENzGEei4POu86h7oEg _nJsqENzGEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KatymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_fJAcANzEEei4POu86h7oEg" name="repPaper" representations="_clevUNzEEei4POu86h7oEg _rNUicNzEEei4POu86h7oEg _ytyqQNzEEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KcdymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_rUazgNzFEei4POu86h7oEg" name="repAirplane" representations="_oHK0YNzFEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KMtymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_9GRPENzGEei4POu86h7oEg" name="repDepartureChart" representations="_Fou_YNzHEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KY9ymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_63GzYNzHEei4POu86h7oEg" name="repAltAlert" representations="_U9o3YNzIEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KdNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_EuknwNzIEei4POu86h7oEg" name="repAltimeter" representations="_LSyisNzIEei4POu86h7oEg" level="high">
+    <concept href="DCDomainModelApplication.ram#_28_KSNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_AMQh8CBaEem5W8SFjUPOuQ" name="repPointPlan" representations="_iYG8sCBZEem5W8SFjUPOuQ" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_KfNymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+  <degreeNaturalness xmi:id="_ITnDgHQgEemhBuM7eOka7w" name="repDuplicateFly" representations="_qweVwHQfEemhBuM7eOka7w" level="low">
+    <concept href="DCDomainModelApplication.ram#_28_KV9ymEeiYhO6XVa8Wyg"/>
+  </degreeNaturalness>
+</DC_MMApplication:DCSpec>

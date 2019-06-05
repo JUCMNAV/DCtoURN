@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="DC" nsURI="http://DC_MMApplication" nsPrefix="DC_MMApplication">
+  <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infoMovementAt" upperBound="-1"
+        eType="#//InformationStructureExchange" eOpposite="#//InformationStructureExchange/movementCausedBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformationAt" upperBound="-1"
+        eType="#//InformationStructureTransformation" eOpposite="#//InformationStructureTransformation/causedBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actionLink" lowerBound="1"
+        eType="#//FlowLink" eOpposite="#//FlowLink/action"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="artefacts" lowerBound="1"
+        upperBound="-1" eType="#//MediatingArtefact"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependsOn" upperBound="-1"
+        eType="#//Dependency"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" upperBound="-1" eType="#//BodilySupport"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actionPlan" lowerBound="1"
+        eType="#//Plan" eOpposite="#//Plan/actions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InformationStructureExchange" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bandwidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="informal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="movedTo" lowerBound="1"
+        eType="#//Actor" eOpposite="#//Actor/infoTarget"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="movementCausedBy" upperBound="-1"
+        eType="#//Action" eOpposite="#//Action/infoMovementAt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="movementOf" lowerBound="1"
+        eType="#//InformationStructure" eOpposite="#//InformationStructure/movementAt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/exchanges"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Resource" abstract="true" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="describes" upperBound="-1"
+        eType="#//InformationStructure" eOpposite="#//InformationStructure/representations"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/resources"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resourceLocation" lowerBound="1"
+        eType="#//Location" eOpposite="#//Location/resources"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Naturalness" lowerBound="1"
+        eType="#//Naturalness" eOpposite="#//Naturalness/representations"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BodilySupport" eSuperTypes="#//Resource">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedBy" lowerBound="1"
+        eType="#//Actor" eOpposite="#//Actor/uses"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InformationStructureTransformation"
+      eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="causedBy" upperBound="-1"
+        eType="#//Action" eOpposite="#//Action/transformationAt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformedFrom" lowerBound="1"
+        eType="#//InformationStructure" eOpposite="#//InformationStructure/transformationsFrom"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformedTo" lowerBound="1"
+        eType="#//InformationStructure" eOpposite="#//InformationStructure/transformationsTo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/transformations"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MediatingArtefact" eSuperTypes="#//Resource">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedby" upperBound="-1"
+        eType="#//Actor" eOpposite="#//Actor/usedToCreateScaffolding"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consistsOf" upperBound="-1"
+        eType="#//MediatingArtefact" eOpposite="#//MediatingArtefact/presentIn"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="presentIn" eType="#//MediatingArtefact"
+        eOpposite="#//MediatingArtefact/consistsOf"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//Resource">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infoTarget" upperBound="-1"
+        eType="#//InformationStructureExchange" eOpposite="#//InformationStructureExchange/movedTo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actorPlan" upperBound="-1"
+        eType="#//Plan" eOpposite="#//Plan/actors"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="performedActions" upperBound="-1"
+        eType="#//Action"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetStates" upperBound="-1"
+        eType="#//GoalState" eOpposite="#//GoalState/actor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedToCreateScaffolding"
+        upperBound="-1" eType="#//MediatingArtefact" eOpposite="#//MediatingArtefact/usedby"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coupledTo" upperBound="-1"
+        eType="#//Actor" eOpposite="#//Actor/expertCoupling"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expertCoupling" upperBound="-1"
+        eType="#//Actor" eOpposite="#//Actor/coupledTo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" upperBound="-1" eType="#//BodilySupport"
+        eOpposite="#//BodilySupport/usedBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="situationalAwareness" upperBound="-1"
+        eType="#//InformationStructure" eOpposite="#//InformationStructure/actorsAwareness"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="horizonOfObservation" upperBound="-1"
+        eType="#//InformationStructure" eOpposite="#//InformationStructure/actorsHorizon"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InformationStructure" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="representations" upperBound="-1"
+        eType="#//Resource" eOpposite="#//Resource/describes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="movementAt" upperBound="-1"
+        eType="#//InformationStructureExchange" eOpposite="#//InformationStructureExchange/movementOf"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformationsFrom" upperBound="-1"
+        eType="#//InformationStructureTransformation" eOpposite="#//InformationStructureTransformation/transformedFrom"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformationsTo" upperBound="-1"
+        eType="#//InformationStructureTransformation" eOpposite="#//InformationStructureTransformation/transformedTo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/structures"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actorsAwareness" upperBound="-1"
+        eType="#//Actor" eOpposite="#//Actor/situationalAwareness"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actorsHorizon" upperBound="-1"
+        eType="#//Actor" eOpposite="#//Actor/horizonOfObservation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="ecore:EClass RAM.ecore#//Class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InformationHub" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="buffers" upperBound="-1"
+        eType="#//Buffer" containment="true" eOpposite="#//Buffer/informationHub"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="information" upperBound="-1"
+        eType="#//InformationStructure"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usedResources" upperBound="-1"
+        eType="#//Resource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/hubs"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Buffer" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="information" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="informationHub" lowerBound="1"
+        eType="#//InformationHub" eOpposite="#//InformationHub/buffers"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ControlNode" abstract="true" eSuperTypes="#//FlowElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Plan" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actors" lowerBound="1"
+        upperBound="-1" eType="#//Actor" eOpposite="#//Actor/actorPlan"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="precedingState" eType="#//History"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="links" upperBound="-1"
+        eType="#//FlowLink" containment="true" eOpposite="#//FlowLink/linkPlan"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//FlowElement" containment="true" eOpposite="#//FlowElement/elementPlan"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workflow" lowerBound="1"
+        eType="#//DCWorkflow" eOpposite="#//DCWorkflow/plans"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="#//Action" containment="true" eOpposite="#//Action/actionPlan"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FlowElement" abstract="true" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementPlan" lowerBound="1"
+        eType="#//Plan" eOpposite="#//Plan/elements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toLink" upperBound="-1"
+        eType="#//FlowLink" eOpposite="#//FlowLink/to"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="flowLink" upperBound="-1"
+        eType="#//FlowLink" eOpposite="#//FlowLink/from"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="condition" eType="#//Condition"
+        containment="true" eOpposite="#//Condition/fElem"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AndJoin" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="History" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goalStates" lowerBound="1"
+        upperBound="-1" eType="#//GoalState"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/histories"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="State" eSuperTypes="#//FlowElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Dependency" eSuperTypes="#//DCLink">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/dependencies"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DCWorkflow" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="plans" upperBound="-1"
+        eType="#//Plan" containment="true" eOpposite="#//Plan/workflow"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/workflows"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FlowLink" eSuperTypes="#//DCLink">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkPlan" lowerBound="1"
+        eType="#//Plan" eOpposite="#//Plan/links"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" lowerBound="1" eType="#//FlowElement"
+        eOpposite="#//FlowElement/toLink"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1" eType="#//FlowElement"
+        eOpposite="#//FlowElement/flowLink"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="action" eType="#//Action"
+        eOpposite="#//Action/actionLink"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linklabel" eType="#//LinkLabel"
+        containment="true" eOpposite="#//LinkLabel/link"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ORJoin" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GoalState" eSuperTypes="#//State">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actor" lowerBound="1" eType="#//Actor"
+        eOpposite="#//Actor/targetStates"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ORFork" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AndFork" eSuperTypes="#//ControlNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Location" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/locations"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resources" upperBound="-1"
+        eType="#//Resource" eOpposite="#//Resource/resourceLocation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DCLink" abstract="true" eSuperTypes="#//Changeable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DCSpec">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependencies" upperBound="-1"
+        eType="#//Dependency" containment="true" eOpposite="#//Dependency/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="changes" upperBound="-1"
+        eType="#//Change" containment="true" eOpposite="#//Change/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workflows" upperBound="-1"
+        eType="#//DCWorkflow" containment="true" eOpposite="#//DCWorkflow/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hubs" upperBound="-1" eType="#//InformationHub"
+        containment="true" eOpposite="#//InformationHub/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformations" upperBound="-1"
+        eType="#//InformationStructureTransformation" containment="true" eOpposite="#//InformationStructureTransformation/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="locations" upperBound="-1"
+        eType="#//Location" containment="true" eOpposite="#//Location/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="resources" upperBound="-1"
+        eType="#//Resource" containment="true" eOpposite="#//Resource/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="histories" upperBound="-1"
+        eType="#//History" containment="true" eOpposite="#//History/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="structures" upperBound="-1"
+        eType="#//InformationStructure" containment="true" eOpposite="#//InformationStructure/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exchanges" upperBound="-1"
+        eType="#//InformationStructureExchange" containment="true" eOpposite="#//InformationStructureExchange/dcSpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="degreeNaturalness" upperBound="-1"
+        eType="#//Naturalness" containment="true" eOpposite="#//Naturalness/dcSpec"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Change" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/changes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" lowerBound="1"
+        eType="#//Changeable"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="start" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="end" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DCNode" abstract="true" eSuperTypes="#//Changeable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Changeable" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PropertyChange" eSuperTypes="#//Change">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="affectedProperty" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeactivationChange" eSuperTypes="#//Change"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkDeactivationChange" eSuperTypes="#//DeactivationChange">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="affectedLinkType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkedElement" lowerBound="1"
+        eType="#//Changeable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Naturalness" eSuperTypes="#//DCNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concept" lowerBound="1"
+        eType="ecore:EClass RAM.ecore#//Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="representations" upperBound="-1"
+        eType="#//Resource" eOpposite="#//Resource/Naturalness"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dcSpec" lowerBound="1"
+        eType="#//DCSpec" eOpposite="#//DCSpec/degreeNaturalness"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Condition" eSuperTypes="#//DCLabel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expression" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fElem" eType="#//FlowElement"
+        eOpposite="#//FlowElement/condition"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DCLabel" abstract="true" eSuperTypes="#//Changeable"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sequence" eSuperTypes="#//FlowElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkLabel" eSuperTypes="#//DCLabel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="link" eType="#//FlowLink"
+        eOpposite="#//FlowLink/linklabel"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FormulaChange" eSuperTypes="#//PropertyChange">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formula" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumerationChange" eSuperTypes="#//PropertyChange">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+</ecore:EPackage>
