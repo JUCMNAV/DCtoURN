@@ -11,6 +11,28 @@ helper def : id : Integer = 0;
 
 helper context Integer def : inc() : Integer = self + 1;
 
+helper def: fls
+  : Sequence(DC!FlowLink) = DC!FlowLink->allInstances();
+
+helper def: startState :String = 'None';
+
+helper def: flag :Integer = 0;
+
+helper def: labelCheck :Integer = 0;
+
+helper def: tempLinks : Set(TupleType(act:DC!Action))  = Set{};
+
+
+helper def: contribLinks : Set(TupleType(act:DC!Action, goalName : String))  = Set{};
+
+helper def: stateLinks : Set(TupleType(act:DC!Action, stateName : String))  = Set{};
+
+
+helper def: stateGoalLinks : Set(TupleType(goa:DC!GoalState, stateName : String))  = Set{};
+
+
+helper def: goalLinks : Set(TupleType(goa:DC!GoalState, goalName : String))  = Set{};
+
 
 helper context DC!Location def: locName:String=
 	if not self.name.oclIsUndefined() then
@@ -32,6 +54,14 @@ helper context DC!Naturalness def: natName:String=
 	else
 	'Name not Mentioned'
 	endif;
+
+helper context DC!History def: hisName:String=
+	if not self.name.oclIsUndefined() then
+	self.name
+	else
+	'Name not Mentioned'
+	endif;
+
 
 helper context DC!MediatingArtefact def: dcName:String=
 	if not self.name.oclIsUndefined() then
@@ -98,11 +128,183 @@ helper context DC!FlowLink def: elemType: Integer =
 	else 2
 			endif;
 
+helper context DC!FlowLink def: linkDef: Integer =
+	if self.linklabel.oclIsUndefined() then
+		1
+	else 2
+			endif;
+
 helper context DC!FlowLink def: elemTypeB: Integer =
 	if self."from".oclIsTypeOf(DC!State) then
 		1
 	else 2
 			endif;
+
+helper context DC!FlowLink def: elemTypeC: Integer =
+	if self."to".oclIsTypeOf(DC!GoalState) then
+		1
+	else 2
+			endif;
+
+
+helper context DC!FlowLink def: elemTypeD: Integer =
+	if self."to".oclIsTypeOf(DC!State) then
+		1
+	else 2
+			endif;
+
+-- Check the type of value entered for the attribute newValue to determine target
+helper context DC!ValueChange def: changeType: Integer =
+	if self.newValue.oclIsTypeOf(String)  then
+		1
+	else if self.newValue.oclIsTypeOf(Boolean)  then
+    2
+	else 3
+			endif
+			endif;
+
+-- This facilitates the creation of contribution links in GRL
+entrypoint rule trying()
+{
+do
+{		-- For Goal Links
+		for(t in thisModule.fls)
+		{	
+			if((t.elemTypeC = 2) and (t.elemType = 2))	
+			{
+				--t.action.debug('Here');
+				
+				thisModule.contribLinks<-thisModule.contribLinks->including(Tuple{act=t.action,goalName='Wait'});
+			}
+			else if((t.elemTypeC = 1) and (t.elemType = 2))
+			{
+				
+				thisModule.contribLinks<-thisModule.contribLinks->including(Tuple{act=t.action,goalName=t."to".gsName});
+				
+				for(n in thisModule.contribLinks)
+				{
+					if(n.goalName='Wait')
+					{
+						n.goalName <- t."to".gsName;
+					}	
+				}	
+				
+			}
+			else if((t.elemTypeC = 1))
+			{   
+			    if((t.linkDef = 2) and (thisModule.labelCheck = 0))
+				{
+					
+					for(n in thisModule.contribLinks)
+					{
+					   thisModule.tempLinks <- thisModule.tempLinks->including(Tuple{act=n.act});
+					}
+				
+			    	thisModule.labelCheck <- 1;
+					
+					--thisModule.contribLinks<-thisModule.contribLinks->including(Tuple{act=t.action,goalName=t."to".gsName});
+					for(n in thisModule.contribLinks)
+					{
+						if(n.goalName='Wait')
+						{
+							n.goalName <- t."to".gsName;
+						}	
+					}
+					--thisModule.contribLinks.debug('deko');
+					for(n in thisModule.tempLinks)
+					{
+						--n.debug('Whattt');
+						thisModule.contribLinks<-thisModule.contribLinks->including(Tuple{act=n.act,goalName='Wait'});
+						--thisModule.contribLinks.debug('so far');
+					}	
+				
+			    	thisModule.contribLinks.debug('FinalCheck3');
+				}
+			    else
+			    {
+			      for(n in thisModule.contribLinks)
+					{
+						if(n.goalName='Wait')
+						{
+							n.goalName <- t."to".gsName;
+						}	
+					}
+			    }
+			}
+		}	
+	--thisModule.contribLinks.debug('Done');
+	-- For State Links
+		for(t in thisModule.fls)
+		{	
+			if((t.elemTypeD = 2) and (t.elemTypeB = 1) and (t.elemType = 2))	
+			{
+				--t.action.debug('Here');
+				thisModule.startState <-t."from".sName;
+				thisModule.stateLinks<-thisModule.stateLinks->including(Tuple{act=t.action,stateName=thisModule.startState});
+				if ((t.elemTypeC = 1))
+				{
+					thisModule.stateGoalLinks<-thisModule.stateGoalLinks->including(Tuple{goa=t."to",stateName=thisModule.startState});
+				}	
+			}
+			else if((t.elemTypeD = 2) and (t.elemType = 2))
+			{
+				thisModule.stateLinks<-thisModule.stateLinks->including(Tuple{act=t.action,stateName=thisModule.startState});
+				if ((t.elemTypeC = 1))
+				{
+					thisModule.stateGoalLinks<-thisModule.stateGoalLinks->including(Tuple{goa=t."to",stateName=thisModule.startState});
+				}
+			}
+			else if((t.elemTypeD = 1) and (t.elemType = 2))
+			{
+				thisModule.stateLinks<-thisModule.stateLinks->including(Tuple{act=t.action,stateName=thisModule.startState});	
+			}
+			else if((t.elemTypeB = 1) and (t.elemTypeC = 1))
+			{
+				thisModule.startState <-t."from".sName;
+				thisModule.stateGoalLinks<-thisModule.stateGoalLinks->including(Tuple{goa=t."to",stateName=thisModule.startState});	
+			}
+			else if((t.elemTypeD = 2))
+			{
+				if ((t.elemTypeC = 1))
+				{
+					thisModule.stateGoalLinks<-thisModule.stateGoalLinks->including(Tuple{goa=t."to",stateName=thisModule.startState});
+				}
+			}
+		}
+	-- For InterGoal Links
+	for(t in thisModule.fls)
+		{	
+			if((t.elemTypeC = 1))
+			{   
+				thisModule.flag<-0;
+				for(m in thisModule.fls)
+				{
+				   if(m."from"=t."to")
+				   {
+				   	thisModule.goalLinks<-thisModule.goalLinks->including(Tuple{goa=t."to",goalName='Waiting'});
+				    thisModule.flag<-1;
+				   }
+				}	
+					
+				if((thisModule.flag=0))
+				{
+					for(n in thisModule.goalLinks)
+					{
+						if(n.goalName='Waiting')
+						{
+							n.goalName <- t."to".gsName;
+						}	
+					}
+				}
+			}
+		}
+	thisModule.goalLinks.debug('Here2');
+	--thisModule.stateLinks.debug('Here2');
+	--thisModule.stateGoalLinks.debug('Ola');
+}	
+	
+}
+
 
 rule DC2URNspec
 {
@@ -132,13 +334,17 @@ rule DC2URNspec
 --			intElements <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'se')),
 --			intElements <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'ase')),
 			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c3')),
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'c8')),			
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'c9')),
 --			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c1')),
 --			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c2')),
 			links <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'c1')),
 			links <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'c2')),
+			
+			links <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'c10'))
 -- Added 13-05
-			links <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'c8')),
-			links <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'c9'))
+--			links <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'c8')),
+--			links <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'c9'))
 -- Added 13-05
 		),
 		gr : urn!GRLGraph(
@@ -155,25 +361,34 @@ rule DC2URNspec
 --		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'l2')),
 		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'l1')),
 		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links-> collect(as| thisModule.resolveTemp(as.action,'l2')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'l8')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!State))->collect(s| thisModule.resolveTemp(s,'l9')),
+		connections <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState))->collect(gs| thisModule.resolveTemp(gs,'l10'))
+
 -- Added 13-05
-		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'l8')),
-		connections <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'l9'))
+		--connections <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'l8')),
+		--connections <- dc.workflows ->any(c| true).plans-> any(d| true).links -> collect(fl| thisModule.resolveTemp(fl,'l9'))
 -- Added 13-05
 		
 		),
-		dcont: urn!DynamicContext(
-			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!DeactivationChange)) -> collect(dchg| thisModule.resolveTemp(dchg,'udchg')),
-			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!PropertyChange)) -> collect(pchg| thisModule.resolveTemp(pchg,'upchg')),
-			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!FormulaChange)) -> collect(fchg| thisModule.resolveTemp(fchg,'ufchg')),
-			changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!EnumerationChange)) -> collect(echg| thisModule.resolveTemp(echg,'uechg'))
+		ulink11:distinct urn! URNlink foreach(e in thisModule.fls->select(n|n.elemType = 2 and n.elemTypeB = 1))(
+		type <- 'History',
+		fromElem <- gr,
+		toElem <- thisModule.resolveTemp(e, 'start')
 		),
-		dcontg: urn!DynamicContextGroup(contexts <- dcont),
+	--	dcont: urn!DynamicContext(
+	--		changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!DeactivationChange)) -> collect(dchg| thisModule.resolveTemp(dchg,'udchg')),
+	--		changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!PropertyChange)) -> collect(pchg| thisModule.resolveTemp(pchg,'upchg')),
+	--		changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!FormulaChange)) -> collect(fchg| thisModule.resolveTemp(fchg,'ufchg')),
+	--		changes <- dc.changes -> select(n| n.oclIsTypeOf(DC!ValueChange)) -> collect(echg| thisModule.resolveTemp(echg,'uechg'))
+	--	),
+	--	dcontg: urn!DynamicContextGroup(contexts <- dcont),
 		us: urn!URNspec(
 	    	urndef <- d,
 			ucmspec <- dc.workflows -> collect(dw| thisModule.resolveTemp(dw,'uc')),
 			grlspec <- gl,
-			dynamicContexts <- dcont,
-			dynamicContextGroups <- dcontg,
+		--	dynamicContexts <- dcont,
+		--	dynamicContextGroups <- dcontg,
 			urnLinks <- dc.resources ->collect(a| thisModule.resolveTemp(a,'ulink1')),
 			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).elements->select(n| n.oclIsTypeOf(DC!GoalState)) ->collect(gs| thisModule.resolveTemp(gs,'ulink2')),
 			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink3')),
@@ -181,6 +396,8 @@ rule DC2URNspec
 	    	-- Added 13 - 05
 			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink8')),
 			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink9')),
+			urnLinks <- dc.workflows ->any(c| true).plans-> any(d| true).links->collect(fl| thisModule.resolveTemp(fl,'ulink10')),
+			urnLinks <- ulink11,
 			name <- 'AirplaneCaseStudy'
 			)
  
@@ -188,10 +405,10 @@ do{
 		thisModule.id <- thisModule.id.inc();
 		gr.id <-  'Id'+ thisModule.id;
 		gr.description <- 'StakeholderTest';
-		dcont.id <- 'D'+ thisModule.id;
-		dcont.name <- 'DynamicContext'+ thisModule.id;
-		dcontg.id <- 'DG'+ thisModule.id;
-		dcontg.name <- 'DynamicContextGroup'+ thisModule.id;
+	--	dcont.id <- 'D'+ thisModule.id;
+	--	dcont.name <- 'DynamicContext'+ thisModule.id;
+	--	dcontg.id <- 'DG'+ thisModule.id;
+	--	dcontg.name <- 'DynamicContextGroup'+ thisModule.id;
   }
 
 }
@@ -205,60 +422,87 @@ rule DCWorkflow2UCMspec
 --	,	chg:urn!Timepoint()
 }
 
-
-rule DCDeactChange2URNDeactChange
-{
-	from
-	dchg:DC!DeactivationChange
-	to
-	udchg:urn!DeactivationChange(
-		element <- dchg.element,
-		start <- dchg.start,
-		end <- dchg.end
-		)
-}
-
-
-rule DCPropChange2URNPropChange
-{
-	from
-	pchg:DC!PropertyChange
-	to
-	upchg:urn!PropertyChange(
-		affectedProperty<-pchg.affectedProperty,
-		element <- pchg.element,
-		start <- pchg.start,
-		end <- pchg.end
-		)
-}
-
-
-rule DCFormChange2URNFormChange
-{
-	from
-	fchg:DC!FormulaChange
-	to
-	ufchg:urn!FormulaChange(
-		formula<-fchg.formula,
-		element <- fchg.element,
-		start <- fchg.start,
-		end <- fchg.end
-	)
-}
-
-
-rule DCDEnumChange2URNEnumChange
-{
-	from
-	echg:DC!EnumerationChange
-	to
-	uechg:urn!EnumChange(
-		newValue <- echg.newValue,
-		element <- echg.element,
-		start <- echg.start,
-		end <- echg.end
-		)
-}
+--All changes related to TimedURN have been commented out to facilitate ease of running the transformations without the plug-in
+--Please uncomment them and run plug-in as an application to check generated file
+--rule DCDeactChange2URNDeactChange
+--{
+--	from
+--	dchg:DC!DeactivationChange
+--	to
+--	udchg:urn!DeactivationChange(
+--		element <- dchg.element,
+--		start <- dchg.start,
+--		end <- dchg.end
+--		)
+--}
+--
+--
+--rule DCPropChange2URNPropChange
+--{
+--	from
+--	pchg:DC!PropertyChange
+--	to
+--	upchg:urn!PropertyChange(
+--		affectedProperty<-pchg.affectedProperty,
+--		element <- pchg.element,
+--		start <- pchg.start,
+--		end <- pchg.end
+--		)
+--}
+--
+--
+--rule DCFormChange2URNFormChange
+--{
+--	from
+--	fchg:DC!FormulaChange
+--	to
+--	ufchg:urn!FormulaChange(
+--		formula<-fchg.formula,
+--		element <- fchg.element,
+--		start <- fchg.start,
+--		end <- fchg.end
+--	)
+--}
+--
+--
+--rule DCValueChange2URNConstantChange
+--{
+--	from
+--	echg:DC!ValueChange(echg.changeType=1)
+--	to
+--	uechg:urn!ConstantChange(
+--		newValue <- echg.newValue,
+--		element <- echg.element,
+--		start <- echg.start,
+--		end <- echg.end
+--		)
+--}
+--
+--rule DCValueChange2URNBoolChange
+--{
+--	from
+--	echg:DC!ValueChange(echg.changeType=2)
+--	to
+--	uechg:urn!BooleanChange(
+--		newValue <- echg.newValue,
+--		element <- echg.element,
+--		start <- echg.start,
+--		end <- echg.end
+--		)
+--}
+--
+--rule DCValueChange2URNEnumChange
+--{
+--	from
+--	echg:DC!ValueChange(echg.changeType=3)
+--	to
+--	uechg:urn!EnumChange(
+--		newValue <- echg.newValue,
+--		element <- echg.element,
+--		start <- echg.start,
+--		end <- echg.end
+--		)
+--}
 
 
 rule DCPlan2UCMmap
@@ -288,7 +532,8 @@ rule DCPlan2UCMmap
  connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn2')),
  connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn3')),
  connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn4')),
- connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn5'))
+ connections <- dp.links -> collect(fl| thisModule.resolveTemp(fl,'conn5')),
+ metadata <- thisModule.resolveTemp(dp.precedingState,'m3b')
 )
 }
 
@@ -488,16 +733,38 @@ rule DCGoalState2GRLGoal
 --		source <- thisModule.resolveTemp(e, 'bref')
 --		),
 		
-	c3:distinct urn! Contribution foreach(e in gs.actor.performedActions)(
+--	c3:distinct urn! Contribution foreach(e in gs.actor.performedActions)(
+--		refs <- l3,
+--		dest <- ge,
+--		src <- thisModule.resolveTemp(e, 'ase')
+--		),
+--	l3: distinct urn!LinkRef foreach(e in gs.actor.performedActions)(
+--		link <- c3,
+--		target<-gref,
+--		source <- thisModule.resolveTemp(e, 'asref')
+--		),
+
+	c3:distinct urn! Contribution foreach(e in thisModule.contribLinks->select(t|t.goalName=gs.gsName))(
 		refs <- l3,
 		dest <- ge,
-		src <- thisModule.resolveTemp(e, 'ase')
+		src <- thisModule.resolveTemp(e.act, 'ase')
 		),
-	l3: distinct urn!LinkRef foreach(e in gs.actor.performedActions)(
+	l3: distinct urn!LinkRef foreach(e in thisModule.contribLinks->select(t|t.goalName=gs.gsName))(
 		link <- c3,
 		target<-gref,
-		source <- thisModule.resolveTemp(e, 'asref')
+		source <- thisModule.resolveTemp(e.act, 'asref')
 		),
+	c10:distinct urn! Contribution foreach(e in thisModule.goalLinks->select(t|t.goalName=gs.gsName))(
+		refs <- l10,
+		dest <- ge,
+		src <- thisModule.resolveTemp(e.goa, 'ge')
+		
+		),
+	l10: distinct urn!LinkRef foreach(e in thisModule.goalLinks->select(t|t.goalName=gs.gsName))(
+		link <- c10,
+		target<-gref,
+		source <- thisModule.resolveTemp(e.goa, 'gref')
+		),	
 
 	endp:urn!EndPoint(name <- gs.gsName,
 		label <- labelG),
@@ -531,7 +798,27 @@ rule DCState2GRLKPI
 	
 	ends:urn!EndPoint(name <- s.sName,
 		label <- labelS),
-	labelS: urn!NodeLabel()
+	labelS: urn!NodeLabel(),
+	c8:distinct urn! Contribution foreach(e in thisModule.stateLinks->select(t|t.stateName=s.sName))(
+		refs <- l8,
+		dest <- thisModule.resolveTemp(e.act, 'ase'),
+		src <-  se
+		),
+	l8: distinct urn!LinkRef foreach(e in thisModule.stateLinks->select(t|t.stateName=s.sName))(
+		link <- c8,
+		target<-thisModule.resolveTemp(e.act, 'asref'),
+		source <- sref
+		),
+	c9:distinct urn! Contribution foreach(e in thisModule.stateGoalLinks->select(t|t.stateName=s.sName))(
+		refs <- l9,
+		dest <- thisModule.resolveTemp(e.goa, 'ge'),
+		src <-  se
+		),
+	l9: distinct urn!LinkRef foreach(e in thisModule.stateGoalLinks->select(t|t.stateName=s.sName))(
+		link <- c9,
+		target<-thisModule.resolveTemp(e.goa, 'gref'),
+		source <- sref
+		)	
 	do{
 		thisModule.id <- thisModule.id.inc();
 		sref.id <-  'Id'+ thisModule.id;
@@ -583,6 +870,8 @@ do{
   }
 }
 
+
+
 rule DCFlowLink2UCMConnection
 {
 	from
@@ -595,6 +884,7 @@ rule DCFlowLink2UCMConnection
 		source <- thisModule.resolveTemp(fl."from",'af'),
 		source <- thisModule.resolveTemp(fl."from",'of'),
 		source <- thisModule.resolveTemp(fl."from",'oj'),
+		source <- thisModule.resolveTemp(fl."from",'endp'),
 		target <- thisModule.resolveTemp(fl."to",'aj'),
 		target <- thisModule.resolveTemp(fl."to",'af'),
 --		target <- thisModule.resolveTemp(fl.action,'resref'),
@@ -605,7 +895,7 @@ rule DCFlowLink2UCMConnection
 		),
     		cond1 : urn!Condition()
 	do
-    {
+    { 
       if(not(fl.linklabel.oclIsUndefined())){
         cond1.label <- fl.linklabel.label;
       	conn.condition <- cond1;
@@ -630,6 +920,7 @@ rule DCFlowLink2UCMResp
 	conn1:urn!NodeConnection(
 --		source <- thisModule.resolveTemp(fl."from",'start'),
 --		source <- thisModule.resolveTemp(fl.action,'resref'),
+		source <- thisModule.resolveTemp(fl."from",'endp'),
 		source <- thisModule.resolveTemp(fl."from",'aj'),
 		source <- thisModule.resolveTemp(fl."from",'af'),
 		source <- thisModule.resolveTemp(fl."from",'of'),
@@ -699,18 +990,21 @@ rule DCFlowLink2UCMStartp
 	ulink8:urn!URNlink(
 		fromElem <- start,
 		toElem <- thisModule.resolveTemp(fl."from",'se')),
-	m1:urn!Metadata(name <- '_state',value <- fl."from".name),
+	ulink10:urn!URNlink(
+		fromElem <- res,
+		toElem <- thisModule.resolveTemp(fl.action,'ase')),	
+	m1:urn!Metadata(name <- '_state',value <- fl."from".name)
 -- Added 13 - 05    
-	c8: urn! Contribution(
-		refs <- l8,
-		dest <- thisModule.resolveTemp(fl.action, 'ase'),
-		src <- thisModule.resolveTemp(fl."from", 'se')
-		),
-	l8:urn!LinkRef (
-			link <- c8,
-		target<-thisModule.resolveTemp(fl.action, 'asref'),
-		source <- thisModule.resolveTemp(fl."from", 'sref')
-		)
+--	c8: urn! Contribution(
+--		refs <- l8,
+--		dest <- thisModule.resolveTemp(fl.action, 'ase'),
+--		src <- thisModule.resolveTemp(fl."from", 'se')
+--		),
+--	l8:urn!LinkRef (
+--			link <- c8,
+--		target<-thisModule.resolveTemp(fl.action, 'asref'),
+--		source <- thisModule.resolveTemp(fl."from", 'sref')
+--		)
 -- Added 13 - 05
 	do
     {
@@ -749,16 +1043,16 @@ rule DCFlowLink2UCMStartEndp
 		),
 	m2:urn!Metadata(name <- '_state',value <- fl."from".name),
 -- Added 13 - 05    
-	c9: urn! Contribution(
-		refs <- l9,
-		dest <- thisModule.resolveTemp(fl."to", 'ge'),
-		src <- thisModule.resolveTemp(fl."from", 'se')
-		),
-	l9:urn!LinkRef (
-			link <- c9,
-		target<-thisModule.resolveTemp(fl."to", 'gref'),
-		source <- thisModule.resolveTemp(fl."from", 'sref')
-		),
+--	c9: urn! Contribution(
+--		refs <- l9,
+--		dest <- thisModule.resolveTemp(fl."to", 'ge'),
+--		src <- thisModule.resolveTemp(fl."from", 'se')
+--		),
+--	l9:urn!LinkRef (
+--			link <- c9,
+--		target<-thisModule.resolveTemp(fl."to", 'gref'),
+--		source <- thisModule.resolveTemp(fl."from", 'sref')
+--		),
 -- Added 13 - 05	
 
 -- Added 13 - 05 
@@ -807,4 +1101,12 @@ rule DCSequence2UCMArrow
 	seq:DC!"Sequence"
 	to
 	da:urn!DirectionArrow()
+}
+
+rule DCHistory2URNLink
+{
+	from
+	hist:DC!History
+	to
+	m3b:urn!Metadata(name <- 'UrnLinkType',value <- hist.hisName)	
 }
